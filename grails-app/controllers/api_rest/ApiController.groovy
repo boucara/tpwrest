@@ -268,4 +268,28 @@ class ApiController {
                 break;
         }
     }
+    def ressourcesLies(){
+        switch(request.getMethod()){
+            case"GET":
+                if(!Bibliotheque.get(params.bu.id)){
+                    render (status: 400, text:"cannot attach a librairie to a non existant bu(${params.bibliotheque.id})")
+                    return
+                }
+                def bibliothequeInstance = Bibliotheque.get(params.bu.id)
+                def livreInstance =bibliothequeInstance.getLivres()
+                    if(livreInstance!=null){
+                    switch (request.getHeader('Accept')) {
+                        case 'JSON':
+                            render  livreInstance as JSON
+                            break;
+                        case 'XML':
+                            render  livreInstance as XML
+                            break;
+
+                    }
+
+                }
+
+        }
+    }
 }
