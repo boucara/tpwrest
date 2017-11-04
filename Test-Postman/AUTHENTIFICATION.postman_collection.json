@@ -1,0 +1,355 @@
+{
+	"id": "448388fb-5491-88f8-5f8c-6eaf3cf371ab",
+	"name": "AUTHENTIFICATION",
+	"description": "Les autentifications des utilisateurs  composés de leurs identifiants et leur token ",
+	"order": [
+		"b553689f-c5a9-30aa-f3d7-9094a78112e4",
+		"a2f8f55b-0a71-a372-bfd0-56b7d01adc55",
+		"1f8bc431-d0b6-8208-3b3c-c9e36826cd6b"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1509616519066,
+	"owner": "2905070",
+	"public": false,
+	"requests": [
+		{
+			"id": "1f8bc431-d0b6-8208-3b3c-c9e36826cd6b",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:8080/api/login",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1509785018592,
+			"name": "login-POST-User-toto",
+			"description": "Cette requéte permet de génerer un token pour une durée limitée  à l'utilisateur toto lui permettant d'acceder à tous les services offert par l'api pendant ce times temp",
+			"collectionId": "448388fb-5491-88f8-5f8c-6eaf3cf371ab",
+			"responses": [
+				{
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK",
+						"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+					},
+					"time": 213,
+					"headers": [
+						{
+							"key": "Cache-Control",
+							"value": "no-store",
+							"name": "Cache-Control",
+							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1083",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 04 Nov 2017 09:42:30 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache",
+							"name": "Pragma",
+							"description": "Implementation-specific headers that may have various effects anywhere along the request-response chain."
+						}
+					],
+					"cookies": [
+						{
+							"domain": "localhost",
+							"expirationDate": 2147483647,
+							"httpOnly": true,
+							"name": "JSESSIONID",
+							"path": "/",
+							"secure": false,
+							"url": "http://localhost:8080",
+							"value": "901ECE9F3017AF8646280EF6B554F4E5"
+						}
+					],
+					"mime": "",
+					"text": "{\"username\":\"toto\",\"roles\":[\"ROLE_USER\"],\"access_token\":\"eyJhbGciOiJIUzI1NiJ9.eyJwcmluY2lwYWwiOiJINHNJQUFBQUFBQUFBSlZTTVU4VVFSUitleDRCUXFKZ0lva0ZOR0puOWhJdHJ4SnlrSkFORU01cklOSE03VDdXZ2RtWmRlWXQzRFhrS2lrb01DZ0ppYTBsXC8wUWJmNERCd3BiYTFqY0x4NTQyeEtsbTNuenpmZFwvNzNseGN3Wml6OENLMVFpb1g1cXBJcFE1ZGJxVk9IY2FGbGRRUEM0YzJRU29SS3lXd3d4VzRYa0VOZ2docU1pRjRHTzJLZmRGUVFxZU45ZTR1eHRUc1dYaHViSHJEdUdORmhnZkc3b1czM0xHeCtKZEFSUjE4cWNINEZzeUlPRGFGcGpXalc3MWNXa3kyWUxxcVJTYmU4NlZITWQrZ0ppbVVHNFdPb3haZGhVa0VVNktndDRaVkpUcUNCOWRtQzVLcTBVWnFSakNSQytmWTNUK2R0TWxiOVwvZmVwdVlPM3NFaDFIdDV3SXV6ZStxaG9lY0psNHhTM0xVMDJpMTBkR1lTdVNPOU9QTVA1azZcL24zd2VkR29Bbk1tenU5OVU5Y2VMTVBqNit2ZDhHWFFRRTh5T1dLOWd6VjdPYm1ZcTVsY1d2ZktQODQyUFoxZEgyXC9kWTJTT1dcLzM4ZUN5OXZrdXN2bVN3WFZwQVptUkhUSHRUOW5za1g3eVlmVHFFZnRtV1dLK1FmcFFtVFc0bUttTnV0VzZPR2VSTk1icTVIclRlZGRtdlRuK3BreUxEbVwvYkpsUDZzd01qeXA0MThmdnAwOHVlVDNxekMyTDFTQm5QaDBCVm9yc2k3YTl4ZG5jMU9mZmg2WFwvb2RcLytRXC9MWk5ua0R3TUFBQT09Iiwic3ViIjoidG90byIsInJvbGVzIjpbIlJPTEVfVVNFUiJdLCJleHAiOjE1MDk3OTIxNTAsImlhdCI6MTUwOTc4ODU1MH0.FMsQ8_56w96nNVC4Iwk8Ycn_ACz8tiTCj6mxwyvn0NI\"}",
+					"language": "json",
+					"previewType": "text",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"code": 200,
+					"responseSize": {
+						"body": 1083,
+						"header": 167,
+						"total": 1250
+					},
+					"mimeType": "text",
+					"fileName": "response.json",
+					"dataURI": "data:application/json;base64, eyJ1c2VybmFtZSI6InRvdG8iLCJyb2xlcyI6WyJST0xFX1VTRVIiXSwiYWNjZXNzX3Rva2VuIjoiZXlKaGJHY2lPaUpJVXpJMU5pSjkuZXlKd2NtbHVZMmx3WVd3aU9pSklOSE5KUVVGQlFVRkJRVUZCU2xaVFRWVTRWVkZTVWl0bGVEUkNVWEZLWjBsdmEwWk9SMHB1T1doSmRISjRTbmxyU2tGT1JVMDFja2xPU0UwM1ZEZFhaMlJ0V21SbFdYUXpSRmhyUzJscmIwMURaMHBwWVRCc1hDOHdVV0ptTkVSQ2QzQmlZVEZxWTB4NE5UUXllRXRzYlROdWVucG1aRnd2TnpOc2VHTjNXbWw2T0VOTE1WRnBiMWcxY1hCSmNGRTFaR0p4Vms5SVkyRkdiR1JSVUVNMFl6SlJVMjlTUzNsWGQzZDRWelJZYTBWT1oyZG9jVTFwUmpSSFR6SkxabVJHVVZGeFpVNDVaVFIxZUhSVWMxZFlhSFZpU0hKRWRVZE9SbWhuWmtjM2IxY3pNMHhIZUN0S1pFRlNVakU0Y1dOSU5FWnplVWxQUkdGR2NHcFhhbGMzTVdOWGEza3lXVXh4Y1ZKVFltVTRObFpJVFdRclowcHBiVlZITkZkUGIzaGFaR2hWYTBWVk5rdG5kRFJhVmtwVWNVTkNPV1J0UXpWTGNUQlZXbkZTYWtOU1F5dG1XVE5VSzJSMFRXeGlPVnd2Wm1Wd2RWbFBNM05GYURGSWREVjNTWFY2WlN0eGFHOWxZMHBzTkhoVE0weFZNREpwTVRCa1IxbFRkVk5QT1U5UVRWQTFhelpjTDI0emQyVmtSMjlCYmsxdGVuVTVPVlU1WTJWTVRWQnFOaXQyWkRoSFdGRlJSVGg1VDFkTE9XZDZWamRQWW0xWmNUVnNZMWQyWmt0UU9EUXlVRm94WkVneVhDOWtXVEpUVDFkY0x6TTRaVU41T1hacmRYTjJiVk4zV0Zad1FWcHRVa2hVU0hSVU9XNXphMWczZVZsbVZIRkZablJ0VjFkTEsxRm1jRkZ0VkZjMGJVdHRUblYwVnpaUFIyVlNUazFpY1RWSWNsUmxaR1J0ZGxSdUszQnJlVXhFYlZ3dllrcHNVRFp6ZDAxcWVYQTBNVGhtZG5Bd09IVmxWRE54ZWtNeVRERlRRbTVRYURCQ1ZtOXljMmszWVRsNFpHNWpNVTltWm1nMldGd3ZiMlJjTHl0UlhDOU1XazV1YTBSM1RVRkJRVDA5SWl3aWMzVmlJam9pZEc5MGJ5SXNJbkp2YkdWeklqcGJJbEpQVEVWZlZWTkZVaUpkTENKbGVIQWlPakUxTURrM09USXhOVEFzSW1saGRDSTZNVFV3T1RjNE9EVTFNSDAuRk1zUThfNTZ3OTZuTlZDNEl3azhZY25fQUN6OHRpVENqNm14d3l2bjBOSSJ9",
+					"name": "login-POST-User-toto",
+					"id": "6265e989-2357-cf97-9006-72839ef50910",
+					"request": {
+						"url": "http://localhost:8080/api/login",
+						"pathVariables": {},
+						"pathVariableData": [],
+						"queryParams": [],
+						"headerData": [],
+						"headers": "",
+						"data": "{\"username\":\"toto\",\"password\":\"pwd1\"}",
+						"method": "POST",
+						"dataMode": "raw"
+					}
+				}
+			],
+			"rawModeData": "{\"username\":\"toto\",\"password\":\"pwd1\"}"
+		},
+		{
+			"id": "a2f8f55b-0a71-a372-bfd0-56b7d01adc55",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:8080/api/login",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1509789218572,
+			"name": "login-POST-User-traore",
+			"description": "Cette requéte permet de génerer un token pour une durée limitée  à l'utilisateur traore lui permettant d'acceder à tous les services offert par l'api pendant ce times temp",
+			"collectionId": "448388fb-5491-88f8-5f8c-6eaf3cf371ab",
+			"responses": [
+				{
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK",
+						"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+					},
+					"time": 252,
+					"headers": [
+						{
+							"key": "Cache-Control",
+							"value": "no-store",
+							"name": "Cache-Control",
+							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1093",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 04 Nov 2017 09:41:43 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache",
+							"name": "Pragma",
+							"description": "Implementation-specific headers that may have various effects anywhere along the request-response chain."
+						}
+					],
+					"cookies": [
+						{
+							"domain": "localhost",
+							"expirationDate": 2147483647,
+							"httpOnly": true,
+							"name": "JSESSIONID",
+							"path": "/",
+							"secure": false,
+							"url": "http://localhost:8080",
+							"value": "901ECE9F3017AF8646280EF6B554F4E5"
+						}
+					],
+					"mime": "",
+					"text": "{\"username\":\"traore\",\"roles\":[\"ROLE_USER\"],\"access_token\":\"eyJhbGciOiJIUzI1NiJ9.eyJwcmluY2lwYWwiOiJINHNJQUFBQUFBQUFBSlZTdlVcL2JRQlJcL0RxRlFJZkZSQ1NRR1dFcTN5cEhhTVZOQkFRbFpnQWhaUUNxNjJBXC8zNEh6bjNwMGhXVkFtR0JoQWZFaElyQjM1VCtqU1A2QnFCMWJtcnJ3ekFRY1cxSnZzZHpcL1wvdnA2djc2RGZhUGdjYThhRjhWT1J4Vno2SnRWY3hnYkRUSFBiOWpPRE9rS2JJeFp5WUlNbThIQzhFbmdCbEhoazRWMnd6WFpaUlRBWlY1YWIyeGphYWt2REo2WGpMdU9XWmdudUtiM2pQM0dIU3VNemdZTGErMUdDZ1hVWVkyR29NbW1YbEt5MVVxNHhXb2ZSWWhhb2NNZU54a082UVdrNUU2WVhPb0NTTlFWR0FReXh6SDVUcE1yUldCaDVNSnRaTGlwMXROVUFCbE5tRExsN2thUnVuWFYzNzJ4S1N2QWQ5cUhjU2owNjFOMEhCXC9VZGp6K25oS0RVWEVrejA1Q0ppdmdXZCtMRTM1azZcL1hWODFXbVVBS2lUajY5XC9VOHduWjZGejhcL1hmZEY2MEYxcVk2TEZld0txdGxOeU1GY3hyR3AzeTc4dVZzNHU3dzQwK1VuYUkrZlwvZng4eVhiblB0T1pXa1RET3JlblpFdEh0bDkwemtzNitUUDI2aDdkZDVrZ3FrUDBwYWpKNGtDbUtLVzlaS1BQWnQ0ZTNxY2xEYmJOUnJxKzd0amRXTUNFbDFPQVwvdHR1VUhpbloxZEh2eThcL2o5SDJKWWhQNWRKaktremtjTDBGS1dORkVmWEY5TURaM1wvUGNvVGRQXC9tdm50cHZhZDZFUU1BQUE9PSIsInN1YiI6InRyYW9yZSIsInJvbGVzIjpbIlJPTEVfVVNFUiJdLCJleHAiOjE1MDk3OTIxMDMsImlhdCI6MTUwOTc4ODUwM30.UXr_5WKs-7aZg_c9CKWTkrJSFxw2umdIZxLM8KZsi1c\"}",
+					"language": "json",
+					"previewType": "text",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"code": 200,
+					"responseSize": {
+						"body": 1093,
+						"header": 167,
+						"total": 1260
+					},
+					"mimeType": "text",
+					"fileName": "response.json",
+					"dataURI": "data:application/json;base64, eyJ1c2VybmFtZSI6InRyYW9yZSIsInJvbGVzIjpbIlJPTEVfVVNFUiJdLCJhY2Nlc3NfdG9rZW4iOiJleUpoYkdjaU9pSklVekkxTmlKOS5leUp3Y21sdVkybHdZV3dpT2lKSU5ITkpRVUZCUVVGQlFVRkJTbFpUZGxWY0wySlJRbEpjTDBSeFJsRkpaa1pTUTFOUlIxZEZjVE41Y0VoaFRWWk9Ra0ZSYkZwblFXaGFVVU54TmpKQlhDOHpORWg2YmpOd01HaFhWa0Z0UjBKb1FXWkZhRWx5UWpNMVZDdHFVMUEyUW5GQ01XSnRjbkozZWtGUlkxY3hTblp6WkhwY0wxd3ZkbkEyZGpjMlJHWmhVR2RqWVRoaFJqaFdUMUo0Vm5vMlNuUldZM2huWWtSVVNGQmlPV3BQUkU5clMySkplRnA1V1VsTmJUaElRemhGYm1kQ2JFaG9helJXTW5kNldGcGFVbFJCV2xZMVlXSXllR3BoWVd0MlJFbzJXR3BNZFU5WFdtZHVkVXRpTTJwUU0wZElVM1ZOZW1kWlRHRXJNVWREWjFoVldWa3lSMjlOYlcxWWJFdDVNVlZ4TkhoWGIyWlNXV2hoYjJOTlpVNTRhMDgyVVZkck5VVTJXVmhQYjBOVFRsRldSMEZSZVhoNlNEVlVjRTF5VWxkQ2FEVk5TblJhVEdsd01YUk9WVUZDYkU1dFJFeHNOMnRoVW5WdVdGWXpOeko0UzFOMlFXUTVjVWhqVTJvd05qRk9NRWhDWEM5VlpHcDZLMjVvUzBSVldFVnJlakExUTBwcGRtZFhaQ3RNUlRNMWF6WmNMMWhXT0RGWGJWVkJTMmxVYWpZNVhDOVZPSGR1V2paR2VqaGNMMWhtWkVZMk1FWXhjVmsyVEVabGQwdHhkR3hPZVUxR1kzaHlSM0F6ZVRjNGRWWnpOSFUzZHpRd0sxVnVZVWtyWmx3dlpuZzRlVmhpYmxCMFQxcFhhMVJFVDNKbGJscEZkRWgwYkRrd2VtdHpOaXRVVURJMmFEZGtaRFZyWjNGclVEQndZV3BLTkd0RGJVdExWemxhUzFCUVduUTBaVE54WTJ4RVltSk9Vbkp4S3pkMGFtUlhUVU5GYkRGUFFWd3ZkSFIxVlVocGJsb3haRWgyZVRoY0wybzVTREpLV1doUU5XUktha3RyZW10alREQkdTMWRPUmtWbVdFWTVUVVJhTTF3dlVHTnZWR1JRWEM5dGRtNTBjSFpoWkRaRlVVMUJRVUU5UFNJc0luTjFZaUk2SW5SeVlXOXlaU0lzSW5KdmJHVnpJanBiSWxKUFRFVmZWVk5GVWlKZExDSmxlSEFpT2pFMU1EazNPVEl4TURNc0ltbGhkQ0k2TVRVd09UYzRPRFV3TTMwLlVYcl81V0tzLTdhWmdfYzlDS1dUa3JKU0Z4dzJ1bWRJWnhMTThLWnNpMWMifQ==",
+					"name": "login-POST-User-traore",
+					"id": "af2b820f-2bde-215c-a4fc-01f24e656a25",
+					"request": {
+						"url": "http://localhost:8080/api/login",
+						"pathVariables": {},
+						"pathVariableData": [],
+						"queryParams": [],
+						"headerData": [],
+						"headers": "",
+						"data": "{\"username\":\"traore\",\"password\":\"0001\"}",
+						"method": "POST",
+						"dataMode": "raw"
+					}
+				}
+			],
+			"rawModeData": "{\"username\":\"traore\",\"password\":\"0001\"}"
+		},
+		{
+			"id": "b553689f-c5a9-30aa-f3d7-9094a78112e4",
+			"headers": "Accept: application/json\n",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/api/login",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1509785013184,
+			"name": "login-POST-User-aicha",
+			"description": "Cette requéte permet de génerer un token pour une durée limitée  à l'utilisateur aicha lui permettant d'acceder à tous les services offert par l'api pendant ce times temp",
+			"collectionId": "448388fb-5491-88f8-5f8c-6eaf3cf371ab",
+			"responses": [
+				{
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK",
+						"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+					},
+					"time": 241,
+					"headers": [
+						{
+							"key": "Cache-Control",
+							"value": "no-store",
+							"name": "Cache-Control",
+							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1093",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 04 Nov 2017 09:53:26 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache",
+							"name": "Pragma",
+							"description": "Implementation-specific headers that may have various effects anywhere along the request-response chain."
+						}
+					],
+					"cookies": [
+						{
+							"domain": "localhost",
+							"expirationDate": 2147483647,
+							"httpOnly": true,
+							"name": "JSESSIONID",
+							"path": "/",
+							"secure": false,
+							"url": "http://localhost:8080",
+							"value": "901ECE9F3017AF8646280EF6B554F4E5"
+						}
+					],
+					"mime": "",
+					"text": "{\"username\":\"aicha\",\"roles\":[\"ROLE_USER\"],\"access_token\":\"eyJhbGciOiJIUzI1NiJ9.eyJwcmluY2lwYWwiOiJINHNJQUFBQUFBQUFBSlZTdjA4VVFSUit1OXdGQ0ltQ0NTWVcySWlkMlV1MHZFcklZVUkyUURpdndVUXpOXC90WUJtWm5scGxadUd2TVZWcFFRRUFTRWxwTFwvaE50XC9BTUlGcmJVdHI1WkR2YTBJVTYxKytiYjc5ZmJpMnVvV3dPdlVzT0V0RkV1aTFTb3lPWkdxTlFpTDR4d1wvYWl3YUJKMEplSk5DZXpRQkc1T0VFSVFReWdTQjRcL2liYmJIR3BLcHRMSGEzVWJ1bWowREw3VkpoNHliaG1XNHI4MU9kTWZOdGNHXC9CQ3JxNEdzSTR4c3d3empYaFhJcldyVjZ1VENZYk1CME5ZczEzXC9HaldVNDNxSnhnMG81Q3gxR3hyc1FraGlsV3VDMU5xZ0t0ZzRjM1pnc25aS09OcmhuRFJNNnNKWGZcL0pHazdiOTNmZTV1S0V1ekNSNmoxOG9BT2RmZmNReVBQRXkxcUtTbTEwTXJPZDFTbUU3RXB2RGp4RCthT2Z4eWVEem9oQUhYeTR2NXZxdm1UQlJoOGVcL1wvN2FWbDB3QjA4SHJGZXdacTluTnpNVk14dkRYcmx5N08xazlQcnorXC9HU05ramx2NVwvSFwvT3ZoODMxRjNXV004T2NIdGtSMGU3WFwvRE9STDl4UGZydUZmdFFXV1M2UlwvaWpsTUxtVHFJZ3BiczFvZWR1M2c4bjExYmoxb2ROdXJmdTNPaE44aTVIb2d6S3pYMVlVYTFyVndhK2o3NGZQcm9oZ0dlcDdUQlpJbFU5WG9KVWk2Nkw1ZEhFNk5cL1hsNTBFWllQZ3poMzhBaEVNbmpSQURBQUE9Iiwic3ViIjoiYWljaGEiLCJyb2xlcyI6WyJST0xFX1VTRVIiXSwiZXhwIjoxNTA5NzkyODA2LCJpYXQiOjE1MDk3ODkyMDZ9.2kedDTq7JSFjwq7OR9V7W4EBzlZDAdhBp3utqYdAiF0\"}",
+					"language": "json",
+					"previewType": "text",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"code": 200,
+					"responseSize": {
+						"body": 1093,
+						"header": 167,
+						"total": 1260
+					},
+					"mimeType": "text",
+					"fileName": "response.json",
+					"dataURI": "data:application/json;base64, eyJ1c2VybmFtZSI6ImFpY2hhIiwicm9sZXMiOlsiUk9MRV9VU0VSIl0sImFjY2Vzc190b2tlbiI6ImV5SmhiR2NpT2lKSVV6STFOaUo5LmV5SndjbWx1WTJsd1lXd2lPaUpJTkhOSlFVRkJRVUZCUVVGQlNsWlRkakE0VlZGU1VpdDFPWGRHUTBsdFEwTlRXVmN5U1dsa01sVjFNSFpGY2tsWlZVa3lVVVJwZG5kVlVYcE9YQzkwV1VKdFdtNXNjR3hhZFVkMlRWWldjRkZSUlVGVFJXeHdURnd2YUU1MFhDOUJUVWxHY21KVmRISTFXa1IyWVRCSlZUWXhLeXRpWWpjNVptSnBNblZ2VjNkUGRsVnpUMFYwUmtWMWFURlRiM2xQV2tkeFRsRnBURFI0ZDF3dllXbDNZVUpLTUVwbFNrNURaWHBSUWtjMVQwVkZTVkZSZVdkVFFqUmNMMmxpWW1KSVIzQkxjSFJNU0dFelZXSjFiV293UkV3M1ZrcG9OSGxpYUcxWE5ISTRNVTlrVFdaT2RHTkhYQzlDUTNKeE5FZHpTVFI0YzNkM2VtcFlhRmhKY2xkeVZqWjFWRU5aWWsxQ01FNVpjekV6WEM5SGFsZFZORE54U25obk1HODFRM2d4UjNoeWMxRnJhR2xzVjNWRE1VNXhaMHQwWnpSak0xcG5jMjVhUzA5T2NtaHVSRkpOTm5OS1dHWmNMMHBIYXpkaU9UTm1aVFYxUzBWMWVrTlNObW94T0c5QlQyUm1abU5SZVZCUVJYa3hjVXRUYlRFd1RYSlBaREZUYlVVM1JYQjJSR3A0UkN0aFQyWjRlV1ZFZW05b1FVaFllVFIyTlhaeGRtMVVRbEpvT0dWY0wxd3ZOMkZXYkRCM1FqQTRTSEpHWlhkYWNUbHVUbnBOVmsxNGRrUlljbXg1TjA4eGF6bFFjbm9yWEM5SFUwNXJhbXgyTlZ3dlNGd3ZUM1pvT0RNeFJqTlhWMDA0VDJOSWRHdFNNR1UzV0Z3dlJFOVNURGw0VUdaeWRVWm1kRkZYVjFNMlVsd3ZhV3BzVFV4dFZIRkpaM0JpY3pGdlpXUjFNMmM0YmpFeFltb3hiMlJPZFhKbWRUTlBhRTQ0YVRWSWIyZDZTM3BZTVZsVllURnlWbmRoSzJvM05HWlFjbTlvWjBkbGNEZFVRbHBKYkZVNVdHOUtWV2syTmt3MVpFaEZOazVjTDFoc05UQkZXbGxRWjNwb016aEJhRVZOYm1wU1FVUkJRVUU5SWl3aWMzVmlJam9pWVdsamFHRWlMQ0p5YjJ4bGN5STZXeUpTVDB4RlgxVlRSVklpWFN3aVpYaHdJam94TlRBNU56a3lPREEyTENKcFlYUWlPakUxTURrM09Ea3lNRFo5LjJrZWREVHE3SlNGandxN09SOVY3VzRFQnpsWkRBZGhCcDN1dHFZZEFpRjAifQ==",
+					"name": "login-POST-User-aicha",
+					"id": "c58dfcba-ab62-1f6e-8493-75cb3b7a94a6",
+					"request": {
+						"url": "http://localhost:8080/api/login",
+						"pathVariables": {},
+						"pathVariableData": [],
+						"queryParams": [],
+						"headerData": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": "",
+								"enabled": true
+							}
+						],
+						"headers": "Accept: application/json\n",
+						"data": "{\"username\":\"aicha\",\"password\":\"0000\"}",
+						"method": "POST",
+						"dataMode": "raw"
+					}
+				}
+			],
+			"rawModeData": "{\"username\":\"aicha\",\"password\":\"0000\"}"
+		}
+	]
+}

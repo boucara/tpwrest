@@ -1,0 +1,849 @@
+{
+	"id": "467761b9-c287-80c4-87da-697dde332d2e",
+	"name": "API_REST_Gestion_Ressources_lies",
+	"description": "requetes sur la collection livre de la bibliotheque",
+	"order": [
+		"207c4a4f-3cac-35b1-15e2-0ea4052817b6",
+		"b048f852-c881-74ed-0ba9-032258287195",
+		"6e4e97de-823e-43b7-f8bb-98bf0f0472de",
+		"188ab05e-eab5-482b-9e8a-fe0c35f0d696",
+		"b5308802-25d7-d72e-5bc4-728c871ef708",
+		"fe7c1d28-0390-fe91-ddfd-1a7f179541b9"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1507900394447,
+	"owner": "2905070",
+	"public": false,
+	"requests": [
+		{
+			"id": "188ab05e-eab5-482b-9e8a-fe0c35f0d696",
+			"headers": "Accept: JSON\nMyToken: eyJhbGciOiJIUzI1NiJ9.eyJwcmluY2lwYWwiOiJINHNJQUFBQUFBQUFBSlZTTVU4VVFSUitleDRCUXFKZ0lva0ZOR0puOWhJdHJ4SnlrSkFORU01cklOSE03VDdXZ2RtWmRlWXQzRFhrS2lrb01DZ0ppYTBsXC8wUWJmNERCd3BiYTFqY0x4NTQyeEtsbTNuenpmZFwvNzNseGN3Wml6OENLMVFpb1g1cXBJcFE1ZGJxVk9IY2FGbGRRUEM0YzJRU29SS3lXd3d4VzRYa0VOZ2docU1pRjRHTzJLZmRGUVFxZU45ZTR1eHRUc1dYaHViSHJEdUdORmhnZkc3b1czM0xHeCtKZEFSUjE4cWNINEZzeUlPRGFGcGpXalc3MWNXa3kyWUxxcVJTYmU4NlZITWQrZ0ppbVVHNFdPb3haZGhVa0VVNktndDRaVkpUcUNCOWRtQzVLcTBVWnFSakNSQytmWTNUK2R0TWxiOVwvZmVwdVlPM3NFaDFIdDV3SXV6ZStxaG9lY0psNHhTM0xVMDJpMTBkR1lTdVNPOU9QTVA1azZcL24zd2VkR29Bbk1tenU5OVU5Y2VMTVBqNit2ZDhHWFFRRTh5T1dLOWd6VjdPYm1ZcTVsY1d2ZktQODQyUFoxZEgyXC9kWTJTT1dcLzM4ZUN5OXZrdXN2bVN3WFZwQVptUkhUSHRUOW5za1g3eVlmVHFFZnRtV1dLK1FmcFFtVFc0bUttTnV0VzZPR2VSTk1icTVIclRlZGRtdlRuK3BreUxEbVwvYkpsUDZzd01qeXA0MThmdnAwOHVlVDNxekMyTDFTQm5QaDBCVm9yc2k3YTl4ZG5jMU9mZmg2WFwvb2RcLytRXC9MWk5ua0R3TUFBQT09Iiwic3ViIjoidG90byIsInJvbGVzIjpbIlJPTEVfVVNFUiJdLCJleHAiOjE1MDk3OTIxNTAsImlhdCI6MTUwOTc4ODU1MH0.FMsQ8_56w96nNVC4Iwk8Ycn_ACz8tiTCj6mxwyvn0NI\n",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "JSON",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "MyToken",
+					"value": "eyJhbGciOiJIUzI1NiJ9.eyJwcmluY2lwYWwiOiJINHNJQUFBQUFBQUFBSlZTTVU4VVFSUitleDRCUXFKZ0lva0ZOR0puOWhJdHJ4SnlrSkFORU01cklOSE03VDdXZ2RtWmRlWXQzRFhrS2lrb01DZ0ppYTBsXC8wUWJmNERCd3BiYTFqY0x4NTQyeEtsbTNuenpmZFwvNzNseGN3Wml6OENLMVFpb1g1cXBJcFE1ZGJxVk9IY2FGbGRRUEM0YzJRU29SS3lXd3d4VzRYa0VOZ2docU1pRjRHTzJLZmRGUVFxZU45ZTR1eHRUc1dYaHViSHJEdUdORmhnZkc3b1czM0xHeCtKZEFSUjE4cWNINEZzeUlPRGFGcGpXalc3MWNXa3kyWUxxcVJTYmU4NlZITWQrZ0ppbVVHNFdPb3haZGhVa0VVNktndDRaVkpUcUNCOWRtQzVLcTBVWnFSakNSQytmWTNUK2R0TWxiOVwvZmVwdVlPM3NFaDFIdDV3SXV6ZStxaG9lY0psNHhTM0xVMDJpMTBkR1lTdVNPOU9QTVA1azZcL24zd2VkR29Bbk1tenU5OVU5Y2VMTVBqNit2ZDhHWFFRRTh5T1dLOWd6VjdPYm1ZcTVsY1d2ZktQODQyUFoxZEgyXC9kWTJTT1dcLzM4ZUN5OXZrdXN2bVN3WFZwQVptUkhUSHRUOW5za1g3eVlmVHFFZnRtV1dLK1FmcFFtVFc0bUttTnV0VzZPR2VSTk1icTVIclRlZGRtdlRuK3BreUxEbVwvYkpsUDZzd01qeXA0MThmdnAwOHVlVDNxekMyTDFTQm5QaDBCVm9yc2k3YTl4ZG5jMU9mZmg2WFwvb2RcLytRXC9MWk5ua0R3TUFBQT09Iiwic3ViIjoidG90byIsInJvbGVzIjpbIlJPTEVfVVNFUiJdLCJleHAiOjE1MDk3OTIxNTAsImlhdCI6MTUwOTc4ODU1MH0.FMsQ8_56w96nNVC4Iwk8Ycn_ACz8tiTCj6mxwyvn0NI",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/api/bibliotheque/1/livres?nom=vale&dateApparution=2017-10-13 08:22:20.626&isbn=vale&auteur=Selfi",
+			"queryParams": [
+				{
+					"key": "nom",
+					"value": "vale",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "dateApparution",
+					"value": "2017-10-13 08:22:20.626",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "isbn",
+					"value": "vale",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "auteur",
+					"value": "Selfi",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1509788685396,
+			"name": "Ajout_livre_BU_JSON",
+			"description": "cette requéte permet d'ajouter  un livre dans la collection de livre d'une bu dont l'identifiant est saisi dans  l'url de la requéte  et revoie la ressource livre ajouter au format specifié dans le header ",
+			"collectionId": "467761b9-c287-80c4-87da-697dde332d2e",
+			"responses": [
+				{
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK",
+						"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+					},
+					"time": 69,
+					"headers": [
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 04 Nov 2017 09:44:40 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked",
+							"name": "Transfer-Encoding",
+							"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+						},
+						{
+							"key": "X-Application-Context",
+							"value": "application:development",
+							"name": "X-Application-Context",
+							"description": "Custom header"
+						}
+					],
+					"cookies": [
+						{
+							"domain": "localhost",
+							"expirationDate": 2147483647,
+							"httpOnly": true,
+							"name": "JSESSIONID",
+							"path": "/",
+							"secure": false,
+							"url": "http://localhost:8080",
+							"value": "901ECE9F3017AF8646280EF6B554F4E5"
+						}
+					],
+					"mime": "",
+					"text": "{\"id\":28,\"bu\":{\"id\":1},\"auteur\":\"Selfi\",\"isbn\":\"vale\",\"nom\":\"vale\",\"dateApparution\":\"2017-10-13T06:22:20Z\"}",
+					"language": "json",
+					"previewType": "text",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"code": 200,
+					"responseSize": {
+						"body": 107,
+						"header": 178,
+						"total": 285
+					},
+					"mimeType": "text",
+					"fileName": "response.json",
+					"dataURI": "data:application/json;base64, eyJpZCI6MjgsImJ1Ijp7ImlkIjoxfSwiYXV0ZXVyIjoiU2VsZmkiLCJpc2JuIjoidmFsZSIsIm5vbSI6InZhbGUiLCJkYXRlQXBwYXJ1dGlvbiI6IjIwMTctMTAtMTNUMDY6MjI6MjBaIn0=",
+					"name": "Ajout_livre_BU_JSON",
+					"id": "490b22de-f91a-f024-1afd-0ab7a4dbc8bb",
+					"request": {
+						"url": "http://localhost:8080/api/bibliotheque/1/livres?nom=vale&dateApparution=2017-10-13 08:22:20.626&isbn=vale&auteur=Selfi",
+						"pathVariables": {},
+						"pathVariableData": [],
+						"queryParams": [
+							{
+								"key": "nom",
+								"value": "vale",
+								"equals": true,
+								"description": "",
+								"enabled": true
+							},
+							{
+								"key": "dateApparution",
+								"value": "2017-10-13 08:22:20.626",
+								"equals": true,
+								"description": "",
+								"enabled": true
+							},
+							{
+								"key": "isbn",
+								"value": "vale",
+								"equals": true,
+								"description": "",
+								"enabled": true
+							},
+							{
+								"key": "auteur",
+								"value": "Selfi",
+								"equals": true,
+								"description": "",
+								"enabled": true
+							}
+						],
+						"headerData": [
+							{
+								"key": "Accept",
+								"value": "JSON",
+								"description": "",
+								"enabled": true,
+								"disabled": false
+							},
+							{
+								"key": "MyToken",
+								"value": "eyJhbGciOiJIUzI1NiJ9.eyJwcmluY2lwYWwiOiJINHNJQUFBQUFBQUFBSlZTTVU4VVFSUitleDRCUXFKZ0lva0ZOR0puOWhJdHJ4SnlrSkFORU01cklOSE03VDdXZ2RtWmRlWXQzRFhrS2lrb01DZ0ppYTBsXC8wUWJmNERCd3BiYTFqY0x4NTQyeEtsbTNuenpmZFwvNzNseGN3Wml6OENLMVFpb1g1cXBJcFE1ZGJxVk9IY2FGbGRRUEM0YzJRU29SS3lXd3d4VzRYa0VOZ2docU1pRjRHTzJLZmRGUVFxZU45ZTR1eHRUc1dYaHViSHJEdUdORmhnZkc3b1czM0xHeCtKZEFSUjE4cWNINEZzeUlPRGFGcGpXalc3MWNXa3kyWUxxcVJTYmU4NlZITWQrZ0ppbVVHNFdPb3haZGhVa0VVNktndDRaVkpUcUNCOWRtQzVLcTBVWnFSakNSQytmWTNUK2R0TWxiOVwvZmVwdVlPM3NFaDFIdDV3SXV6ZStxaG9lY0psNHhTM0xVMDJpMTBkR1lTdVNPOU9QTVA1azZcL24zd2VkR29Bbk1tenU5OVU5Y2VMTVBqNit2ZDhHWFFRRTh5T1dLOWd6VjdPYm1ZcTVsY1d2ZktQODQyUFoxZEgyXC9kWTJTT1dcLzM4ZUN5OXZrdXN2bVN3WFZwQVptUkhUSHRUOW5za1g3eVlmVHFFZnRtV1dLK1FmcFFtVFc0bUttTnV0VzZPR2VSTk1icTVIclRlZGRtdlRuK3BreUxEbVwvYkpsUDZzd01qeXA0MThmdnAwOHVlVDNxekMyTDFTQm5QaDBCVm9yc2k3YTl4ZG5jMU9mZmg2WFwvb2RcLytRXC9MWk5ua0R3TUFBQT09Iiwic3ViIjoidG90byIsInJvbGVzIjpbIlJPTEVfVVNFUiJdLCJleHAiOjE1MDk3OTIxNTAsImlhdCI6MTUwOTc4ODU1MH0.FMsQ8_56w96nNVC4Iwk8Ycn_ACz8tiTCj6mxwyvn0NI",
+								"description": "",
+								"enabled": true,
+								"disabled": false
+							}
+						],
+						"headers": "Accept: JSON\nMyToken: eyJhbGciOiJIUzI1NiJ9.eyJwcmluY2lwYWwiOiJINHNJQUFBQUFBQUFBSlZTTVU4VVFSUitleDRCUXFKZ0lva0ZOR0puOWhJdHJ4SnlrSkFORU01cklOSE03VDdXZ2RtWmRlWXQzRFhrS2lrb01DZ0ppYTBsXC8wUWJmNERCd3BiYTFqY0x4NTQyeEtsbTNuenpmZFwvNzNseGN3Wml6OENLMVFpb1g1cXBJcFE1ZGJxVk9IY2FGbGRRUEM0YzJRU29SS3lXd3d4VzRYa0VOZ2docU1pRjRHTzJLZmRGUVFxZU45ZTR1eHRUc1dYaHViSHJEdUdORmhnZkc3b1czM0xHeCtKZEFSUjE4cWNINEZzeUlPRGFGcGpXalc3MWNXa3kyWUxxcVJTYmU4NlZITWQrZ0ppbVVHNFdPb3haZGhVa0VVNktndDRaVkpUcUNCOWRtQzVLcTBVWnFSakNSQytmWTNUK2R0TWxiOVwvZmVwdVlPM3NFaDFIdDV3SXV6ZStxaG9lY0psNHhTM0xVMDJpMTBkR1lTdVNPOU9QTVA1azZcL24zd2VkR29Bbk1tenU5OVU5Y2VMTVBqNit2ZDhHWFFRRTh5T1dLOWd6VjdPYm1ZcTVsY1d2ZktQODQyUFoxZEgyXC9kWTJTT1dcLzM4ZUN5OXZrdXN2bVN3WFZwQVptUkhUSHRUOW5za1g3eVlmVHFFZnRtV1dLK1FmcFFtVFc0bUttTnV0VzZPR2VSTk1icTVIclRlZGRtdlRuK3BreUxEbVwvYkpsUDZzd01qeXA0MThmdnAwOHVlVDNxekMyTDFTQm5QaDBCVm9yc2k3YTl4ZG5jMU9mZmg2WFwvb2RcLytRXC9MWk5ua0R3TUFBQT09Iiwic3ViIjoidG90byIsInJvbGVzIjpbIlJPTEVfVVNFUiJdLCJleHAiOjE1MDk3OTIxNTAsImlhdCI6MTUwOTc4ODU1MH0.FMsQ8_56w96nNVC4Iwk8Ycn_ACz8tiTCj6mxwyvn0NI\n",
+						"data": null,
+						"method": "POST",
+						"dataMode": "params"
+					}
+				}
+			]
+		},
+		{
+			"id": "207c4a4f-3cac-35b1-15e2-0ea4052817b6",
+			"headers": "Accept: XML\nMyToken: eyJhbGciOiJIUzI1NiJ9.eyJwcmluY2lwYWwiOiJINHNJQUFBQUFBQUFBSlZTTVU4VVFSUitleDRCUXFKZ0lva0ZOR0puOWhJdHJ4SnlrSkFORU01cklOSE03VDdXZ2RtWmRlWXQzRFhrS2lrb01DZ0ppYTBsXC8wUWJmNERCd3BiYTFqY0x4NTQyeEtsbTNuenpmZFwvNzNseGN3Wml6OENLMVFpb1g1cXBJcFE1ZGJxVk9IY2FGbGRRUEM0YzJRU29SS3lXd3d4VzRYa0VOZ2docU1pRjRHTzJLZmRGUVFxZU45ZTR1eHRUc1dYaHViSHJEdUdORmhnZkc3b1czM0xHeCtKZEFSUjE4cWNINEZzeUlPRGFGcGpXalc3MWNXa3kyWUxxcVJTYmU4NlZITWQrZ0ppbVVHNFdPb3haZGhVa0VVNktndDRaVkpUcUNCOWRtQzVLcTBVWnFSakNSQytmWTNUK2R0TWxiOVwvZmVwdVlPM3NFaDFIdDV3SXV6ZStxaG9lY0psNHhTM0xVMDJpMTBkR1lTdVNPOU9QTVA1azZcL24zd2VkR29Bbk1tenU5OVU5Y2VMTVBqNit2ZDhHWFFRRTh5T1dLOWd6VjdPYm1ZcTVsY1d2ZktQODQyUFoxZEgyXC9kWTJTT1dcLzM4ZUN5OXZrdXN2bVN3WFZwQVptUkhUSHRUOW5za1g3eVlmVHFFZnRtV1dLK1FmcFFtVFc0bUttTnV0VzZPR2VSTk1icTVIclRlZGRtdlRuK3BreUxEbVwvYkpsUDZzd01qeXA0MThmdnAwOHVlVDNxekMyTDFTQm5QaDBCVm9yc2k3YTl4ZG5jMU9mZmg2WFwvb2RcLytRXC9MWk5ua0R3TUFBQT09Iiwic3ViIjoidG90byIsInJvbGVzIjpbIlJPTEVfVVNFUiJdLCJleHAiOjE1MDk3OTIxNTAsImlhdCI6MTUwOTc4ODU1MH0.FMsQ8_56w96nNVC4Iwk8Ycn_ACz8tiTCj6mxwyvn0NI\n",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "XML",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "MyToken",
+					"value": "eyJhbGciOiJIUzI1NiJ9.eyJwcmluY2lwYWwiOiJINHNJQUFBQUFBQUFBSlZTTVU4VVFSUitleDRCUXFKZ0lva0ZOR0puOWhJdHJ4SnlrSkFORU01cklOSE03VDdXZ2RtWmRlWXQzRFhrS2lrb01DZ0ppYTBsXC8wUWJmNERCd3BiYTFqY0x4NTQyeEtsbTNuenpmZFwvNzNseGN3Wml6OENLMVFpb1g1cXBJcFE1ZGJxVk9IY2FGbGRRUEM0YzJRU29SS3lXd3d4VzRYa0VOZ2docU1pRjRHTzJLZmRGUVFxZU45ZTR1eHRUc1dYaHViSHJEdUdORmhnZkc3b1czM0xHeCtKZEFSUjE4cWNINEZzeUlPRGFGcGpXalc3MWNXa3kyWUxxcVJTYmU4NlZITWQrZ0ppbVVHNFdPb3haZGhVa0VVNktndDRaVkpUcUNCOWRtQzVLcTBVWnFSakNSQytmWTNUK2R0TWxiOVwvZmVwdVlPM3NFaDFIdDV3SXV6ZStxaG9lY0psNHhTM0xVMDJpMTBkR1lTdVNPOU9QTVA1azZcL24zd2VkR29Bbk1tenU5OVU5Y2VMTVBqNit2ZDhHWFFRRTh5T1dLOWd6VjdPYm1ZcTVsY1d2ZktQODQyUFoxZEgyXC9kWTJTT1dcLzM4ZUN5OXZrdXN2bVN3WFZwQVptUkhUSHRUOW5za1g3eVlmVHFFZnRtV1dLK1FmcFFtVFc0bUttTnV0VzZPR2VSTk1icTVIclRlZGRtdlRuK3BreUxEbVwvYkpsUDZzd01qeXA0MThmdnAwOHVlVDNxekMyTDFTQm5QaDBCVm9yc2k3YTl4ZG5jMU9mZmg2WFwvb2RcLytRXC9MWk5ua0R3TUFBQT09Iiwic3ViIjoidG90byIsInJvbGVzIjpbIlJPTEVfVVNFUiJdLCJleHAiOjE1MDk3OTIxNTAsImlhdCI6MTUwOTc4ODU1MH0.FMsQ8_56w96nNVC4Iwk8Ycn_ACz8tiTCj6mxwyvn0NI",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/api/bibliotheque/2/livres",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1509788589381,
+			"name": "Lecture_collectionLivres_BU_XML",
+			"description": "lecture  des ressources livre d'une BU",
+			"collectionId": "467761b9-c287-80c4-87da-697dde332d2e",
+			"responses": [
+				{
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK",
+						"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+					},
+					"time": 118,
+					"headers": [
+						{
+							"key": "Content-Type",
+							"value": "application/xml;charset=UTF-8",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 04 Nov 2017 09:42:57 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked",
+							"name": "Transfer-Encoding",
+							"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+						},
+						{
+							"key": "X-Application-Context",
+							"value": "application:development",
+							"name": "X-Application-Context",
+							"description": "Custom header"
+						}
+					],
+					"cookies": [
+						{
+							"domain": "localhost",
+							"expirationDate": 2147483647,
+							"httpOnly": true,
+							"name": "JSESSIONID",
+							"path": "/",
+							"secure": false,
+							"url": "http://localhost:8080",
+							"value": "901ECE9F3017AF8646280EF6B554F4E5"
+						}
+					],
+					"mime": "",
+					"text": "<?xml version=\"1.0\" encoding=\"UTF-8\"?><set><livre id=\"6\"><bu id=\"2\" /><auteur>mamadou</auteur><isbn>125</isbn><nom>le soleil</nom><dateApparution>2010-05-10 00:00:00.0 CEST</dateApparution></livre><livre id=\"9\"><bu id=\"2\" /><auteur>Emily Bronte</auteur><isbn>1238</isbn><nom>Les Hauts de Hurlevement</nom><dateApparution>2017-11-04 09:54:12.97 CET</dateApparution></livre><livre id=\"10\"><bu id=\"2\" /><auteur>Johan Wolfgang</auteur><isbn>1238</isbn><nom>Faust</nom><dateApparution>2017-11-04 09:54:12.113 CET</dateApparution></livre><livre id=\"7\"><bu id=\"2\" /><auteur>Boccace</auteur><isbn>1236</isbn><nom>Decameron</nom><dateApparution>2017-11-04 09:54:12.97 CET</dateApparution></livre><livre id=\"8\"><bu id=\"2\" /><auteur>Jorge Luis Borges</auteur><isbn>1237</isbn><nom>Fictions</nom><dateApparution>2017-11-04 09:54:12.97 CET</dateApparution></livre></set>",
+					"language": "xml",
+					"previewType": "text",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"code": 200,
+					"responseSize": {
+						"body": 857,
+						"header": 177,
+						"total": 1034
+					},
+					"mimeType": "text",
+					"fileName": "response.xml",
+					"dataURI": "data:application/xml;base64, PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c2V0PjxsaXZyZSBpZD0iNiI+PGJ1IGlkPSIyIiAvPjxhdXRldXI+bWFtYWRvdTwvYXV0ZXVyPjxpc2JuPjEyNTwvaXNibj48bm9tPmxlIHNvbGVpbDwvbm9tPjxkYXRlQXBwYXJ1dGlvbj4yMDEwLTA1LTEwIDAwOjAwOjAwLjAgQ0VTVDwvZGF0ZUFwcGFydXRpb24+PC9saXZyZT48bGl2cmUgaWQ9IjkiPjxidSBpZD0iMiIgLz48YXV0ZXVyPkVtaWx5IEJyb250ZTwvYXV0ZXVyPjxpc2JuPjEyMzg8L2lzYm4+PG5vbT5MZXMgSGF1dHMgZGUgSHVybGV2ZW1lbnQ8L25vbT48ZGF0ZUFwcGFydXRpb24+MjAxNy0xMS0wNCAwOTo1NDoxMi45NyBDRVQ8L2RhdGVBcHBhcnV0aW9uPjwvbGl2cmU+PGxpdnJlIGlkPSIxMCI+PGJ1IGlkPSIyIiAvPjxhdXRldXI+Sm9oYW4gV29sZmdhbmc8L2F1dGV1cj48aXNibj4xMjM4PC9pc2JuPjxub20+RmF1c3Q8L25vbT48ZGF0ZUFwcGFydXRpb24+MjAxNy0xMS0wNCAwOTo1NDoxMi4xMTMgQ0VUPC9kYXRlQXBwYXJ1dGlvbj48L2xpdnJlPjxsaXZyZSBpZD0iNyI+PGJ1IGlkPSIyIiAvPjxhdXRldXI+Qm9jY2FjZTwvYXV0ZXVyPjxpc2JuPjEyMzY8L2lzYm4+PG5vbT5EZWNhbWVyb248L25vbT48ZGF0ZUFwcGFydXRpb24+MjAxNy0xMS0wNCAwOTo1NDoxMi45NyBDRVQ8L2RhdGVBcHBhcnV0aW9uPjwvbGl2cmU+PGxpdnJlIGlkPSI4Ij48YnUgaWQ9IjIiIC8+PGF1dGV1cj5Kb3JnZSBMdWlzIEJvcmdlczwvYXV0ZXVyPjxpc2JuPjEyMzc8L2lzYm4+PG5vbT5GaWN0aW9uczwvbm9tPjxkYXRlQXBwYXJ1dGlvbj4yMDE3LTExLTA0IDA5OjU0OjEyLjk3IENFVDwvZGF0ZUFwcGFydXRpb24+PC9saXZyZT48L3NldD4=",
+					"name": "Lecture_collectionLivres_BU_XML",
+					"id": "23075c7b-0adb-2fb6-914d-3fa51bf68e1f",
+					"request": {
+						"url": "http://localhost:8080/api/bibliotheque/2/livres",
+						"pathVariables": {},
+						"pathVariableData": [],
+						"queryParams": [],
+						"headerData": [
+							{
+								"key": "Accept",
+								"value": "XML",
+								"description": "",
+								"enabled": true,
+								"disabled": false
+							},
+							{
+								"key": "MyToken",
+								"value": "eyJhbGciOiJIUzI1NiJ9.eyJwcmluY2lwYWwiOiJINHNJQUFBQUFBQUFBSlZTTVU4VVFSUitleDRCUXFKZ0lva0ZOR0puOWhJdHJ4SnlrSkFORU01cklOSE03VDdXZ2RtWmRlWXQzRFhrS2lrb01DZ0ppYTBsXC8wUWJmNERCd3BiYTFqY0x4NTQyeEtsbTNuenpmZFwvNzNseGN3Wml6OENLMVFpb1g1cXBJcFE1ZGJxVk9IY2FGbGRRUEM0YzJRU29SS3lXd3d4VzRYa0VOZ2docU1pRjRHTzJLZmRGUVFxZU45ZTR1eHRUc1dYaHViSHJEdUdORmhnZkc3b1czM0xHeCtKZEFSUjE4cWNINEZzeUlPRGFGcGpXalc3MWNXa3kyWUxxcVJTYmU4NlZITWQrZ0ppbVVHNFdPb3haZGhVa0VVNktndDRaVkpUcUNCOWRtQzVLcTBVWnFSakNSQytmWTNUK2R0TWxiOVwvZmVwdVlPM3NFaDFIdDV3SXV6ZStxaG9lY0psNHhTM0xVMDJpMTBkR1lTdVNPOU9QTVA1azZcL24zd2VkR29Bbk1tenU5OVU5Y2VMTVBqNit2ZDhHWFFRRTh5T1dLOWd6VjdPYm1ZcTVsY1d2ZktQODQyUFoxZEgyXC9kWTJTT1dcLzM4ZUN5OXZrdXN2bVN3WFZwQVptUkhUSHRUOW5za1g3eVlmVHFFZnRtV1dLK1FmcFFtVFc0bUttTnV0VzZPR2VSTk1icTVIclRlZGRtdlRuK3BreUxEbVwvYkpsUDZzd01qeXA0MThmdnAwOHVlVDNxekMyTDFTQm5QaDBCVm9yc2k3YTl4ZG5jMU9mZmg2WFwvb2RcLytRXC9MWk5ua0R3TUFBQT09Iiwic3ViIjoidG90byIsInJvbGVzIjpbIlJPTEVfVVNFUiJdLCJleHAiOjE1MDk3OTIxNTAsImlhdCI6MTUwOTc4ODU1MH0.FMsQ8_56w96nNVC4Iwk8Ycn_ACz8tiTCj6mxwyvn0NI",
+								"description": "",
+								"enabled": true,
+								"disabled": false
+							}
+						],
+						"headers": "Accept: XML\nMyToken: eyJhbGciOiJIUzI1NiJ9.eyJwcmluY2lwYWwiOiJINHNJQUFBQUFBQUFBSlZTTVU4VVFSUitleDRCUXFKZ0lva0ZOR0puOWhJdHJ4SnlrSkFORU01cklOSE03VDdXZ2RtWmRlWXQzRFhrS2lrb01DZ0ppYTBsXC8wUWJmNERCd3BiYTFqY0x4NTQyeEtsbTNuenpmZFwvNzNseGN3Wml6OENLMVFpb1g1cXBJcFE1ZGJxVk9IY2FGbGRRUEM0YzJRU29SS3lXd3d4VzRYa0VOZ2docU1pRjRHTzJLZmRGUVFxZU45ZTR1eHRUc1dYaHViSHJEdUdORmhnZkc3b1czM0xHeCtKZEFSUjE4cWNINEZzeUlPRGFGcGpXalc3MWNXa3kyWUxxcVJTYmU4NlZITWQrZ0ppbVVHNFdPb3haZGhVa0VVNktndDRaVkpUcUNCOWRtQzVLcTBVWnFSakNSQytmWTNUK2R0TWxiOVwvZmVwdVlPM3NFaDFIdDV3SXV6ZStxaG9lY0psNHhTM0xVMDJpMTBkR1lTdVNPOU9QTVA1azZcL24zd2VkR29Bbk1tenU5OVU5Y2VMTVBqNit2ZDhHWFFRRTh5T1dLOWd6VjdPYm1ZcTVsY1d2ZktQODQyUFoxZEgyXC9kWTJTT1dcLzM4ZUN5OXZrdXN2bVN3WFZwQVptUkhUSHRUOW5za1g3eVlmVHFFZnRtV1dLK1FmcFFtVFc0bUttTnV0VzZPR2VSTk1icTVIclRlZGRtdlRuK3BreUxEbVwvYkpsUDZzd01qeXA0MThmdnAwOHVlVDNxekMyTDFTQm5QaDBCVm9yc2k3YTl4ZG5jMU9mZmg2WFwvb2RcLytRXC9MWk5ua0R3TUFBQT09Iiwic3ViIjoidG90byIsInJvbGVzIjpbIlJPTEVfVVNFUiJdLCJleHAiOjE1MDk3OTIxNTAsImlhdCI6MTUwOTc4ODU1MH0.FMsQ8_56w96nNVC4Iwk8Ycn_ACz8tiTCj6mxwyvn0NI\n",
+						"data": null,
+						"method": "GET",
+						"dataMode": "params"
+					}
+				}
+			]
+		},
+		{
+			"id": "6e4e97de-823e-43b7-f8bb-98bf0f0472de",
+			"headers": "Accept: JSON\nMyToken: eyJhbGciOiJIUzI1NiJ9.eyJwcmluY2lwYWwiOiJINHNJQUFBQUFBQUFBSlZTTVU4VVFSUitleDRCUXFKZ0lva0ZOR0puOWhJdHJ4SnlrSkFORU01cklOSE03VDdXZ2RtWmRlWXQzRFhrS2lrb01DZ0ppYTBsXC8wUWJmNERCd3BiYTFqY0x4NTQyeEtsbTNuenpmZFwvNzNseGN3Wml6OENLMVFpb1g1cXBJcFE1ZGJxVk9IY2FGbGRRUEM0YzJRU29SS3lXd3d4VzRYa0VOZ2docU1pRjRHTzJLZmRGUVFxZU45ZTR1eHRUc1dYaHViSHJEdUdORmhnZkc3b1czM0xHeCtKZEFSUjE4cWNINEZzeUlPRGFGcGpXalc3MWNXa3kyWUxxcVJTYmU4NlZITWQrZ0ppbVVHNFdPb3haZGhVa0VVNktndDRaVkpUcUNCOWRtQzVLcTBVWnFSakNSQytmWTNUK2R0TWxiOVwvZmVwdVlPM3NFaDFIdDV3SXV6ZStxaG9lY0psNHhTM0xVMDJpMTBkR1lTdVNPOU9QTVA1azZcL24zd2VkR29Bbk1tenU5OVU5Y2VMTVBqNit2ZDhHWFFRRTh5T1dLOWd6VjdPYm1ZcTVsY1d2ZktQODQyUFoxZEgyXC9kWTJTT1dcLzM4ZUN5OXZrdXN2bVN3WFZwQVptUkhUSHRUOW5za1g3eVlmVHFFZnRtV1dLK1FmcFFtVFc0bUttTnV0VzZPR2VSTk1icTVIclRlZGRtdlRuK3BreUxEbVwvYkpsUDZzd01qeXA0MThmdnAwOHVlVDNxekMyTDFTQm5QaDBCVm9yc2k3YTl4ZG5jMU9mZmg2WFwvb2RcLytRXC9MWk5ua0R3TUFBQT09Iiwic3ViIjoidG90byIsInJvbGVzIjpbIlJPTEVfVVNFUiJdLCJleHAiOjE1MDk3OTIxNTAsImlhdCI6MTUwOTc4ODU1MH0.FMsQ8_56w96nNVC4Iwk8Ycn_ACz8tiTCj6mxwyvn0NI\n",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "JSON",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "MyToken",
+					"value": "eyJhbGciOiJIUzI1NiJ9.eyJwcmluY2lwYWwiOiJINHNJQUFBQUFBQUFBSlZTTVU4VVFSUitleDRCUXFKZ0lva0ZOR0puOWhJdHJ4SnlrSkFORU01cklOSE03VDdXZ2RtWmRlWXQzRFhrS2lrb01DZ0ppYTBsXC8wUWJmNERCd3BiYTFqY0x4NTQyeEtsbTNuenpmZFwvNzNseGN3Wml6OENLMVFpb1g1cXBJcFE1ZGJxVk9IY2FGbGRRUEM0YzJRU29SS3lXd3d4VzRYa0VOZ2docU1pRjRHTzJLZmRGUVFxZU45ZTR1eHRUc1dYaHViSHJEdUdORmhnZkc3b1czM0xHeCtKZEFSUjE4cWNINEZzeUlPRGFGcGpXalc3MWNXa3kyWUxxcVJTYmU4NlZITWQrZ0ppbVVHNFdPb3haZGhVa0VVNktndDRaVkpUcUNCOWRtQzVLcTBVWnFSakNSQytmWTNUK2R0TWxiOVwvZmVwdVlPM3NFaDFIdDV3SXV6ZStxaG9lY0psNHhTM0xVMDJpMTBkR1lTdVNPOU9QTVA1azZcL24zd2VkR29Bbk1tenU5OVU5Y2VMTVBqNit2ZDhHWFFRRTh5T1dLOWd6VjdPYm1ZcTVsY1d2ZktQODQyUFoxZEgyXC9kWTJTT1dcLzM4ZUN5OXZrdXN2bVN3WFZwQVptUkhUSHRUOW5za1g3eVlmVHFFZnRtV1dLK1FmcFFtVFc0bUttTnV0VzZPR2VSTk1icTVIclRlZGRtdlRuK3BreUxEbVwvYkpsUDZzd01qeXA0MThmdnAwOHVlVDNxekMyTDFTQm5QaDBCVm9yc2k3YTl4ZG5jMU9mZmg2WFwvb2RcLytRXC9MWk5ua0R3TUFBQT09Iiwic3ViIjoidG90byIsInJvbGVzIjpbIlJPTEVfVVNFUiJdLCJleHAiOjE1MDk3OTIxNTAsImlhdCI6MTUwOTc4ODU1MH0.FMsQ8_56w96nNVC4Iwk8Ycn_ACz8tiTCj6mxwyvn0NI",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/api/bibliotheque/2/livres",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1509788643750,
+			"name": "Lecture_collectionLivres_BU_JSON",
+			"description": "lecture  des ressources livre d'une BU",
+			"collectionId": "467761b9-c287-80c4-87da-697dde332d2e",
+			"responses": [
+				{
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK",
+						"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+					},
+					"time": 59,
+					"headers": [
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 04 Nov 2017 09:44:01 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked",
+							"name": "Transfer-Encoding",
+							"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+						},
+						{
+							"key": "X-Application-Context",
+							"value": "application:development",
+							"name": "X-Application-Context",
+							"description": "Custom header"
+						}
+					],
+					"cookies": [
+						{
+							"domain": "localhost",
+							"expirationDate": 2147483647,
+							"httpOnly": true,
+							"name": "JSESSIONID",
+							"path": "/",
+							"secure": false,
+							"url": "http://localhost:8080",
+							"value": "901ECE9F3017AF8646280EF6B554F4E5"
+						}
+					],
+					"mime": "",
+					"text": "[{\"id\":7,\"bu\":{\"id\":2},\"auteur\":\"Boccace\",\"isbn\":\"1236\",\"nom\":\"Decameron\",\"dateApparution\":\"2017-11-04T08:54:12Z\"},{\"id\":9,\"bu\":{\"id\":2},\"auteur\":\"Emily Bronte\",\"isbn\":\"1238\",\"nom\":\"Les Hauts de Hurlevement\",\"dateApparution\":\"2017-11-04T08:54:12Z\"},{\"id\":8,\"bu\":{\"id\":2},\"auteur\":\"Jorge Luis Borges\",\"isbn\":\"1237\",\"nom\":\"Fictions\",\"dateApparution\":\"2017-11-04T08:54:12Z\"},{\"id\":10,\"bu\":{\"id\":2},\"auteur\":\"Johan Wolfgang\",\"isbn\":\"1238\",\"nom\":\"Faust\",\"dateApparution\":\"2017-11-04T08:54:12Z\"},{\"id\":6,\"bu\":{\"id\":2},\"auteur\":\"mamadou\",\"isbn\":\"125\",\"nom\":\"le soleil\",\"dateApparution\":\"2010-05-09T22:00:00Z\"}]",
+					"language": "json",
+					"previewType": "text",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"code": 200,
+					"responseSize": {
+						"body": 603,
+						"header": 178,
+						"total": 781
+					},
+					"mimeType": "text",
+					"fileName": "response.json",
+					"dataURI": "data:application/json;base64, W3siaWQiOjcsImJ1Ijp7ImlkIjoyfSwiYXV0ZXVyIjoiQm9jY2FjZSIsImlzYm4iOiIxMjM2Iiwibm9tIjoiRGVjYW1lcm9uIiwiZGF0ZUFwcGFydXRpb24iOiIyMDE3LTExLTA0VDA4OjU0OjEyWiJ9LHsiaWQiOjksImJ1Ijp7ImlkIjoyfSwiYXV0ZXVyIjoiRW1pbHkgQnJvbnRlIiwiaXNibiI6IjEyMzgiLCJub20iOiJMZXMgSGF1dHMgZGUgSHVybGV2ZW1lbnQiLCJkYXRlQXBwYXJ1dGlvbiI6IjIwMTctMTEtMDRUMDg6NTQ6MTJaIn0seyJpZCI6OCwiYnUiOnsiaWQiOjJ9LCJhdXRldXIiOiJKb3JnZSBMdWlzIEJvcmdlcyIsImlzYm4iOiIxMjM3Iiwibm9tIjoiRmljdGlvbnMiLCJkYXRlQXBwYXJ1dGlvbiI6IjIwMTctMTEtMDRUMDg6NTQ6MTJaIn0seyJpZCI6MTAsImJ1Ijp7ImlkIjoyfSwiYXV0ZXVyIjoiSm9oYW4gV29sZmdhbmciLCJpc2JuIjoiMTIzOCIsIm5vbSI6IkZhdXN0IiwiZGF0ZUFwcGFydXRpb24iOiIyMDE3LTExLTA0VDA4OjU0OjEyWiJ9LHsiaWQiOjYsImJ1Ijp7ImlkIjoyfSwiYXV0ZXVyIjoibWFtYWRvdSIsImlzYm4iOiIxMjUiLCJub20iOiJsZSBzb2xlaWwiLCJkYXRlQXBwYXJ1dGlvbiI6IjIwMTAtMDUtMDlUMjI6MDA6MDBaIn1d",
+					"name": "Lecture_collectionLivres_BU_JSON",
+					"id": "47938ff1-468e-693c-e12a-8b72b078e1f0",
+					"request": {
+						"url": "http://localhost:8080/api/bibliotheque/2/livres",
+						"pathVariables": {},
+						"pathVariableData": [],
+						"queryParams": [],
+						"headerData": [
+							{
+								"key": "Accept",
+								"value": "JSON",
+								"description": "",
+								"enabled": true,
+								"disabled": false
+							},
+							{
+								"key": "MyToken",
+								"value": "eyJhbGciOiJIUzI1NiJ9.eyJwcmluY2lwYWwiOiJINHNJQUFBQUFBQUFBSlZTTVU4VVFSUitleDRCUXFKZ0lva0ZOR0puOWhJdHJ4SnlrSkFORU01cklOSE03VDdXZ2RtWmRlWXQzRFhrS2lrb01DZ0ppYTBsXC8wUWJmNERCd3BiYTFqY0x4NTQyeEtsbTNuenpmZFwvNzNseGN3Wml6OENLMVFpb1g1cXBJcFE1ZGJxVk9IY2FGbGRRUEM0YzJRU29SS3lXd3d4VzRYa0VOZ2docU1pRjRHTzJLZmRGUVFxZU45ZTR1eHRUc1dYaHViSHJEdUdORmhnZkc3b1czM0xHeCtKZEFSUjE4cWNINEZzeUlPRGFGcGpXalc3MWNXa3kyWUxxcVJTYmU4NlZITWQrZ0ppbVVHNFdPb3haZGhVa0VVNktndDRaVkpUcUNCOWRtQzVLcTBVWnFSakNSQytmWTNUK2R0TWxiOVwvZmVwdVlPM3NFaDFIdDV3SXV6ZStxaG9lY0psNHhTM0xVMDJpMTBkR1lTdVNPOU9QTVA1azZcL24zd2VkR29Bbk1tenU5OVU5Y2VMTVBqNit2ZDhHWFFRRTh5T1dLOWd6VjdPYm1ZcTVsY1d2ZktQODQyUFoxZEgyXC9kWTJTT1dcLzM4ZUN5OXZrdXN2bVN3WFZwQVptUkhUSHRUOW5za1g3eVlmVHFFZnRtV1dLK1FmcFFtVFc0bUttTnV0VzZPR2VSTk1icTVIclRlZGRtdlRuK3BreUxEbVwvYkpsUDZzd01qeXA0MThmdnAwOHVlVDNxekMyTDFTQm5QaDBCVm9yc2k3YTl4ZG5jMU9mZmg2WFwvb2RcLytRXC9MWk5ua0R3TUFBQT09Iiwic3ViIjoidG90byIsInJvbGVzIjpbIlJPTEVfVVNFUiJdLCJleHAiOjE1MDk3OTIxNTAsImlhdCI6MTUwOTc4ODU1MH0.FMsQ8_56w96nNVC4Iwk8Ycn_ACz8tiTCj6mxwyvn0NI",
+								"description": "",
+								"enabled": true,
+								"disabled": false
+							}
+						],
+						"headers": "Accept: JSON\nMyToken: eyJhbGciOiJIUzI1NiJ9.eyJwcmluY2lwYWwiOiJINHNJQUFBQUFBQUFBSlZTTVU4VVFSUitleDRCUXFKZ0lva0ZOR0puOWhJdHJ4SnlrSkFORU01cklOSE03VDdXZ2RtWmRlWXQzRFhrS2lrb01DZ0ppYTBsXC8wUWJmNERCd3BiYTFqY0x4NTQyeEtsbTNuenpmZFwvNzNseGN3Wml6OENLMVFpb1g1cXBJcFE1ZGJxVk9IY2FGbGRRUEM0YzJRU29SS3lXd3d4VzRYa0VOZ2docU1pRjRHTzJLZmRGUVFxZU45ZTR1eHRUc1dYaHViSHJEdUdORmhnZkc3b1czM0xHeCtKZEFSUjE4cWNINEZzeUlPRGFGcGpXalc3MWNXa3kyWUxxcVJTYmU4NlZITWQrZ0ppbVVHNFdPb3haZGhVa0VVNktndDRaVkpUcUNCOWRtQzVLcTBVWnFSakNSQytmWTNUK2R0TWxiOVwvZmVwdVlPM3NFaDFIdDV3SXV6ZStxaG9lY0psNHhTM0xVMDJpMTBkR1lTdVNPOU9QTVA1azZcL24zd2VkR29Bbk1tenU5OVU5Y2VMTVBqNit2ZDhHWFFRRTh5T1dLOWd6VjdPYm1ZcTVsY1d2ZktQODQyUFoxZEgyXC9kWTJTT1dcLzM4ZUN5OXZrdXN2bVN3WFZwQVptUkhUSHRUOW5za1g3eVlmVHFFZnRtV1dLK1FmcFFtVFc0bUttTnV0VzZPR2VSTk1icTVIclRlZGRtdlRuK3BreUxEbVwvYkpsUDZzd01qeXA0MThmdnAwOHVlVDNxekMyTDFTQm5QaDBCVm9yc2k3YTl4ZG5jMU9mZmg2WFwvb2RcLytRXC9MWk5ua0R3TUFBQT09Iiwic3ViIjoidG90byIsInJvbGVzIjpbIlJPTEVfVVNFUiJdLCJleHAiOjE1MDk3OTIxNTAsImlhdCI6MTUwOTc4ODU1MH0.FMsQ8_56w96nNVC4Iwk8Ycn_ACz8tiTCj6mxwyvn0NI\n",
+						"data": null,
+						"method": "GET",
+						"dataMode": "params"
+					}
+				}
+			]
+		},
+		{
+			"id": "b048f852-c881-74ed-0ba9-032258287195",
+			"headers": "Accept: JSON\nMyToken: eyJhbGciOiJIUzI1NiJ9.eyJwcmluY2lwYWwiOiJINHNJQUFBQUFBQUFBSlZTTVU4VVFSUitleDRCUXFKZ0lva0ZOR0puOWhJdHJ4SnlrSkFORU01cklOSE03VDdXZ2RtWmRlWXQzRFhrS2lrb01DZ0ppYTBsXC8wUWJmNERCd3BiYTFqY0x4NTQyeEtsbTNuenpmZFwvNzNseGN3Wml6OENLMVFpb1g1cXBJcFE1ZGJxVk9IY2FGbGRRUEM0YzJRU29SS3lXd3d4VzRYa0VOZ2docU1pRjRHTzJLZmRGUVFxZU45ZTR1eHRUc1dYaHViSHJEdUdORmhnZkc3b1czM0xHeCtKZEFSUjE4cWNINEZzeUlPRGFGcGpXalc3MWNXa3kyWUxxcVJTYmU4NlZITWQrZ0ppbVVHNFdPb3haZGhVa0VVNktndDRaVkpUcUNCOWRtQzVLcTBVWnFSakNSQytmWTNUK2R0TWxiOVwvZmVwdVlPM3NFaDFIdDV3SXV6ZStxaG9lY0psNHhTM0xVMDJpMTBkR1lTdVNPOU9QTVA1azZcL24zd2VkR29Bbk1tenU5OVU5Y2VMTVBqNit2ZDhHWFFRRTh5T1dLOWd6VjdPYm1ZcTVsY1d2ZktQODQyUFoxZEgyXC9kWTJTT1dcLzM4ZUN5OXZrdXN2bVN3WFZwQVptUkhUSHRUOW5za1g3eVlmVHFFZnRtV1dLK1FmcFFtVFc0bUttTnV0VzZPR2VSTk1icTVIclRlZGRtdlRuK3BreUxEbVwvYkpsUDZzd01qeXA0MThmdnAwOHVlVDNxekMyTDFTQm5QaDBCVm9yc2k3YTl4ZG5jMU9mZmg2WFwvb2RcLytRXC9MWk5ua0R3TUFBQT09Iiwic3ViIjoidG90byIsInJvbGVzIjpbIlJPTEVfVVNFUiJdLCJleHAiOjE1MDk3OTIxNTAsImlhdCI6MTUwOTc4ODU1MH0.FMsQ8_56w96nNVC4Iwk8Ycn_ACz8tiTCj6mxwyvn0NI\n",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "JSON",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "MyToken",
+					"value": "eyJhbGciOiJIUzI1NiJ9.eyJwcmluY2lwYWwiOiJINHNJQUFBQUFBQUFBSlZTTVU4VVFSUitleDRCUXFKZ0lva0ZOR0puOWhJdHJ4SnlrSkFORU01cklOSE03VDdXZ2RtWmRlWXQzRFhrS2lrb01DZ0ppYTBsXC8wUWJmNERCd3BiYTFqY0x4NTQyeEtsbTNuenpmZFwvNzNseGN3Wml6OENLMVFpb1g1cXBJcFE1ZGJxVk9IY2FGbGRRUEM0YzJRU29SS3lXd3d4VzRYa0VOZ2docU1pRjRHTzJLZmRGUVFxZU45ZTR1eHRUc1dYaHViSHJEdUdORmhnZkc3b1czM0xHeCtKZEFSUjE4cWNINEZzeUlPRGFGcGpXalc3MWNXa3kyWUxxcVJTYmU4NlZITWQrZ0ppbVVHNFdPb3haZGhVa0VVNktndDRaVkpUcUNCOWRtQzVLcTBVWnFSakNSQytmWTNUK2R0TWxiOVwvZmVwdVlPM3NFaDFIdDV3SXV6ZStxaG9lY0psNHhTM0xVMDJpMTBkR1lTdVNPOU9QTVA1azZcL24zd2VkR29Bbk1tenU5OVU5Y2VMTVBqNit2ZDhHWFFRRTh5T1dLOWd6VjdPYm1ZcTVsY1d2ZktQODQyUFoxZEgyXC9kWTJTT1dcLzM4ZUN5OXZrdXN2bVN3WFZwQVptUkhUSHRUOW5za1g3eVlmVHFFZnRtV1dLK1FmcFFtVFc0bUttTnV0VzZPR2VSTk1icTVIclRlZGRtdlRuK3BreUxEbVwvYkpsUDZzd01qeXA0MThmdnAwOHVlVDNxekMyTDFTQm5QaDBCVm9yc2k3YTl4ZG5jMU9mZmg2WFwvb2RcLytRXC9MWk5ua0R3TUFBQT09Iiwic3ViIjoidG90byIsInJvbGVzIjpbIlJPTEVfVVNFUiJdLCJleHAiOjE1MDk3OTIxNTAsImlhdCI6MTUwOTc4ODU1MH0.FMsQ8_56w96nNVC4Iwk8Ycn_ACz8tiTCj6mxwyvn0NI",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/api/bibliotheque/1/livre/4/",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1509788723626,
+			"name": "Lecture_UnLivre_BU_JSON",
+			"description": "cette requéte permet de lire un livre dans une bibliotheque identifiée dans l'URL de la réquéte et renvoie la ressource livre demandé sous le format JSON",
+			"collectionId": "467761b9-c287-80c4-87da-697dde332d2e",
+			"responses": [
+				{
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK",
+						"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+					},
+					"time": 71,
+					"headers": [
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 04 Nov 2017 09:45:18 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked",
+							"name": "Transfer-Encoding",
+							"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+						},
+						{
+							"key": "X-Application-Context",
+							"value": "application:development",
+							"name": "X-Application-Context",
+							"description": "Custom header"
+						}
+					],
+					"cookies": [
+						{
+							"domain": "localhost",
+							"expirationDate": 2147483647,
+							"httpOnly": true,
+							"name": "JSESSIONID",
+							"path": "/",
+							"secure": false,
+							"url": "http://localhost:8080",
+							"value": "901ECE9F3017AF8646280EF6B554F4E5"
+						}
+					],
+					"mime": "",
+					"text": "{\"id\":4,\"bu\":{\"id\":1},\"auteur\":\"Honore de Balzac\",\"isbn\":\"1234\",\"nom\":\"Mamadou\",\"dateApparution\":\"2010-05-09T22:00:00Z\"}",
+					"language": "json",
+					"previewType": "text",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"code": 200,
+					"responseSize": {
+						"body": 120,
+						"header": 178,
+						"total": 298
+					},
+					"mimeType": "text",
+					"fileName": "response.json",
+					"dataURI": "data:application/json;base64, eyJpZCI6NCwiYnUiOnsiaWQiOjF9LCJhdXRldXIiOiJIb25vcmUgZGUgQmFsemFjIiwiaXNibiI6IjEyMzQiLCJub20iOiJNYW1hZG91IiwiZGF0ZUFwcGFydXRpb24iOiIyMDEwLTA1LTA5VDIyOjAwOjAwWiJ9",
+					"name": "Lecture_UnLivre_BU_JSON",
+					"id": "f725de0f-b4c1-a06f-f35d-5ef6776b3112",
+					"request": {
+						"url": "http://localhost:8080/api/bibliotheque/1/livre/4/",
+						"pathVariables": {},
+						"pathVariableData": [],
+						"queryParams": [],
+						"headerData": [
+							{
+								"key": "Accept",
+								"value": "JSON",
+								"description": "",
+								"enabled": true,
+								"disabled": false
+							},
+							{
+								"key": "MyToken",
+								"value": "eyJhbGciOiJIUzI1NiJ9.eyJwcmluY2lwYWwiOiJINHNJQUFBQUFBQUFBSlZTTVU4VVFSUitleDRCUXFKZ0lva0ZOR0puOWhJdHJ4SnlrSkFORU01cklOSE03VDdXZ2RtWmRlWXQzRFhrS2lrb01DZ0ppYTBsXC8wUWJmNERCd3BiYTFqY0x4NTQyeEtsbTNuenpmZFwvNzNseGN3Wml6OENLMVFpb1g1cXBJcFE1ZGJxVk9IY2FGbGRRUEM0YzJRU29SS3lXd3d4VzRYa0VOZ2docU1pRjRHTzJLZmRGUVFxZU45ZTR1eHRUc1dYaHViSHJEdUdORmhnZkc3b1czM0xHeCtKZEFSUjE4cWNINEZzeUlPRGFGcGpXalc3MWNXa3kyWUxxcVJTYmU4NlZITWQrZ0ppbVVHNFdPb3haZGhVa0VVNktndDRaVkpUcUNCOWRtQzVLcTBVWnFSakNSQytmWTNUK2R0TWxiOVwvZmVwdVlPM3NFaDFIdDV3SXV6ZStxaG9lY0psNHhTM0xVMDJpMTBkR1lTdVNPOU9QTVA1azZcL24zd2VkR29Bbk1tenU5OVU5Y2VMTVBqNit2ZDhHWFFRRTh5T1dLOWd6VjdPYm1ZcTVsY1d2ZktQODQyUFoxZEgyXC9kWTJTT1dcLzM4ZUN5OXZrdXN2bVN3WFZwQVptUkhUSHRUOW5za1g3eVlmVHFFZnRtV1dLK1FmcFFtVFc0bUttTnV0VzZPR2VSTk1icTVIclRlZGRtdlRuK3BreUxEbVwvYkpsUDZzd01qeXA0MThmdnAwOHVlVDNxekMyTDFTQm5QaDBCVm9yc2k3YTl4ZG5jMU9mZmg2WFwvb2RcLytRXC9MWk5ua0R3TUFBQT09Iiwic3ViIjoidG90byIsInJvbGVzIjpbIlJPTEVfVVNFUiJdLCJleHAiOjE1MDk3OTIxNTAsImlhdCI6MTUwOTc4ODU1MH0.FMsQ8_56w96nNVC4Iwk8Ycn_ACz8tiTCj6mxwyvn0NI",
+								"description": "",
+								"enabled": true,
+								"disabled": false
+							}
+						],
+						"headers": "Accept: JSON\nMyToken: eyJhbGciOiJIUzI1NiJ9.eyJwcmluY2lwYWwiOiJINHNJQUFBQUFBQUFBSlZTTVU4VVFSUitleDRCUXFKZ0lva0ZOR0puOWhJdHJ4SnlrSkFORU01cklOSE03VDdXZ2RtWmRlWXQzRFhrS2lrb01DZ0ppYTBsXC8wUWJmNERCd3BiYTFqY0x4NTQyeEtsbTNuenpmZFwvNzNseGN3Wml6OENLMVFpb1g1cXBJcFE1ZGJxVk9IY2FGbGRRUEM0YzJRU29SS3lXd3d4VzRYa0VOZ2docU1pRjRHTzJLZmRGUVFxZU45ZTR1eHRUc1dYaHViSHJEdUdORmhnZkc3b1czM0xHeCtKZEFSUjE4cWNINEZzeUlPRGFGcGpXalc3MWNXa3kyWUxxcVJTYmU4NlZITWQrZ0ppbVVHNFdPb3haZGhVa0VVNktndDRaVkpUcUNCOWRtQzVLcTBVWnFSakNSQytmWTNUK2R0TWxiOVwvZmVwdVlPM3NFaDFIdDV3SXV6ZStxaG9lY0psNHhTM0xVMDJpMTBkR1lTdVNPOU9QTVA1azZcL24zd2VkR29Bbk1tenU5OVU5Y2VMTVBqNit2ZDhHWFFRRTh5T1dLOWd6VjdPYm1ZcTVsY1d2ZktQODQyUFoxZEgyXC9kWTJTT1dcLzM4ZUN5OXZrdXN2bVN3WFZwQVptUkhUSHRUOW5za1g3eVlmVHFFZnRtV1dLK1FmcFFtVFc0bUttTnV0VzZPR2VSTk1icTVIclRlZGRtdlRuK3BreUxEbVwvYkpsUDZzd01qeXA0MThmdnAwOHVlVDNxekMyTDFTQm5QaDBCVm9yc2k3YTl4ZG5jMU9mZmg2WFwvb2RcLytRXC9MWk5ua0R3TUFBQT09Iiwic3ViIjoidG90byIsInJvbGVzIjpbIlJPTEVfVVNFUiJdLCJleHAiOjE1MDk3OTIxNTAsImlhdCI6MTUwOTc4ODU1MH0.FMsQ8_56w96nNVC4Iwk8Ycn_ACz8tiTCj6mxwyvn0NI\n",
+						"data": null,
+						"method": "GET",
+						"dataMode": "params"
+					}
+				}
+			]
+		},
+		{
+			"id": "b5308802-25d7-d72e-5bc4-728c871ef708",
+			"headers": "Accept: JSON\nMyToken: eyJhbGciOiJIUzI1NiJ9.eyJwcmluY2lwYWwiOiJINHNJQUFBQUFBQUFBSlZTTVU4VVFSUitleDRCUXFKZ0lva0ZOR0puOWhJdHJ4SnlrSkFORU01cklOSE03VDdXZ2RtWmRlWXQzRFhrS2lrb01DZ0ppYTBsXC8wUWJmNERCd3BiYTFqY0x4NTQyeEtsbTNuenpmZFwvNzNseGN3Wml6OENLMVFpb1g1cXBJcFE1ZGJxVk9IY2FGbGRRUEM0YzJRU29SS3lXd3d4VzRYa0VOZ2docU1pRjRHTzJLZmRGUVFxZU45ZTR1eHRUc1dYaHViSHJEdUdORmhnZkc3b1czM0xHeCtKZEFSUjE4cWNINEZzeUlPRGFGcGpXalc3MWNXa3kyWUxxcVJTYmU4NlZITWQrZ0ppbVVHNFdPb3haZGhVa0VVNktndDRaVkpUcUNCOWRtQzVLcTBVWnFSakNSQytmWTNUK2R0TWxiOVwvZmVwdVlPM3NFaDFIdDV3SXV6ZStxaG9lY0psNHhTM0xVMDJpMTBkR1lTdVNPOU9QTVA1azZcL24zd2VkR29Bbk1tenU5OVU5Y2VMTVBqNit2ZDhHWFFRRTh5T1dLOWd6VjdPYm1ZcTVsY1d2ZktQODQyUFoxZEgyXC9kWTJTT1dcLzM4ZUN5OXZrdXN2bVN3WFZwQVptUkhUSHRUOW5za1g3eVlmVHFFZnRtV1dLK1FmcFFtVFc0bUttTnV0VzZPR2VSTk1icTVIclRlZGRtdlRuK3BreUxEbVwvYkpsUDZzd01qeXA0MThmdnAwOHVlVDNxekMyTDFTQm5QaDBCVm9yc2k3YTl4ZG5jMU9mZmg2WFwvb2RcLytRXC9MWk5ua0R3TUFBQT09Iiwic3ViIjoidG90byIsInJvbGVzIjpbIlJPTEVfVVNFUiJdLCJleHAiOjE1MDk3OTIxNTAsImlhdCI6MTUwOTc4ODU1MH0.FMsQ8_56w96nNVC4Iwk8Ycn_ACz8tiTCj6mxwyvn0NI\n",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "JSON",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "MyToken",
+					"value": "eyJhbGciOiJIUzI1NiJ9.eyJwcmluY2lwYWwiOiJINHNJQUFBQUFBQUFBSlZTTVU4VVFSUitleDRCUXFKZ0lva0ZOR0puOWhJdHJ4SnlrSkFORU01cklOSE03VDdXZ2RtWmRlWXQzRFhrS2lrb01DZ0ppYTBsXC8wUWJmNERCd3BiYTFqY0x4NTQyeEtsbTNuenpmZFwvNzNseGN3Wml6OENLMVFpb1g1cXBJcFE1ZGJxVk9IY2FGbGRRUEM0YzJRU29SS3lXd3d4VzRYa0VOZ2docU1pRjRHTzJLZmRGUVFxZU45ZTR1eHRUc1dYaHViSHJEdUdORmhnZkc3b1czM0xHeCtKZEFSUjE4cWNINEZzeUlPRGFGcGpXalc3MWNXa3kyWUxxcVJTYmU4NlZITWQrZ0ppbVVHNFdPb3haZGhVa0VVNktndDRaVkpUcUNCOWRtQzVLcTBVWnFSakNSQytmWTNUK2R0TWxiOVwvZmVwdVlPM3NFaDFIdDV3SXV6ZStxaG9lY0psNHhTM0xVMDJpMTBkR1lTdVNPOU9QTVA1azZcL24zd2VkR29Bbk1tenU5OVU5Y2VMTVBqNit2ZDhHWFFRRTh5T1dLOWd6VjdPYm1ZcTVsY1d2ZktQODQyUFoxZEgyXC9kWTJTT1dcLzM4ZUN5OXZrdXN2bVN3WFZwQVptUkhUSHRUOW5za1g3eVlmVHFFZnRtV1dLK1FmcFFtVFc0bUttTnV0VzZPR2VSTk1icTVIclRlZGRtdlRuK3BreUxEbVwvYkpsUDZzd01qeXA0MThmdnAwOHVlVDNxekMyTDFTQm5QaDBCVm9yc2k3YTl4ZG5jMU9mZmg2WFwvb2RcLytRXC9MWk5ua0R3TUFBQT09Iiwic3ViIjoidG90byIsInJvbGVzIjpbIlJPTEVfVVNFUiJdLCJleHAiOjE1MDk3OTIxNTAsImlhdCI6MTUwOTc4ODU1MH0.FMsQ8_56w96nNVC4Iwk8Ycn_ACz8tiTCj6mxwyvn0NI",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/api/bibliotheque/1/livre/2?nom=ami",
+			"queryParams": [
+				{
+					"key": "nom",
+					"value": "ami",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PUT",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1509788617550,
+			"name": "Modification_collection",
+			"description": "Modification du nom d'un livre dans la collection de livre d'une bibliotheque",
+			"collectionId": "467761b9-c287-80c4-87da-697dde332d2e",
+			"responses": [
+				{
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK",
+						"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+					},
+					"time": 71,
+					"headers": [
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 04 Nov 2017 09:43:35 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked",
+							"name": "Transfer-Encoding",
+							"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+						},
+						{
+							"key": "X-Application-Context",
+							"value": "application:development",
+							"name": "X-Application-Context",
+							"description": "Custom header"
+						}
+					],
+					"cookies": [
+						{
+							"domain": "localhost",
+							"expirationDate": 2147483647,
+							"httpOnly": true,
+							"name": "JSESSIONID",
+							"path": "/",
+							"secure": false,
+							"url": "http://localhost:8080",
+							"value": "901ECE9F3017AF8646280EF6B554F4E5"
+						}
+					],
+					"mime": "",
+					"text": "{\"id\":2,\"bu\":{\"id\":1},\"auteur\":\"Hans Christian Andersen\",\"isbn\":\"1232\",\"nom\":\"ami\",\"dateApparution\":\"2017-11-04T08:54:12Z\"}",
+					"language": "json",
+					"previewType": "text",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"code": 200,
+					"responseSize": {
+						"body": 123,
+						"header": 178,
+						"total": 301
+					},
+					"mimeType": "text",
+					"fileName": "response.json",
+					"dataURI": "data:application/json;base64, eyJpZCI6MiwiYnUiOnsiaWQiOjF9LCJhdXRldXIiOiJIYW5zIENocmlzdGlhbiBBbmRlcnNlbiIsImlzYm4iOiIxMjMyIiwibm9tIjoiYW1pIiwiZGF0ZUFwcGFydXRpb24iOiIyMDE3LTExLTA0VDA4OjU0OjEyWiJ9",
+					"name": "Modification_collection",
+					"id": "0af61068-0d41-78c0-fe4d-6fef6ce1c29f",
+					"request": {
+						"url": "http://localhost:8080/api/bibliotheque/1/livre/2?nom=ami",
+						"pathVariables": {},
+						"pathVariableData": [],
+						"queryParams": [
+							{
+								"key": "nom",
+								"value": "ami",
+								"equals": true,
+								"description": "",
+								"enabled": true
+							}
+						],
+						"headerData": [
+							{
+								"key": "Accept",
+								"value": "JSON",
+								"description": "",
+								"enabled": true,
+								"disabled": false
+							},
+							{
+								"key": "MyToken",
+								"value": "eyJhbGciOiJIUzI1NiJ9.eyJwcmluY2lwYWwiOiJINHNJQUFBQUFBQUFBSlZTTVU4VVFSUitleDRCUXFKZ0lva0ZOR0puOWhJdHJ4SnlrSkFORU01cklOSE03VDdXZ2RtWmRlWXQzRFhrS2lrb01DZ0ppYTBsXC8wUWJmNERCd3BiYTFqY0x4NTQyeEtsbTNuenpmZFwvNzNseGN3Wml6OENLMVFpb1g1cXBJcFE1ZGJxVk9IY2FGbGRRUEM0YzJRU29SS3lXd3d4VzRYa0VOZ2docU1pRjRHTzJLZmRGUVFxZU45ZTR1eHRUc1dYaHViSHJEdUdORmhnZkc3b1czM0xHeCtKZEFSUjE4cWNINEZzeUlPRGFGcGpXalc3MWNXa3kyWUxxcVJTYmU4NlZITWQrZ0ppbVVHNFdPb3haZGhVa0VVNktndDRaVkpUcUNCOWRtQzVLcTBVWnFSakNSQytmWTNUK2R0TWxiOVwvZmVwdVlPM3NFaDFIdDV3SXV6ZStxaG9lY0psNHhTM0xVMDJpMTBkR1lTdVNPOU9QTVA1azZcL24zd2VkR29Bbk1tenU5OVU5Y2VMTVBqNit2ZDhHWFFRRTh5T1dLOWd6VjdPYm1ZcTVsY1d2ZktQODQyUFoxZEgyXC9kWTJTT1dcLzM4ZUN5OXZrdXN2bVN3WFZwQVptUkhUSHRUOW5za1g3eVlmVHFFZnRtV1dLK1FmcFFtVFc0bUttTnV0VzZPR2VSTk1icTVIclRlZGRtdlRuK3BreUxEbVwvYkpsUDZzd01qeXA0MThmdnAwOHVlVDNxekMyTDFTQm5QaDBCVm9yc2k3YTl4ZG5jMU9mZmg2WFwvb2RcLytRXC9MWk5ua0R3TUFBQT09Iiwic3ViIjoidG90byIsInJvbGVzIjpbIlJPTEVfVVNFUiJdLCJleHAiOjE1MDk3OTIxNTAsImlhdCI6MTUwOTc4ODU1MH0.FMsQ8_56w96nNVC4Iwk8Ycn_ACz8tiTCj6mxwyvn0NI",
+								"description": "",
+								"enabled": true,
+								"disabled": false
+							}
+						],
+						"headers": "Accept: JSON\nMyToken: eyJhbGciOiJIUzI1NiJ9.eyJwcmluY2lwYWwiOiJINHNJQUFBQUFBQUFBSlZTTVU4VVFSUitleDRCUXFKZ0lva0ZOR0puOWhJdHJ4SnlrSkFORU01cklOSE03VDdXZ2RtWmRlWXQzRFhrS2lrb01DZ0ppYTBsXC8wUWJmNERCd3BiYTFqY0x4NTQyeEtsbTNuenpmZFwvNzNseGN3Wml6OENLMVFpb1g1cXBJcFE1ZGJxVk9IY2FGbGRRUEM0YzJRU29SS3lXd3d4VzRYa0VOZ2docU1pRjRHTzJLZmRGUVFxZU45ZTR1eHRUc1dYaHViSHJEdUdORmhnZkc3b1czM0xHeCtKZEFSUjE4cWNINEZzeUlPRGFGcGpXalc3MWNXa3kyWUxxcVJTYmU4NlZITWQrZ0ppbVVHNFdPb3haZGhVa0VVNktndDRaVkpUcUNCOWRtQzVLcTBVWnFSakNSQytmWTNUK2R0TWxiOVwvZmVwdVlPM3NFaDFIdDV3SXV6ZStxaG9lY0psNHhTM0xVMDJpMTBkR1lTdVNPOU9QTVA1azZcL24zd2VkR29Bbk1tenU5OVU5Y2VMTVBqNit2ZDhHWFFRRTh5T1dLOWd6VjdPYm1ZcTVsY1d2ZktQODQyUFoxZEgyXC9kWTJTT1dcLzM4ZUN5OXZrdXN2bVN3WFZwQVptUkhUSHRUOW5za1g3eVlmVHFFZnRtV1dLK1FmcFFtVFc0bUttTnV0VzZPR2VSTk1icTVIclRlZGRtdlRuK3BreUxEbVwvYkpsUDZzd01qeXA0MThmdnAwOHVlVDNxekMyTDFTQm5QaDBCVm9yc2k3YTl4ZG5jMU9mZmg2WFwvb2RcLytRXC9MWk5ua0R3TUFBQT09Iiwic3ViIjoidG90byIsInJvbGVzIjpbIlJPTEVfVVNFUiJdLCJleHAiOjE1MDk3OTIxNTAsImlhdCI6MTUwOTc4ODU1MH0.FMsQ8_56w96nNVC4Iwk8Ycn_ACz8tiTCj6mxwyvn0NI\n",
+						"data": null,
+						"method": "PUT",
+						"dataMode": "params"
+					}
+				}
+			]
+		},
+		{
+			"id": "fe7c1d28-0390-fe91-ddfd-1a7f179541b9",
+			"headers": "MyToken: eyJhbGciOiJIUzI1NiJ9.eyJwcmluY2lwYWwiOiJINHNJQUFBQUFBQUFBSlZTTVU4VVFSUitleDRCUXFKZ0lva0ZOR0puOWhJdHJ4SnlrSkFORU01cklOSE03VDdXZ2RtWmRlWXQzRFhrS2lrb01DZ0ppYTBsXC8wUWJmNERCd3BiYTFqY0x4NTQyeEtsbTNuenpmZFwvNzNseGN3Wml6OENLMVFpb1g1cXBJcFE1ZGJxVk9IY2FGbGRRUEM0YzJRU29SS3lXd3d4VzRYa0VOZ2docU1pRjRHTzJLZmRGUVFxZU45ZTR1eHRUc1dYaHViSHJEdUdORmhnZkc3b1czM0xHeCtKZEFSUjE4cWNINEZzeUlPRGFGcGpXalc3MWNXa3kyWUxxcVJTYmU4NlZITWQrZ0ppbVVHNFdPb3haZGhVa0VVNktndDRaVkpUcUNCOWRtQzVLcTBVWnFSakNSQytmWTNUK2R0TWxiOVwvZmVwdVlPM3NFaDFIdDV3SXV6ZStxaG9lY0psNHhTM0xVMDJpMTBkR1lTdVNPOU9QTVA1azZcL24zd2VkR29Bbk1tenU5OVU5Y2VMTVBqNit2ZDhHWFFRRTh5T1dLOWd6VjdPYm1ZcTVsY1d2ZktQODQyUFoxZEgyXC9kWTJTT1dcLzM4ZUN5OXZrdXN2bVN3WFZwQVptUkhUSHRUOW5za1g3eVlmVHFFZnRtV1dLK1FmcFFtVFc0bUttTnV0VzZPR2VSTk1icTVIclRlZGRtdlRuK3BreUxEbVwvYkpsUDZzd01qeXA0MThmdnAwOHVlVDNxekMyTDFTQm5QaDBCVm9yc2k3YTl4ZG5jMU9mZmg2WFwvb2RcLytRXC9MWk5ua0R3TUFBQT09Iiwic3ViIjoidG90byIsInJvbGVzIjpbIlJPTEVfVVNFUiJdLCJleHAiOjE1MDk3OTIxNTAsImlhdCI6MTUwOTc4ODU1MH0.FMsQ8_56w96nNVC4Iwk8Ycn_ACz8tiTCj6mxwyvn0NI\n",
+			"headerData": [
+				{
+					"key": "MyToken",
+					"value": "eyJhbGciOiJIUzI1NiJ9.eyJwcmluY2lwYWwiOiJINHNJQUFBQUFBQUFBSlZTTVU4VVFSUitleDRCUXFKZ0lva0ZOR0puOWhJdHJ4SnlrSkFORU01cklOSE03VDdXZ2RtWmRlWXQzRFhrS2lrb01DZ0ppYTBsXC8wUWJmNERCd3BiYTFqY0x4NTQyeEtsbTNuenpmZFwvNzNseGN3Wml6OENLMVFpb1g1cXBJcFE1ZGJxVk9IY2FGbGRRUEM0YzJRU29SS3lXd3d4VzRYa0VOZ2docU1pRjRHTzJLZmRGUVFxZU45ZTR1eHRUc1dYaHViSHJEdUdORmhnZkc3b1czM0xHeCtKZEFSUjE4cWNINEZzeUlPRGFGcGpXalc3MWNXa3kyWUxxcVJTYmU4NlZITWQrZ0ppbVVHNFdPb3haZGhVa0VVNktndDRaVkpUcUNCOWRtQzVLcTBVWnFSakNSQytmWTNUK2R0TWxiOVwvZmVwdVlPM3NFaDFIdDV3SXV6ZStxaG9lY0psNHhTM0xVMDJpMTBkR1lTdVNPOU9QTVA1azZcL24zd2VkR29Bbk1tenU5OVU5Y2VMTVBqNit2ZDhHWFFRRTh5T1dLOWd6VjdPYm1ZcTVsY1d2ZktQODQyUFoxZEgyXC9kWTJTT1dcLzM4ZUN5OXZrdXN2bVN3WFZwQVptUkhUSHRUOW5za1g3eVlmVHFFZnRtV1dLK1FmcFFtVFc0bUttTnV0VzZPR2VSTk1icTVIclRlZGRtdlRuK3BreUxEbVwvYkpsUDZzd01qeXA0MThmdnAwOHVlVDNxekMyTDFTQm5QaDBCVm9yc2k3YTl4ZG5jMU9mZmg2WFwvb2RcLytRXC9MWk5ua0R3TUFBQT09Iiwic3ViIjoidG90byIsInJvbGVzIjpbIlJPTEVfVVNFUiJdLCJleHAiOjE1MDk3OTIxNTAsImlhdCI6MTUwOTc4ODU1MH0.FMsQ8_56w96nNVC4Iwk8Ycn_ACz8tiTCj6mxwyvn0NI",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/api/bibliotheque/1/livre/1",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "DELETE",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1509788666613,
+			"name": "DELETE_Livre_BU",
+			"description": "suppression d'un livre dans une bu",
+			"collectionId": "467761b9-c287-80c4-87da-697dde332d2e",
+			"responses": [
+				{
+					"status": "",
+					"responseCode": {
+						"code": 204,
+						"name": "No Content",
+						"detail": "The server successfully processed the request, but is not returning any content."
+					},
+					"time": 71,
+					"headers": [
+						{
+							"key": "Content-Type",
+							"value": "text/html;charset=UTF-8",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 04 Nov 2017 09:44:24 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "X-Application-Context",
+							"value": "application:development",
+							"name": "X-Application-Context",
+							"description": "Custom header"
+						}
+					],
+					"cookies": [
+						{
+							"domain": "localhost",
+							"expirationDate": 2147483647,
+							"httpOnly": true,
+							"name": "JSESSIONID",
+							"path": "/",
+							"secure": false,
+							"url": "http://localhost:8080",
+							"value": "901ECE9F3017AF8646280EF6B554F4E5"
+						}
+					],
+					"mime": "",
+					"text": "",
+					"language": "html",
+					"previewType": "text",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"code": 204,
+					"responseSize": {
+						"body": 0,
+						"header": 151,
+						"total": 151
+					},
+					"mimeType": "text",
+					"fileName": "response.html",
+					"dataURI": "data:text/html;base64, ",
+					"name": "DELETE_Livre_BU",
+					"id": "9c058b48-0937-2687-acdf-dc7905598db8",
+					"request": {
+						"url": "http://localhost:8080/api/bibliotheque/1/livre/1",
+						"pathVariables": {},
+						"pathVariableData": [],
+						"queryParams": [],
+						"headerData": [
+							{
+								"key": "MyToken",
+								"value": "eyJhbGciOiJIUzI1NiJ9.eyJwcmluY2lwYWwiOiJINHNJQUFBQUFBQUFBSlZTTVU4VVFSUitleDRCUXFKZ0lva0ZOR0puOWhJdHJ4SnlrSkFORU01cklOSE03VDdXZ2RtWmRlWXQzRFhrS2lrb01DZ0ppYTBsXC8wUWJmNERCd3BiYTFqY0x4NTQyeEtsbTNuenpmZFwvNzNseGN3Wml6OENLMVFpb1g1cXBJcFE1ZGJxVk9IY2FGbGRRUEM0YzJRU29SS3lXd3d4VzRYa0VOZ2docU1pRjRHTzJLZmRGUVFxZU45ZTR1eHRUc1dYaHViSHJEdUdORmhnZkc3b1czM0xHeCtKZEFSUjE4cWNINEZzeUlPRGFGcGpXalc3MWNXa3kyWUxxcVJTYmU4NlZITWQrZ0ppbVVHNFdPb3haZGhVa0VVNktndDRaVkpUcUNCOWRtQzVLcTBVWnFSakNSQytmWTNUK2R0TWxiOVwvZmVwdVlPM3NFaDFIdDV3SXV6ZStxaG9lY0psNHhTM0xVMDJpMTBkR1lTdVNPOU9QTVA1azZcL24zd2VkR29Bbk1tenU5OVU5Y2VMTVBqNit2ZDhHWFFRRTh5T1dLOWd6VjdPYm1ZcTVsY1d2ZktQODQyUFoxZEgyXC9kWTJTT1dcLzM4ZUN5OXZrdXN2bVN3WFZwQVptUkhUSHRUOW5za1g3eVlmVHFFZnRtV1dLK1FmcFFtVFc0bUttTnV0VzZPR2VSTk1icTVIclRlZGRtdlRuK3BreUxEbVwvYkpsUDZzd01qeXA0MThmdnAwOHVlVDNxekMyTDFTQm5QaDBCVm9yc2k3YTl4ZG5jMU9mZmg2WFwvb2RcLytRXC9MWk5ua0R3TUFBQT09Iiwic3ViIjoidG90byIsInJvbGVzIjpbIlJPTEVfVVNFUiJdLCJleHAiOjE1MDk3OTIxNTAsImlhdCI6MTUwOTc4ODU1MH0.FMsQ8_56w96nNVC4Iwk8Ycn_ACz8tiTCj6mxwyvn0NI",
+								"description": "",
+								"enabled": true,
+								"disabled": false
+							}
+						],
+						"headers": "MyToken: eyJhbGciOiJIUzI1NiJ9.eyJwcmluY2lwYWwiOiJINHNJQUFBQUFBQUFBSlZTTVU4VVFSUitleDRCUXFKZ0lva0ZOR0puOWhJdHJ4SnlrSkFORU01cklOSE03VDdXZ2RtWmRlWXQzRFhrS2lrb01DZ0ppYTBsXC8wUWJmNERCd3BiYTFqY0x4NTQyeEtsbTNuenpmZFwvNzNseGN3Wml6OENLMVFpb1g1cXBJcFE1ZGJxVk9IY2FGbGRRUEM0YzJRU29SS3lXd3d4VzRYa0VOZ2docU1pRjRHTzJLZmRGUVFxZU45ZTR1eHRUc1dYaHViSHJEdUdORmhnZkc3b1czM0xHeCtKZEFSUjE4cWNINEZzeUlPRGFGcGpXalc3MWNXa3kyWUxxcVJTYmU4NlZITWQrZ0ppbVVHNFdPb3haZGhVa0VVNktndDRaVkpUcUNCOWRtQzVLcTBVWnFSakNSQytmWTNUK2R0TWxiOVwvZmVwdVlPM3NFaDFIdDV3SXV6ZStxaG9lY0psNHhTM0xVMDJpMTBkR1lTdVNPOU9QTVA1azZcL24zd2VkR29Bbk1tenU5OVU5Y2VMTVBqNit2ZDhHWFFRRTh5T1dLOWd6VjdPYm1ZcTVsY1d2ZktQODQyUFoxZEgyXC9kWTJTT1dcLzM4ZUN5OXZrdXN2bVN3WFZwQVptUkhUSHRUOW5za1g3eVlmVHFFZnRtV1dLK1FmcFFtVFc0bUttTnV0VzZPR2VSTk1icTVIclRlZGRtdlRuK3BreUxEbVwvYkpsUDZzd01qeXA0MThmdnAwOHVlVDNxekMyTDFTQm5QaDBCVm9yc2k3YTl4ZG5jMU9mZmg2WFwvb2RcLytRXC9MWk5ua0R3TUFBQT09Iiwic3ViIjoidG90byIsInJvbGVzIjpbIlJPTEVfVVNFUiJdLCJleHAiOjE1MDk3OTIxNTAsImlhdCI6MTUwOTc4ODU1MH0.FMsQ8_56w96nNVC4Iwk8Ycn_ACz8tiTCj6mxwyvn0NI\n",
+						"data": null,
+						"method": "DELETE",
+						"dataMode": "params"
+					}
+				}
+			]
+		}
+	]
+}

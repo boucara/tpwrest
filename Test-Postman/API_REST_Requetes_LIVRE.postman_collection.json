@@ -1,0 +1,1734 @@
+{
+	"id": "2b8f8549-8847-aadd-486c-792ade711cd8",
+	"name": "API_REST_Requetes_LIVRE",
+	"description": "",
+	"order": [
+		"35fa4a90-d749-288d-b6de-3b8debee2149",
+		"c08fe6ee-5592-5854-187d-07d57c31fed6",
+		"785ed563-e2cb-581e-8d7a-679610c1db06",
+		"7e7e06e7-8098-f1cf-d20f-79d53ababfd0",
+		"75c6eef3-bb8a-52e6-7981-a40230480870",
+		"ce7f5040-78a1-baff-667f-a4ff59a0321e",
+		"b4e5e273-95a3-2978-2ed4-2a3842b66e29",
+		"8188abab-97c2-459b-b3c5-e4356dee7495",
+		"114fc1e3-d539-8103-5398-1516b311b9e6",
+		"cfe4358c-2987-b9ce-f470-94bd1d73786b",
+		"119bda68-5555-b028-4c8e-e0528821ba9e"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1507876923253,
+	"owner": "2905070",
+	"public": false,
+	"requests": [
+		{
+			"id": "114fc1e3-d539-8103-5398-1516b311b9e6",
+			"headers": "Accept: JSON\nMyToken: eyJhbGciOiJIUzI1NiJ9.eyJwcmluY2lwYWwiOiJINHNJQUFBQUFBQUFBSlZTdjA4VVFSUit1OXdGQ0ltQ0NTWVcySWlkMlV1MHZFcklZVUkyUURpdndVUXpOXC90WUJtWm5scGxadUd2TVZWcFFRRUFTRWxwTFwvaE50XC9BTUlGcmJVdHI1WkR2YTBJVTYxKytiYjc5ZmJpMnVvV3dPdlVzT0V0RkV1aTFTb3lPWkdxTlFpTDR4d1wvYWl3YUJKMEplSk5DZXpRQkc1T0VFSVFReWdTQjRcL2liYmJIR3BLcHRMSGEzVWJ1bWowREw3VkpoNHliaG1XNHI4MU9kTWZOdGNHXC9CQ3JxNEdzSTR4c3d3empYaFhJcldyVjZ1VENZYk1CME5ZczEzXC9HaldVNDNxSnhnMG81Q3gxR3hyc1FraGlsV3VDMU5xZ0t0ZzRjM1pnc25aS09OcmhuRFJNNnNKWGZcL0pHazdiOTNmZTV1S0V1ekNSNmoxOG9BT2RmZmNReVBQRXkxcUtTbTEwTXJPZDFTbUU3RXB2RGp4RCthT2Z4eWVEem9oQUhYeTR2NXZxdm1UQlJoOGVcL1wvN2FWbDB3QjA4SHJGZXdacTluTnpNVk14dkRYcmx5N08xazlQcnorXC9HU05ramx2NVwvSFwvT3ZoODMxRjNXV004T2NIdGtSMGU3WFwvRE9STDl4UGZydUZmdFFXV1M2UlwvaWpsTUxtVHFJZ3BiczFvZWR1M2c4bjExYmoxb2ROdXJmdTNPaE44aTVIb2d6S3pYMVlVYTFyVndhK2o3NGZQcm9oZ0dlcDdUQlpJbFU5WG9KVWk2Nkw1ZEhFNk5cL1hsNTBFWllQZ3poMzhBaEVNbmpSQURBQUE9Iiwic3ViIjoiYWljaGEiLCJyb2xlcyI6WyJST0xFX1VTRVIiXSwiZXhwIjoxNTA5NzkwMzc3LCJpYXQiOjE1MDk3ODY3Nzd9.PET0m6G3MqvMvWE8gecZ14BN207XlI-68VPOYe5fjWc\n",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "JSON",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "MyToken",
+					"value": "eyJhbGciOiJIUzI1NiJ9.eyJwcmluY2lwYWwiOiJINHNJQUFBQUFBQUFBSlZTdjA4VVFSUit1OXdGQ0ltQ0NTWVcySWlkMlV1MHZFcklZVUkyUURpdndVUXpOXC90WUJtWm5scGxadUd2TVZWcFFRRUFTRWxwTFwvaE50XC9BTUlGcmJVdHI1WkR2YTBJVTYxKytiYjc5ZmJpMnVvV3dPdlVzT0V0RkV1aTFTb3lPWkdxTlFpTDR4d1wvYWl3YUJKMEplSk5DZXpRQkc1T0VFSVFReWdTQjRcL2liYmJIR3BLcHRMSGEzVWJ1bWowREw3VkpoNHliaG1XNHI4MU9kTWZOdGNHXC9CQ3JxNEdzSTR4c3d3empYaFhJcldyVjZ1VENZYk1CME5ZczEzXC9HaldVNDNxSnhnMG81Q3gxR3hyc1FraGlsV3VDMU5xZ0t0ZzRjM1pnc25aS09OcmhuRFJNNnNKWGZcL0pHazdiOTNmZTV1S0V1ekNSNmoxOG9BT2RmZmNReVBQRXkxcUtTbTEwTXJPZDFTbUU3RXB2RGp4RCthT2Z4eWVEem9oQUhYeTR2NXZxdm1UQlJoOGVcL1wvN2FWbDB3QjA4SHJGZXdacTluTnpNVk14dkRYcmx5N08xazlQcnorXC9HU05ramx2NVwvSFwvT3ZoODMxRjNXV004T2NIdGtSMGU3WFwvRE9STDl4UGZydUZmdFFXV1M2UlwvaWpsTUxtVHFJZ3BiczFvZWR1M2c4bjExYmoxb2ROdXJmdTNPaE44aTVIb2d6S3pYMVlVYTFyVndhK2o3NGZQcm9oZ0dlcDdUQlpJbFU5WG9KVWk2Nkw1ZEhFNk5cL1hsNTBFWllQZ3poMzhBaEVNbmpSQURBQUE9Iiwic3ViIjoiYWljaGEiLCJyb2xlcyI6WyJST0xFX1VTRVIiXSwiZXhwIjoxNTA5NzkwMzc3LCJpYXQiOjE1MDk3ODY3Nzd9.PET0m6G3MqvMvWE8gecZ14BN207XlI-68VPOYe5fjWc",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/api/livre/6?nom=le soleil&auteur=mamadou&isbn=125&dateApparution=2017-11-04 09:54:12.046",
+			"queryParams": [
+				{
+					"key": "nom",
+					"value": "le soleil",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "auteur",
+					"value": "mamadou",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "isbn",
+					"value": "125",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "dateApparution",
+					"value": "2017-11-04 09:54:12.046",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PUT",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1509787828438,
+			"name": "Modification_auteur_All_Livre",
+			"description": "Modification complet d'un livre et le livre modifié est renvoyé sous le format JSON",
+			"collectionId": "2b8f8549-8847-aadd-486c-792ade711cd8",
+			"responses": [
+				{
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK",
+						"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+					},
+					"time": 77,
+					"headers": [
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 04 Nov 2017 09:29:41 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked",
+							"name": "Transfer-Encoding",
+							"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+						},
+						{
+							"key": "X-Application-Context",
+							"value": "application:development",
+							"name": "X-Application-Context",
+							"description": "Custom header"
+						}
+					],
+					"cookies": [
+						{
+							"domain": "localhost",
+							"expirationDate": 2147483647,
+							"httpOnly": true,
+							"name": "JSESSIONID",
+							"path": "/",
+							"secure": false,
+							"url": "http://localhost:8080",
+							"value": "901ECE9F3017AF8646280EF6B554F4E5"
+						}
+					],
+					"mime": "",
+					"text": "{\"id\":6,\"bu\":{\"id\":2},\"auteur\":\"mamadou\",\"isbn\":\"125\",\"nom\":\"le soleil\",\"dateApparution\":\"2010-05-09T22:00:00Z\"}",
+					"language": "json",
+					"previewType": "text",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"code": 200,
+					"responseSize": {
+						"body": 112,
+						"header": 178,
+						"total": 290
+					},
+					"mimeType": "text",
+					"fileName": "response.json",
+					"dataURI": "data:application/json;base64, eyJpZCI6NiwiYnUiOnsiaWQiOjJ9LCJhdXRldXIiOiJtYW1hZG91IiwiaXNibiI6IjEyNSIsIm5vbSI6ImxlIHNvbGVpbCIsImRhdGVBcHBhcnV0aW9uIjoiMjAxMC0wNS0wOVQyMjowMDowMFoifQ==",
+					"name": "Modification_auteur_All_Livre",
+					"id": "226ae077-28a6-f570-ff14-4e3edb7a2b12",
+					"request": {
+						"url": "http://localhost:8080/api/livre/6?nom=le soleil&auteur=mamadou&isbn=125&dateApparution=2017-11-04 09:54:12.046",
+						"pathVariables": {},
+						"pathVariableData": [],
+						"queryParams": [
+							{
+								"key": "nom",
+								"value": "le soleil",
+								"equals": true,
+								"description": "",
+								"enabled": true
+							},
+							{
+								"key": "auteur",
+								"value": "mamadou",
+								"equals": true,
+								"description": "",
+								"enabled": true
+							},
+							{
+								"key": "isbn",
+								"value": "125",
+								"equals": true,
+								"description": "",
+								"enabled": true
+							},
+							{
+								"key": "dateApparution",
+								"value": "2017-11-04 09:54:12.046",
+								"equals": true,
+								"description": "",
+								"enabled": true
+							}
+						],
+						"headerData": [
+							{
+								"key": "Accept",
+								"value": "JSON",
+								"description": "",
+								"enabled": true,
+								"disabled": false
+							},
+							{
+								"key": "MyToken",
+								"value": "eyJhbGciOiJIUzI1NiJ9.eyJwcmluY2lwYWwiOiJINHNJQUFBQUFBQUFBSlZTdjA4VVFSUit1OXdGQ0ltQ0NTWVcySWlkMlV1MHZFcklZVUkyUURpdndVUXpOXC90WUJtWm5scGxadUd2TVZWcFFRRUFTRWxwTFwvaE50XC9BTUlGcmJVdHI1WkR2YTBJVTYxKytiYjc5ZmJpMnVvV3dPdlVzT0V0RkV1aTFTb3lPWkdxTlFpTDR4d1wvYWl3YUJKMEplSk5DZXpRQkc1T0VFSVFReWdTQjRcL2liYmJIR3BLcHRMSGEzVWJ1bWowREw3VkpoNHliaG1XNHI4MU9kTWZOdGNHXC9CQ3JxNEdzSTR4c3d3empYaFhJcldyVjZ1VENZYk1CME5ZczEzXC9HaldVNDNxSnhnMG81Q3gxR3hyc1FraGlsV3VDMU5xZ0t0ZzRjM1pnc25aS09OcmhuRFJNNnNKWGZcL0pHazdiOTNmZTV1S0V1ekNSNmoxOG9BT2RmZmNReVBQRXkxcUtTbTEwTXJPZDFTbUU3RXB2RGp4RCthT2Z4eWVEem9oQUhYeTR2NXZxdm1UQlJoOGVcL1wvN2FWbDB3QjA4SHJGZXdacTluTnpNVk14dkRYcmx5N08xazlQcnorXC9HU05ramx2NVwvSFwvT3ZoODMxRjNXV004T2NIdGtSMGU3WFwvRE9STDl4UGZydUZmdFFXV1M2UlwvaWpsTUxtVHFJZ3BiczFvZWR1M2c4bjExYmoxb2ROdXJmdTNPaE44aTVIb2d6S3pYMVlVYTFyVndhK2o3NGZQcm9oZ0dlcDdUQlpJbFU5WG9KVWk2Nkw1ZEhFNk5cL1hsNTBFWllQZ3poMzhBaEVNbmpSQURBQUE9Iiwic3ViIjoiYWljaGEiLCJyb2xlcyI6WyJST0xFX1VTRVIiXSwiZXhwIjoxNTA5NzkwMzc3LCJpYXQiOjE1MDk3ODY3Nzd9.PET0m6G3MqvMvWE8gecZ14BN207XlI-68VPOYe5fjWc",
+								"description": "",
+								"enabled": true,
+								"disabled": false
+							}
+						],
+						"headers": "Accept: JSON\nMyToken: eyJhbGciOiJIUzI1NiJ9.eyJwcmluY2lwYWwiOiJINHNJQUFBQUFBQUFBSlZTdjA4VVFSUit1OXdGQ0ltQ0NTWVcySWlkMlV1MHZFcklZVUkyUURpdndVUXpOXC90WUJtWm5scGxadUd2TVZWcFFRRUFTRWxwTFwvaE50XC9BTUlGcmJVdHI1WkR2YTBJVTYxKytiYjc5ZmJpMnVvV3dPdlVzT0V0RkV1aTFTb3lPWkdxTlFpTDR4d1wvYWl3YUJKMEplSk5DZXpRQkc1T0VFSVFReWdTQjRcL2liYmJIR3BLcHRMSGEzVWJ1bWowREw3VkpoNHliaG1XNHI4MU9kTWZOdGNHXC9CQ3JxNEdzSTR4c3d3empYaFhJcldyVjZ1VENZYk1CME5ZczEzXC9HaldVNDNxSnhnMG81Q3gxR3hyc1FraGlsV3VDMU5xZ0t0ZzRjM1pnc25aS09OcmhuRFJNNnNKWGZcL0pHazdiOTNmZTV1S0V1ekNSNmoxOG9BT2RmZmNReVBQRXkxcUtTbTEwTXJPZDFTbUU3RXB2RGp4RCthT2Z4eWVEem9oQUhYeTR2NXZxdm1UQlJoOGVcL1wvN2FWbDB3QjA4SHJGZXdacTluTnpNVk14dkRYcmx5N08xazlQcnorXC9HU05ramx2NVwvSFwvT3ZoODMxRjNXV004T2NIdGtSMGU3WFwvRE9STDl4UGZydUZmdFFXV1M2UlwvaWpsTUxtVHFJZ3BiczFvZWR1M2c4bjExYmoxb2ROdXJmdTNPaE44aTVIb2d6S3pYMVlVYTFyVndhK2o3NGZQcm9oZ0dlcDdUQlpJbFU5WG9KVWk2Nkw1ZEhFNk5cL1hsNTBFWllQZ3poMzhBaEVNbmpSQURBQUE9Iiwic3ViIjoiYWljaGEiLCJyb2xlcyI6WyJST0xFX1VTRVIiXSwiZXhwIjoxNTA5NzkwMzc3LCJpYXQiOjE1MDk3ODY3Nzd9.PET0m6G3MqvMvWE8gecZ14BN207XlI-68VPOYe5fjWc\n",
+						"data": null,
+						"method": "PUT",
+						"dataMode": "params"
+					}
+				}
+			]
+		},
+		{
+			"id": "119bda68-5555-b028-4c8e-e0528821ba9e",
+			"headers": "MyToken: eyJhbGciOiJIUzI1NiJ9.eyJwcmluY2lwYWwiOiJINHNJQUFBQUFBQUFBSlZTdjA4VVFSUit1OXdGQ0ltQ0NTWVcySWlkMlV1MHZFcklZVUkyUURpdndVUXpOXC90WUJtWm5scGxadUd2TVZWcFFRRUFTRWxwTFwvaE50XC9BTUlGcmJVdHI1WkR2YTBJVTYxKytiYjc5ZmJpMnVvV3dPdlVzT0V0RkV1aTFTb3lPWkdxTlFpTDR4d1wvYWl3YUJKMEplSk5DZXpRQkc1T0VFSVFReWdTQjRcL2liYmJIR3BLcHRMSGEzVWJ1bWowREw3VkpoNHliaG1XNHI4MU9kTWZOdGNHXC9CQ3JxNEdzSTR4c3d3empYaFhJcldyVjZ1VENZYk1CME5ZczEzXC9HaldVNDNxSnhnMG81Q3gxR3hyc1FraGlsV3VDMU5xZ0t0ZzRjM1pnc25aS09OcmhuRFJNNnNKWGZcL0pHazdiOTNmZTV1S0V1ekNSNmoxOG9BT2RmZmNReVBQRXkxcUtTbTEwTXJPZDFTbUU3RXB2RGp4RCthT2Z4eWVEem9oQUhYeTR2NXZxdm1UQlJoOGVcL1wvN2FWbDB3QjA4SHJGZXdacTluTnpNVk14dkRYcmx5N08xazlQcnorXC9HU05ramx2NVwvSFwvT3ZoODMxRjNXV004T2NIdGtSMGU3WFwvRE9STDl4UGZydUZmdFFXV1M2UlwvaWpsTUxtVHFJZ3BiczFvZWR1M2c4bjExYmoxb2ROdXJmdTNPaE44aTVIb2d6S3pYMVlVYTFyVndhK2o3NGZQcm9oZ0dlcDdUQlpJbFU5WG9KVWk2Nkw1ZEhFNk5cL1hsNTBFWllQZ3poMzhBaEVNbmpSQURBQUE9Iiwic3ViIjoiYWljaGEiLCJyb2xlcyI6WyJST0xFX1VTRVIiXSwiZXhwIjoxNTA5NzkwMzc3LCJpYXQiOjE1MDk3ODY3Nzd9.PET0m6G3MqvMvWE8gecZ14BN207XlI-68VPOYe5fjWc\n",
+			"headerData": [
+				{
+					"key": "MyToken",
+					"value": "eyJhbGciOiJIUzI1NiJ9.eyJwcmluY2lwYWwiOiJINHNJQUFBQUFBQUFBSlZTdjA4VVFSUit1OXdGQ0ltQ0NTWVcySWlkMlV1MHZFcklZVUkyUURpdndVUXpOXC90WUJtWm5scGxadUd2TVZWcFFRRUFTRWxwTFwvaE50XC9BTUlGcmJVdHI1WkR2YTBJVTYxKytiYjc5ZmJpMnVvV3dPdlVzT0V0RkV1aTFTb3lPWkdxTlFpTDR4d1wvYWl3YUJKMEplSk5DZXpRQkc1T0VFSVFReWdTQjRcL2liYmJIR3BLcHRMSGEzVWJ1bWowREw3VkpoNHliaG1XNHI4MU9kTWZOdGNHXC9CQ3JxNEdzSTR4c3d3empYaFhJcldyVjZ1VENZYk1CME5ZczEzXC9HaldVNDNxSnhnMG81Q3gxR3hyc1FraGlsV3VDMU5xZ0t0ZzRjM1pnc25aS09OcmhuRFJNNnNKWGZcL0pHazdiOTNmZTV1S0V1ekNSNmoxOG9BT2RmZmNReVBQRXkxcUtTbTEwTXJPZDFTbUU3RXB2RGp4RCthT2Z4eWVEem9oQUhYeTR2NXZxdm1UQlJoOGVcL1wvN2FWbDB3QjA4SHJGZXdacTluTnpNVk14dkRYcmx5N08xazlQcnorXC9HU05ramx2NVwvSFwvT3ZoODMxRjNXV004T2NIdGtSMGU3WFwvRE9STDl4UGZydUZmdFFXV1M2UlwvaWpsTUxtVHFJZ3BiczFvZWR1M2c4bjExYmoxb2ROdXJmdTNPaE44aTVIb2d6S3pYMVlVYTFyVndhK2o3NGZQcm9oZ0dlcDdUQlpJbFU5WG9KVWk2Nkw1ZEhFNk5cL1hsNTBFWllQZ3poMzhBaEVNbmpSQURBQUE9Iiwic3ViIjoiYWljaGEiLCJyb2xlcyI6WyJST0xFX1VTRVIiXSwiZXhwIjoxNTA5NzkwMzc3LCJpYXQiOjE1MDk3ODY3Nzd9.PET0m6G3MqvMvWE8gecZ14BN207XlI-68VPOYe5fjWc",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/api/livre/3?bu.id=1",
+			"queryParams": [
+				{
+					"key": "bu.id",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "DELETE",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1509788318679,
+			"name": "DELETE_Livre",
+			"description": "Suppression d'un livre",
+			"collectionId": "2b8f8549-8847-aadd-486c-792ade711cd8",
+			"responses": [
+				{
+					"status": "",
+					"responseCode": {
+						"code": 204,
+						"name": "No Content"
+					},
+					"time": 179,
+					"headers": [
+						{
+							"key": "Content-Type",
+							"value": "text/html;charset=UTF-8",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 04 Nov 2017 09:38:03 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "X-Application-Context",
+							"value": "application:development",
+							"name": "X-Application-Context",
+							"description": "Custom header"
+						}
+					],
+					"cookies": [
+						{
+							"domain": "localhost",
+							"expirationDate": 2147483647,
+							"httpOnly": true,
+							"name": "JSESSIONID",
+							"path": "/",
+							"secure": false,
+							"url": "http://localhost:8080",
+							"value": "901ECE9F3017AF8646280EF6B554F4E5"
+						}
+					],
+					"mime": "",
+					"text": "",
+					"language": "html",
+					"previewType": "text",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"code": 204,
+					"responseSize": {
+						"body": 0,
+						"header": 151,
+						"total": 151
+					},
+					"mimeType": "text",
+					"fileName": "response.html",
+					"dataURI": "data:text/html;base64, ",
+					"name": "DELETE_Livre",
+					"id": "cacc720b-b84b-587b-8a9a-c60984104fa9",
+					"request": {
+						"url": "http://localhost:8080/api/livre/3?bu.id=1",
+						"pathVariables": {},
+						"pathVariableData": [],
+						"queryParams": [
+							{
+								"key": "bu.id",
+								"value": "1",
+								"equals": true,
+								"description": "",
+								"enabled": true
+							}
+						],
+						"headerData": [
+							{
+								"key": "MyToken",
+								"value": "eyJhbGciOiJIUzI1NiJ9.eyJwcmluY2lwYWwiOiJINHNJQUFBQUFBQUFBSlZTdjA4VVFSUit1OXdGQ0ltQ0NTWVcySWlkMlV1MHZFcklZVUkyUURpdndVUXpOXC90WUJtWm5scGxadUd2TVZWcFFRRUFTRWxwTFwvaE50XC9BTUlGcmJVdHI1WkR2YTBJVTYxKytiYjc5ZmJpMnVvV3dPdlVzT0V0RkV1aTFTb3lPWkdxTlFpTDR4d1wvYWl3YUJKMEplSk5DZXpRQkc1T0VFSVFReWdTQjRcL2liYmJIR3BLcHRMSGEzVWJ1bWowREw3VkpoNHliaG1XNHI4MU9kTWZOdGNHXC9CQ3JxNEdzSTR4c3d3empYaFhJcldyVjZ1VENZYk1CME5ZczEzXC9HaldVNDNxSnhnMG81Q3gxR3hyc1FraGlsV3VDMU5xZ0t0ZzRjM1pnc25aS09OcmhuRFJNNnNKWGZcL0pHazdiOTNmZTV1S0V1ekNSNmoxOG9BT2RmZmNReVBQRXkxcUtTbTEwTXJPZDFTbUU3RXB2RGp4RCthT2Z4eWVEem9oQUhYeTR2NXZxdm1UQlJoOGVcL1wvN2FWbDB3QjA4SHJGZXdacTluTnpNVk14dkRYcmx5N08xazlQcnorXC9HU05ramx2NVwvSFwvT3ZoODMxRjNXV004T2NIdGtSMGU3WFwvRE9STDl4UGZydUZmdFFXV1M2UlwvaWpsTUxtVHFJZ3BiczFvZWR1M2c4bjExYmoxb2ROdXJmdTNPaE44aTVIb2d6S3pYMVlVYTFyVndhK2o3NGZQcm9oZ0dlcDdUQlpJbFU5WG9KVWk2Nkw1ZEhFNk5cL1hsNTBFWllQZ3poMzhBaEVNbmpSQURBQUE9Iiwic3ViIjoiYWljaGEiLCJyb2xlcyI6WyJST0xFX1VTRVIiXSwiZXhwIjoxNTA5NzkwMzc3LCJpYXQiOjE1MDk3ODY3Nzd9.PET0m6G3MqvMvWE8gecZ14BN207XlI-68VPOYe5fjWc",
+								"description": "",
+								"enabled": true,
+								"disabled": false
+							}
+						],
+						"headers": "MyToken: eyJhbGciOiJIUzI1NiJ9.eyJwcmluY2lwYWwiOiJINHNJQUFBQUFBQUFBSlZTdjA4VVFSUit1OXdGQ0ltQ0NTWVcySWlkMlV1MHZFcklZVUkyUURpdndVUXpOXC90WUJtWm5scGxadUd2TVZWcFFRRUFTRWxwTFwvaE50XC9BTUlGcmJVdHI1WkR2YTBJVTYxKytiYjc5ZmJpMnVvV3dPdlVzT0V0RkV1aTFTb3lPWkdxTlFpTDR4d1wvYWl3YUJKMEplSk5DZXpRQkc1T0VFSVFReWdTQjRcL2liYmJIR3BLcHRMSGEzVWJ1bWowREw3VkpoNHliaG1XNHI4MU9kTWZOdGNHXC9CQ3JxNEdzSTR4c3d3empYaFhJcldyVjZ1VENZYk1CME5ZczEzXC9HaldVNDNxSnhnMG81Q3gxR3hyc1FraGlsV3VDMU5xZ0t0ZzRjM1pnc25aS09OcmhuRFJNNnNKWGZcL0pHazdiOTNmZTV1S0V1ekNSNmoxOG9BT2RmZmNReVBQRXkxcUtTbTEwTXJPZDFTbUU3RXB2RGp4RCthT2Z4eWVEem9oQUhYeTR2NXZxdm1UQlJoOGVcL1wvN2FWbDB3QjA4SHJGZXdacTluTnpNVk14dkRYcmx5N08xazlQcnorXC9HU05ramx2NVwvSFwvT3ZoODMxRjNXV004T2NIdGtSMGU3WFwvRE9STDl4UGZydUZmdFFXV1M2UlwvaWpsTUxtVHFJZ3BiczFvZWR1M2c4bjExYmoxb2ROdXJmdTNPaE44aTVIb2d6S3pYMVlVYTFyVndhK2o3NGZQcm9oZ0dlcDdUQlpJbFU5WG9KVWk2Nkw1ZEhFNk5cL1hsNTBFWllQZ3poMzhBaEVNbmpSQURBQUE9Iiwic3ViIjoiYWljaGEiLCJyb2xlcyI6WyJST0xFX1VTRVIiXSwiZXhwIjoxNTA5NzkwMzc3LCJpYXQiOjE1MDk3ODY3Nzd9.PET0m6G3MqvMvWE8gecZ14BN207XlI-68VPOYe5fjWc\n",
+						"data": null,
+						"method": "DELETE",
+						"dataMode": "params"
+					}
+				}
+			]
+		},
+		{
+			"id": "35fa4a90-d749-288d-b6de-3b8debee2149",
+			"headers": "Accept: JSON\nMyToken: eyJhbGciOiJIUzI1NiJ9.eyJwcmluY2lwYWwiOiJINHNJQUFBQUFBQUFBSlZTTVU4VVFSUitleDRCUXFKZ0lva0ZOR0puOWhJdHJ4SnlrSkFORU01cklOSE03VDdXZ2RtWmRlWXQzRFhrS2lrb01DZ0ppYTBsXC8wUWJmNERCd3BiYTFqY0x4NTQyeEtsbTNuenpmZFwvNzNseGN3Wml6OENLMVFpb1g1cXBJcFE1ZGJxVk9IY2FGbGRRUEM0YzJRU29SS3lXd3d4VzRYa0VOZ2docU1pRjRHTzJLZmRGUVFxZU45ZTR1eHRUc1dYaHViSHJEdUdORmhnZkc3b1czM0xHeCtKZEFSUjE4cWNINEZzeUlPRGFGcGpXalc3MWNXa3kyWUxxcVJTYmU4NlZITWQrZ0ppbVVHNFdPb3haZGhVa0VVNktndDRaVkpUcUNCOWRtQzVLcTBVWnFSakNSQytmWTNUK2R0TWxiOVwvZmVwdVlPM3NFaDFIdDV3SXV6ZStxaG9lY0psNHhTM0xVMDJpMTBkR1lTdVNPOU9QTVA1azZcL24zd2VkR29Bbk1tenU5OVU5Y2VMTVBqNit2ZDhHWFFRRTh5T1dLOWd6VjdPYm1ZcTVsY1d2ZktQODQyUFoxZEgyXC9kWTJTT1dcLzM4ZUN5OXZrdXN2bVN3WFZwQVptUkhUSHRUOW5za1g3eVlmVHFFZnRtV1dLK1FmcFFtVFc0bUttTnV0VzZPR2VSTk1icTVIclRlZGRtdlRuK3BreUxEbVwvYkpsUDZzd01qeXA0MThmdnAwOHVlVDNxekMyTDFTQm5QaDBCVm9yc2k3YTl4ZG5jMU9mZmg2WFwvb2RcLytRXC9MWk5ua0R3TUFBQT09Iiwic3ViIjoidG90byIsInJvbGVzIjpbIlJPTEVfVVNFUiJdLCJleHAiOjE1MDk3OTIxNTAsImlhdCI6MTUwOTc4ODU1MH0.FMsQ8_56w96nNVC4Iwk8Ycn_ACz8tiTCj6mxwyvn0NI\n",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "JSON",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "MyToken",
+					"value": "eyJhbGciOiJIUzI1NiJ9.eyJwcmluY2lwYWwiOiJINHNJQUFBQUFBQUFBSlZTTVU4VVFSUitleDRCUXFKZ0lva0ZOR0puOWhJdHJ4SnlrSkFORU01cklOSE03VDdXZ2RtWmRlWXQzRFhrS2lrb01DZ0ppYTBsXC8wUWJmNERCd3BiYTFqY0x4NTQyeEtsbTNuenpmZFwvNzNseGN3Wml6OENLMVFpb1g1cXBJcFE1ZGJxVk9IY2FGbGRRUEM0YzJRU29SS3lXd3d4VzRYa0VOZ2docU1pRjRHTzJLZmRGUVFxZU45ZTR1eHRUc1dYaHViSHJEdUdORmhnZkc3b1czM0xHeCtKZEFSUjE4cWNINEZzeUlPRGFGcGpXalc3MWNXa3kyWUxxcVJTYmU4NlZITWQrZ0ppbVVHNFdPb3haZGhVa0VVNktndDRaVkpUcUNCOWRtQzVLcTBVWnFSakNSQytmWTNUK2R0TWxiOVwvZmVwdVlPM3NFaDFIdDV3SXV6ZStxaG9lY0psNHhTM0xVMDJpMTBkR1lTdVNPOU9QTVA1azZcL24zd2VkR29Bbk1tenU5OVU5Y2VMTVBqNit2ZDhHWFFRRTh5T1dLOWd6VjdPYm1ZcTVsY1d2ZktQODQyUFoxZEgyXC9kWTJTT1dcLzM4ZUN5OXZrdXN2bVN3WFZwQVptUkhUSHRUOW5za1g3eVlmVHFFZnRtV1dLK1FmcFFtVFc0bUttTnV0VzZPR2VSTk1icTVIclRlZGRtdlRuK3BreUxEbVwvYkpsUDZzd01qeXA0MThmdnAwOHVlVDNxekMyTDFTQm5QaDBCVm9yc2k3YTl4ZG5jMU9mZmg2WFwvb2RcLytRXC9MWk5ua0R3TUFBQT09Iiwic3ViIjoidG90byIsInJvbGVzIjpbIlJPTEVfVVNFUiJdLCJleHAiOjE1MDk3OTIxNTAsImlhdCI6MTUwOTc4ODU1MH0.FMsQ8_56w96nNVC4Iwk8Ycn_ACz8tiTCj6mxwyvn0NI",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/api/livre/2",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1509789088543,
+			"name": "lecture_Livre_reponse_JSON",
+			"description": "Créer un livre",
+			"collectionId": "2b8f8549-8847-aadd-486c-792ade711cd8",
+			"responses": [
+				{
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK",
+						"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+					},
+					"time": 69,
+					"headers": [
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 04 Nov 2017 09:51:26 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked",
+							"name": "Transfer-Encoding",
+							"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+						},
+						{
+							"key": "X-Application-Context",
+							"value": "application:development",
+							"name": "X-Application-Context",
+							"description": "Custom header"
+						}
+					],
+					"cookies": [
+						{
+							"domain": "localhost",
+							"expirationDate": 2147483647,
+							"httpOnly": true,
+							"name": "JSESSIONID",
+							"path": "/",
+							"secure": false,
+							"url": "http://localhost:8080",
+							"value": "901ECE9F3017AF8646280EF6B554F4E5"
+						}
+					],
+					"mime": "",
+					"text": "{\"id\":2,\"bu\":{\"id\":1},\"auteur\":\"Hans Christian Andersen\",\"isbn\":\"1232\",\"nom\":\"ami\",\"dateApparution\":\"2017-11-04T08:54:12Z\"}",
+					"language": "json",
+					"previewType": "text",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"code": 200,
+					"responseSize": {
+						"body": 123,
+						"header": 178,
+						"total": 301
+					},
+					"mimeType": "text",
+					"fileName": "response.json",
+					"dataURI": "data:application/json;base64, eyJpZCI6MiwiYnUiOnsiaWQiOjF9LCJhdXRldXIiOiJIYW5zIENocmlzdGlhbiBBbmRlcnNlbiIsImlzYm4iOiIxMjMyIiwibm9tIjoiYW1pIiwiZGF0ZUFwcGFydXRpb24iOiIyMDE3LTExLTA0VDA4OjU0OjEyWiJ9",
+					"name": "lecture_Livre_reponse_JSON",
+					"id": "4c12aa2d-0239-c7f2-6ba6-2e83bde90605",
+					"request": {
+						"url": "http://localhost:8080/api/livre/2",
+						"pathVariables": {},
+						"pathVariableData": [],
+						"queryParams": [],
+						"headerData": [
+							{
+								"key": "Accept",
+								"value": "JSON",
+								"description": "",
+								"enabled": true,
+								"disabled": false
+							},
+							{
+								"key": "MyToken",
+								"value": "eyJhbGciOiJIUzI1NiJ9.eyJwcmluY2lwYWwiOiJINHNJQUFBQUFBQUFBSlZTTVU4VVFSUitleDRCUXFKZ0lva0ZOR0puOWhJdHJ4SnlrSkFORU01cklOSE03VDdXZ2RtWmRlWXQzRFhrS2lrb01DZ0ppYTBsXC8wUWJmNERCd3BiYTFqY0x4NTQyeEtsbTNuenpmZFwvNzNseGN3Wml6OENLMVFpb1g1cXBJcFE1ZGJxVk9IY2FGbGRRUEM0YzJRU29SS3lXd3d4VzRYa0VOZ2docU1pRjRHTzJLZmRGUVFxZU45ZTR1eHRUc1dYaHViSHJEdUdORmhnZkc3b1czM0xHeCtKZEFSUjE4cWNINEZzeUlPRGFGcGpXalc3MWNXa3kyWUxxcVJTYmU4NlZITWQrZ0ppbVVHNFdPb3haZGhVa0VVNktndDRaVkpUcUNCOWRtQzVLcTBVWnFSakNSQytmWTNUK2R0TWxiOVwvZmVwdVlPM3NFaDFIdDV3SXV6ZStxaG9lY0psNHhTM0xVMDJpMTBkR1lTdVNPOU9QTVA1azZcL24zd2VkR29Bbk1tenU5OVU5Y2VMTVBqNit2ZDhHWFFRRTh5T1dLOWd6VjdPYm1ZcTVsY1d2ZktQODQyUFoxZEgyXC9kWTJTT1dcLzM4ZUN5OXZrdXN2bVN3WFZwQVptUkhUSHRUOW5za1g3eVlmVHFFZnRtV1dLK1FmcFFtVFc0bUttTnV0VzZPR2VSTk1icTVIclRlZGRtdlRuK3BreUxEbVwvYkpsUDZzd01qeXA0MThmdnAwOHVlVDNxekMyTDFTQm5QaDBCVm9yc2k3YTl4ZG5jMU9mZmg2WFwvb2RcLytRXC9MWk5ua0R3TUFBQT09Iiwic3ViIjoidG90byIsInJvbGVzIjpbIlJPTEVfVVNFUiJdLCJleHAiOjE1MDk3OTIxNTAsImlhdCI6MTUwOTc4ODU1MH0.FMsQ8_56w96nNVC4Iwk8Ycn_ACz8tiTCj6mxwyvn0NI",
+								"description": "",
+								"enabled": true,
+								"disabled": false
+							}
+						],
+						"headers": "Accept: JSON\nMyToken: eyJhbGciOiJIUzI1NiJ9.eyJwcmluY2lwYWwiOiJINHNJQUFBQUFBQUFBSlZTTVU4VVFSUitleDRCUXFKZ0lva0ZOR0puOWhJdHJ4SnlrSkFORU01cklOSE03VDdXZ2RtWmRlWXQzRFhrS2lrb01DZ0ppYTBsXC8wUWJmNERCd3BiYTFqY0x4NTQyeEtsbTNuenpmZFwvNzNseGN3Wml6OENLMVFpb1g1cXBJcFE1ZGJxVk9IY2FGbGRRUEM0YzJRU29SS3lXd3d4VzRYa0VOZ2docU1pRjRHTzJLZmRGUVFxZU45ZTR1eHRUc1dYaHViSHJEdUdORmhnZkc3b1czM0xHeCtKZEFSUjE4cWNINEZzeUlPRGFGcGpXalc3MWNXa3kyWUxxcVJTYmU4NlZITWQrZ0ppbVVHNFdPb3haZGhVa0VVNktndDRaVkpUcUNCOWRtQzVLcTBVWnFSakNSQytmWTNUK2R0TWxiOVwvZmVwdVlPM3NFaDFIdDV3SXV6ZStxaG9lY0psNHhTM0xVMDJpMTBkR1lTdVNPOU9QTVA1azZcL24zd2VkR29Bbk1tenU5OVU5Y2VMTVBqNit2ZDhHWFFRRTh5T1dLOWd6VjdPYm1ZcTVsY1d2ZktQODQyUFoxZEgyXC9kWTJTT1dcLzM4ZUN5OXZrdXN2bVN3WFZwQVptUkhUSHRUOW5za1g3eVlmVHFFZnRtV1dLK1FmcFFtVFc0bUttTnV0VzZPR2VSTk1icTVIclRlZGRtdlRuK3BreUxEbVwvYkpsUDZzd01qeXA0MThmdnAwOHVlVDNxekMyTDFTQm5QaDBCVm9yc2k3YTl4ZG5jMU9mZmg2WFwvb2RcLytRXC9MWk5ua0R3TUFBQT09Iiwic3ViIjoidG90byIsInJvbGVzIjpbIlJPTEVfVVNFUiJdLCJleHAiOjE1MDk3OTIxNTAsImlhdCI6MTUwOTc4ODU1MH0.FMsQ8_56w96nNVC4Iwk8Ycn_ACz8tiTCj6mxwyvn0NI\n",
+						"data": null,
+						"method": "GET",
+						"dataMode": "params"
+					}
+				}
+			]
+		},
+		{
+			"id": "75c6eef3-bb8a-52e6-7981-a40230480870",
+			"headers": "Accept: JSON\nMyToken: eyJhbGciOiJIUzI1NiJ9.eyJwcmluY2lwYWwiOiJINHNJQUFBQUFBQUFBSlZTdlVcL2JRQlJcL0RxRlFJZkZSQ1NRR1dFcTN5cEhhTVZOQkFRbFpnQWhaUUNxNjJBXC8zNEh6bjNwMGhXVkFtR0JoQWZFaElyQjM1VCtqU1A2QnFCMWJtcnJ3ekFRY1cxSnZzZHpcL1wvdnA2djc2RGZhUGdjYThhRjhWT1J4Vno2SnRWY3hnYkRUSFBiOWpPRE9rS2JJeFp5WUlNbThIQzhFbmdCbEhoazRWMnd6WFpaUlRBWlY1YWIyeGphYWt2REo2WGpMdU9XWmdudUtiM2pQM0dIU3VNemdZTGErMUdDZ1hVWVkyR29NbW1YbEt5MVVxNHhXb2ZSWWhhb2NNZU54a082UVdrNUU2WVhPb0NTTlFWR0FReXh6SDVUcE1yUldCaDVNSnRaTGlwMXROVUFCbE5tRExsN2thUnVuWFYzNzJ4S1N2QWQ5cUhjU2owNjFOMEhCXC9VZGp6K25oS0RVWEVrejA1Q0ppdmdXZCtMRTM1azZcL1hWODFXbVVBS2lUajY5XC9VOHduWjZGejhcL1hmZEY2MEYxcVk2TEZld0txdGxOeU1GY3hyR3AzeTc4dVZzNHU3dzQwK1VuYUkrZlwvZng4eVhiblB0T1pXa1RET3JlblpFdEh0bDkwemtzNitUUDI2aDdkZDVrZ3FrUDBwYWpKNGtDbUtLVzlaS1BQWnQ0ZTNxY2xEYmJOUnJxKzd0amRXTUNFbDFPQVwvdHR1VUhpbloxZEh2eThcL2o5SDJKWWhQNWRKaktremtjTDBGS1dORkVmWEY5TURaM1wvUGNvVGRQXC9tdm50cHZhZDZFUU1BQUE9PSIsInN1YiI6InRyYW9yZSIsInJvbGVzIjpbIlJPTEVfVVNFUiJdLCJleHAiOjE1MDk3ODkwMDgsImlhdCI6MTUwOTc4NTQwOH0.c--0xhY6Jo1bvoziAKLUhJOd8UU2jKL4aSuZ97-0SpA\n",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "JSON",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "MyToken",
+					"value": "eyJhbGciOiJIUzI1NiJ9.eyJwcmluY2lwYWwiOiJINHNJQUFBQUFBQUFBSlZTdlVcL2JRQlJcL0RxRlFJZkZSQ1NRR1dFcTN5cEhhTVZOQkFRbFpnQWhaUUNxNjJBXC8zNEh6bjNwMGhXVkFtR0JoQWZFaElyQjM1VCtqU1A2QnFCMWJtcnJ3ekFRY1cxSnZzZHpcL1wvdnA2djc2RGZhUGdjYThhRjhWT1J4Vno2SnRWY3hnYkRUSFBiOWpPRE9rS2JJeFp5WUlNbThIQzhFbmdCbEhoazRWMnd6WFpaUlRBWlY1YWIyeGphYWt2REo2WGpMdU9XWmdudUtiM2pQM0dIU3VNemdZTGErMUdDZ1hVWVkyR29NbW1YbEt5MVVxNHhXb2ZSWWhhb2NNZU54a082UVdrNUU2WVhPb0NTTlFWR0FReXh6SDVUcE1yUldCaDVNSnRaTGlwMXROVUFCbE5tRExsN2thUnVuWFYzNzJ4S1N2QWQ5cUhjU2owNjFOMEhCXC9VZGp6K25oS0RVWEVrejA1Q0ppdmdXZCtMRTM1azZcL1hWODFXbVVBS2lUajY5XC9VOHduWjZGejhcL1hmZEY2MEYxcVk2TEZld0txdGxOeU1GY3hyR3AzeTc4dVZzNHU3dzQwK1VuYUkrZlwvZng4eVhiblB0T1pXa1RET3JlblpFdEh0bDkwemtzNitUUDI2aDdkZDVrZ3FrUDBwYWpKNGtDbUtLVzlaS1BQWnQ0ZTNxY2xEYmJOUnJxKzd0amRXTUNFbDFPQVwvdHR1VUhpbloxZEh2eThcL2o5SDJKWWhQNWRKaktremtjTDBGS1dORkVmWEY5TURaM1wvUGNvVGRQXC9tdm50cHZhZDZFUU1BQUE9PSIsInN1YiI6InRyYW9yZSIsInJvbGVzIjpbIlJPTEVfVVNFUiJdLCJleHAiOjE1MDk3ODkwMDgsImlhdCI6MTUwOTc4NTQwOH0.c--0xhY6Jo1bvoziAKLUhJOd8UU2jKL4aSuZ97-0SpA",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/api/livres/?bu.id=1&nom=Romance&dateApparution=2017-10-13 08:22:20.626&isbn=lola&auteur=ckeik",
+			"queryParams": [
+				{
+					"key": "bu.id",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "nom",
+					"value": "Romance",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "dateApparution",
+					"value": "2017-10-13 08:22:20.626",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "isbn",
+					"value": "lola",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "auteur",
+					"value": "ckeik",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1509786047952,
+			"name": "Creation_Livre_reponse_JSON",
+			"description": "Créer un livre",
+			"collectionId": "2b8f8549-8847-aadd-486c-792ade711cd8",
+			"responses": [
+				{
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK",
+						"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+					},
+					"time": 80,
+					"headers": [
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 04 Nov 2017 09:00:35 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked",
+							"name": "Transfer-Encoding",
+							"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+						},
+						{
+							"key": "X-Application-Context",
+							"value": "application:development",
+							"name": "X-Application-Context",
+							"description": "Custom header"
+						}
+					],
+					"cookies": [
+						{
+							"domain": "localhost",
+							"expirationDate": 2147483647,
+							"httpOnly": true,
+							"name": "JSESSIONID",
+							"path": "/",
+							"secure": false,
+							"url": "http://localhost:8080",
+							"value": "901ECE9F3017AF8646280EF6B554F4E5"
+						}
+					],
+					"mime": "",
+					"text": "{\"id\":26,\"bu\":{\"id\":1},\"auteur\":\"ckeik\",\"isbn\":\"lola\",\"nom\":\"Romance\",\"dateApparution\":\"2017-10-13T06:22:20Z\"}",
+					"language": "json",
+					"previewType": "text",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"code": 200,
+					"responseSize": {
+						"body": 110,
+						"header": 178,
+						"total": 288
+					},
+					"mimeType": "text",
+					"fileName": "response.json",
+					"dataURI": "data:application/json;base64, eyJpZCI6MjYsImJ1Ijp7ImlkIjoxfSwiYXV0ZXVyIjoiY2tlaWsiLCJpc2JuIjoibG9sYSIsIm5vbSI6IlJvbWFuY2UiLCJkYXRlQXBwYXJ1dGlvbiI6IjIwMTctMTAtMTNUMDY6MjI6MjBaIn0=",
+					"name": "Creation_Livre_reponse_JSON",
+					"id": "781b5d2b-307d-7308-8498-3f38e599a327",
+					"request": {
+						"url": "http://localhost:8080/api/livres/?bu.id=1&nom=Romance&dateApparution=2017-10-13 08:22:20.626&isbn=lola&auteur=ckeik",
+						"pathVariables": {},
+						"pathVariableData": [],
+						"queryParams": [
+							{
+								"key": "bu.id",
+								"value": "1",
+								"equals": true,
+								"description": "",
+								"enabled": true
+							},
+							{
+								"key": "nom",
+								"value": "Romance",
+								"equals": true,
+								"description": "",
+								"enabled": true
+							},
+							{
+								"key": "dateApparution",
+								"value": "2017-10-13 08:22:20.626",
+								"equals": true,
+								"description": "",
+								"enabled": true
+							},
+							{
+								"key": "isbn",
+								"value": "lola",
+								"equals": true,
+								"description": "",
+								"enabled": true
+							},
+							{
+								"key": "auteur",
+								"value": "ckeik",
+								"equals": true,
+								"description": "",
+								"enabled": true
+							}
+						],
+						"headerData": [
+							{
+								"key": "Accept",
+								"value": "JSON",
+								"description": "",
+								"enabled": true,
+								"disabled": false
+							},
+							{
+								"key": "MyToken",
+								"value": "eyJhbGciOiJIUzI1NiJ9.eyJwcmluY2lwYWwiOiJINHNJQUFBQUFBQUFBSlZTdlVcL2JRQlJcL0RxRlFJZkZSQ1NRR1dFcTN5cEhhTVZOQkFRbFpnQWhaUUNxNjJBXC8zNEh6bjNwMGhXVkFtR0JoQWZFaElyQjM1VCtqU1A2QnFCMWJtcnJ3ekFRY1cxSnZzZHpcL1wvdnA2djc2RGZhUGdjYThhRjhWT1J4Vno2SnRWY3hnYkRUSFBiOWpPRE9rS2JJeFp5WUlNbThIQzhFbmdCbEhoazRWMnd6WFpaUlRBWlY1YWIyeGphYWt2REo2WGpMdU9XWmdudUtiM2pQM0dIU3VNemdZTGErMUdDZ1hVWVkyR29NbW1YbEt5MVVxNHhXb2ZSWWhhb2NNZU54a082UVdrNUU2WVhPb0NTTlFWR0FReXh6SDVUcE1yUldCaDVNSnRaTGlwMXROVUFCbE5tRExsN2thUnVuWFYzNzJ4S1N2QWQ5cUhjU2owNjFOMEhCXC9VZGp6K25oS0RVWEVrejA1Q0ppdmdXZCtMRTM1azZcL1hWODFXbVVBS2lUajY5XC9VOHduWjZGejhcL1hmZEY2MEYxcVk2TEZld0txdGxOeU1GY3hyR3AzeTc4dVZzNHU3dzQwK1VuYUkrZlwvZng4eVhiblB0T1pXa1RET3JlblpFdEh0bDkwemtzNitUUDI2aDdkZDVrZ3FrUDBwYWpKNGtDbUtLVzlaS1BQWnQ0ZTNxY2xEYmJOUnJxKzd0amRXTUNFbDFPQVwvdHR1VUhpbloxZEh2eThcL2o5SDJKWWhQNWRKaktremtjTDBGS1dORkVmWEY5TURaM1wvUGNvVGRQXC9tdm50cHZhZDZFUU1BQUE9PSIsInN1YiI6InRyYW9yZSIsInJvbGVzIjpbIlJPTEVfVVNFUiJdLCJleHAiOjE1MDk3ODkwMDgsImlhdCI6MTUwOTc4NTQwOH0.c--0xhY6Jo1bvoziAKLUhJOd8UU2jKL4aSuZ97-0SpA",
+								"description": "",
+								"enabled": true,
+								"disabled": false
+							}
+						],
+						"headers": "Accept: JSON\nMyToken: eyJhbGciOiJIUzI1NiJ9.eyJwcmluY2lwYWwiOiJINHNJQUFBQUFBQUFBSlZTdlVcL2JRQlJcL0RxRlFJZkZSQ1NRR1dFcTN5cEhhTVZOQkFRbFpnQWhaUUNxNjJBXC8zNEh6bjNwMGhXVkFtR0JoQWZFaElyQjM1VCtqU1A2QnFCMWJtcnJ3ekFRY1cxSnZzZHpcL1wvdnA2djc2RGZhUGdjYThhRjhWT1J4Vno2SnRWY3hnYkRUSFBiOWpPRE9rS2JJeFp5WUlNbThIQzhFbmdCbEhoazRWMnd6WFpaUlRBWlY1YWIyeGphYWt2REo2WGpMdU9XWmdudUtiM2pQM0dIU3VNemdZTGErMUdDZ1hVWVkyR29NbW1YbEt5MVVxNHhXb2ZSWWhhb2NNZU54a082UVdrNUU2WVhPb0NTTlFWR0FReXh6SDVUcE1yUldCaDVNSnRaTGlwMXROVUFCbE5tRExsN2thUnVuWFYzNzJ4S1N2QWQ5cUhjU2owNjFOMEhCXC9VZGp6K25oS0RVWEVrejA1Q0ppdmdXZCtMRTM1azZcL1hWODFXbVVBS2lUajY5XC9VOHduWjZGejhcL1hmZEY2MEYxcVk2TEZld0txdGxOeU1GY3hyR3AzeTc4dVZzNHU3dzQwK1VuYUkrZlwvZng4eVhiblB0T1pXa1RET3JlblpFdEh0bDkwemtzNitUUDI2aDdkZDVrZ3FrUDBwYWpKNGtDbUtLVzlaS1BQWnQ0ZTNxY2xEYmJOUnJxKzd0amRXTUNFbDFPQVwvdHR1VUhpbloxZEh2eThcL2o5SDJKWWhQNWRKaktremtjTDBGS1dORkVmWEY5TURaM1wvUGNvVGRQXC9tdm50cHZhZDZFUU1BQUE9PSIsInN1YiI6InRyYW9yZSIsInJvbGVzIjpbIlJPTEVfVVNFUiJdLCJleHAiOjE1MDk3ODkwMDgsImlhdCI6MTUwOTc4NTQwOH0.c--0xhY6Jo1bvoziAKLUhJOd8UU2jKL4aSuZ97-0SpA\n",
+						"data": null,
+						"method": "POST",
+						"dataMode": "params"
+					}
+				}
+			]
+		},
+		{
+			"id": "785ed563-e2cb-581e-8d7a-679610c1db06",
+			"headers": "Accept: JSON\nMyToken: eyJhbGciOiJIUzI1NiJ9.eyJwcmluY2lwYWwiOiJINHNJQUFBQUFBQUFBSlZTTVU4VVFSUitleDRCUXFKZ0lva0ZOR0puOWhJdHJ4SnlrSkFORU01cklOSE03VDdXZ2RtWmRlWXQzRFhrS2lrb01DZ0ppYTBsXC8wUWJmNERCd3BiYTFqY0x4NTQyeEtsbTNuenpmZFwvNzNseGN3Wml6OENLMVFpb1g1cXBJcFE1ZGJxVk9IY2FGbGRRUEM0YzJRU29SS3lXd3d4VzRYa0VOZ2docU1pRjRHTzJLZmRGUVFxZU45ZTR1eHRUc1dYaHViSHJEdUdORmhnZkc3b1czM0xHeCtKZEFSUjE4cWNINEZzeUlPRGFGcGpXalc3MWNXa3kyWUxxcVJTYmU4NlZITWQrZ0ppbVVHNFdPb3haZGhVa0VVNktndDRaVkpUcUNCOWRtQzVLcTBVWnFSakNSQytmWTNUK2R0TWxiOVwvZmVwdVlPM3NFaDFIdDV3SXV6ZStxaG9lY0psNHhTM0xVMDJpMTBkR1lTdVNPOU9QTVA1azZcL24zd2VkR29Bbk1tenU5OVU5Y2VMTVBqNit2ZDhHWFFRRTh5T1dLOWd6VjdPYm1ZcTVsY1d2ZktQODQyUFoxZEgyXC9kWTJTT1dcLzM4ZUN5OXZrdXN2bVN3WFZwQVptUkhUSHRUOW5za1g3eVlmVHFFZnRtV1dLK1FmcFFtVFc0bUttTnV0VzZPR2VSTk1icTVIclRlZGRtdlRuK3BreUxEbVwvYkpsUDZzd01qeXA0MThmdnAwOHVlVDNxekMyTDFTQm5QaDBCVm9yc2k3YTl4ZG5jMU9mZmg2WFwvb2RcLytRXC9MWk5ua0R3TUFBQT09Iiwic3ViIjoidG90byIsInJvbGVzIjpbIlJPTEVfVVNFUiJdLCJleHAiOjE1MDk3OTIxNTAsImlhdCI6MTUwOTc4ODU1MH0.FMsQ8_56w96nNVC4Iwk8Ycn_ACz8tiTCj6mxwyvn0NI\n",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "JSON",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "MyToken",
+					"value": "eyJhbGciOiJIUzI1NiJ9.eyJwcmluY2lwYWwiOiJINHNJQUFBQUFBQUFBSlZTTVU4VVFSUitleDRCUXFKZ0lva0ZOR0puOWhJdHJ4SnlrSkFORU01cklOSE03VDdXZ2RtWmRlWXQzRFhrS2lrb01DZ0ppYTBsXC8wUWJmNERCd3BiYTFqY0x4NTQyeEtsbTNuenpmZFwvNzNseGN3Wml6OENLMVFpb1g1cXBJcFE1ZGJxVk9IY2FGbGRRUEM0YzJRU29SS3lXd3d4VzRYa0VOZ2docU1pRjRHTzJLZmRGUVFxZU45ZTR1eHRUc1dYaHViSHJEdUdORmhnZkc3b1czM0xHeCtKZEFSUjE4cWNINEZzeUlPRGFGcGpXalc3MWNXa3kyWUxxcVJTYmU4NlZITWQrZ0ppbVVHNFdPb3haZGhVa0VVNktndDRaVkpUcUNCOWRtQzVLcTBVWnFSakNSQytmWTNUK2R0TWxiOVwvZmVwdVlPM3NFaDFIdDV3SXV6ZStxaG9lY0psNHhTM0xVMDJpMTBkR1lTdVNPOU9QTVA1azZcL24zd2VkR29Bbk1tenU5OVU5Y2VMTVBqNit2ZDhHWFFRRTh5T1dLOWd6VjdPYm1ZcTVsY1d2ZktQODQyUFoxZEgyXC9kWTJTT1dcLzM4ZUN5OXZrdXN2bVN3WFZwQVptUkhUSHRUOW5za1g3eVlmVHFFZnRtV1dLK1FmcFFtVFc0bUttTnV0VzZPR2VSTk1icTVIclRlZGRtdlRuK3BreUxEbVwvYkpsUDZzd01qeXA0MThmdnAwOHVlVDNxekMyTDFTQm5QaDBCVm9yc2k3YTl4ZG5jMU9mZmg2WFwvb2RcLytRXC9MWk5ua0R3TUFBQT09Iiwic3ViIjoidG90byIsInJvbGVzIjpbIlJPTEVfVVNFUiJdLCJleHAiOjE1MDk3OTIxNTAsImlhdCI6MTUwOTc4ODU1MH0.FMsQ8_56w96nNVC4Iwk8Ycn_ACz8tiTCj6mxwyvn0NI",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/api/livres",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1509789150220,
+			"name": "Lecture_All_Livre_JSON",
+			"description": "Consultation de tous les livres existants sous le format JSON",
+			"collectionId": "2b8f8549-8847-aadd-486c-792ade711cd8",
+			"responses": [
+				{
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK",
+						"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+					},
+					"time": 75,
+					"headers": [
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 04 Nov 2017 09:35:40 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked",
+							"name": "Transfer-Encoding",
+							"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+						},
+						{
+							"key": "X-Application-Context",
+							"value": "application:development",
+							"name": "X-Application-Context",
+							"description": "Custom header"
+						}
+					],
+					"cookies": [
+						{
+							"domain": "localhost",
+							"expirationDate": 2147483647,
+							"httpOnly": true,
+							"name": "JSESSIONID",
+							"path": "/",
+							"secure": false,
+							"url": "http://localhost:8080",
+							"value": "901ECE9F3017AF8646280EF6B554F4E5"
+						}
+					],
+					"mime": "",
+					"text": "[{\"id\":1,\"bu\":{\"id\":1},\"auteur\":\"Chinua Achebe\",\"isbn\":\"1231\",\"nom\":\"Le monde seffondre\",\"dateApparution\":\"2017-11-04T08:54:12Z\"},{\"id\":2,\"bu\":{\"id\":1},\"auteur\":\"Hans Christian Andersen\",\"isbn\":\"1232\",\"nom\":\"Contes\",\"dateApparution\":\"2017-11-04T08:54:12Z\"},{\"id\":3,\"bu\":{\"id\":1},\"auteur\":\"Jane Austen\",\"isbn\":\"1233\",\"nom\":\"Orgueil et prejuges\",\"dateApparution\":\"2017-11-04T08:54:12Z\"},{\"id\":4,\"bu\":{\"id\":1},\"auteur\":\"Honore de Balzac\",\"isbn\":\"1234\",\"nom\":\"Mamadou\",\"dateApparution\":\"2010-05-09T22:00:00Z\"},{\"id\":5,\"bu\":{\"id\":1},\"auteur\":\"toto\",\"isbn\":\"124\",\"nom\":\"Trilogie\",\"dateApparution\":\"2017-11-04T08:54:12Z\"},{\"id\":6,\"bu\":{\"id\":2},\"auteur\":\"mamadou\",\"isbn\":\"125\",\"nom\":\"le soleil\",\"dateApparution\":\"2010-05-09T22:00:00Z\"},{\"id\":7,\"bu\":{\"id\":2},\"auteur\":\"Boccace\",\"isbn\":\"1236\",\"nom\":\"Decameron\",\"dateApparution\":\"2017-11-04T08:54:12Z\"},{\"id\":8,\"bu\":{\"id\":2},\"auteur\":\"Jorge Luis Borges\",\"isbn\":\"1237\",\"nom\":\"Fictions\",\"dateApparution\":\"2017-11-04T08:54:12Z\"},{\"id\":9,\"bu\":{\"id\":2},\"auteur\":\"Emily Bronte\",\"isbn\":\"1238\",\"nom\":\"Les Hauts de Hurlevement\",\"dateApparution\":\"2017-11-04T08:54:12Z\"},{\"id\":10,\"bu\":{\"id\":2},\"auteur\":\"Johan Wolfgang\",\"isbn\":\"1238\",\"nom\":\"Faust\",\"dateApparution\":\"2017-11-04T08:54:12Z\"},{\"id\":11,\"bu\":{\"id\":3},\"auteur\":\"Louis Ferdinand Céline\",\"isbn\":\"1239\",\"nom\":\"Voyage au bout de la nuit\",\"dateApparution\":\"2017-11-04T08:54:12Z\"},{\"id\":12,\"bu\":{\"id\":3},\"auteur\":\"Miguel de Cervantes\",\"isbn\":\"1241\",\"nom\":\"Don Quichotte\",\"dateApparution\":\"2017-11-04T08:54:12Z\"},{\"id\":13,\"bu\":{\"id\":3},\"auteur\":\"Geoffrey Chaucer\",\"isbn\":\"1242\",\"nom\":\"Les Contes de Canterbury\",\"dateApparution\":\"2017-11-04T08:54:12Z\"},{\"id\":14,\"bu\":{\"id\":3},\"auteur\":\"Joseph Conrad\",\"isbn\":\"1243\",\"nom\":\"Nostromo\",\"dateApparution\":\"2017-11-04T08:54:12Z\"},{\"id\":15,\"bu\":{\"id\":3},\"auteur\":\"Gunter Grass\",\"isbn\":\"1243\",\"nom\":\"Le Tambour\",\"dateApparution\":\"2017-11-04T08:54:12Z\"},{\"id\":16,\"bu\":{\"id\":4},\"auteur\":\"Dante Alighieri\",\"isbn\":\"1243\",\"nom\":\"Divine Comedie\",\"dateApparution\":\"2017-11-04T08:54:12Z\"},{\"id\":17,\"bu\":{\"id\":4},\"auteur\":\"Charles Dickens\",\"isbn\":\"1244\",\"nom\":\"Les Grandes Esperances\",\"dateApparution\":\"2017-11-04T08:54:12Z\"},{\"id\":18,\"bu\":{\"id\":4},\"auteur\":\"Denis Diderot\",\"isbn\":\"1245\",\"nom\":\"Jacques le fataliste\",\"dateApparution\":\"2017-11-04T08:54:12Z\"},{\"id\":19,\"bu\":{\"id\":4},\"auteur\":\"ALfred Doblin\",\"isbn\":\"1246\",\"nom\":\"Berlin Alexanderplatz\",\"dateApparution\":\"2017-11-04T08:54:12Z\"},{\"id\":20,\"bu\":{\"id\":4},\"auteur\":\"Knut Hamsun\",\"isbn\":\"1246\",\"nom\":\"La Faim\",\"dateApparution\":\"2017-11-04T08:54:12Z\"},{\"id\":21,\"bu\":{\"id\":5},\"auteur\":\"Fiodor Dostoievski\",\"isbn\":\"1247\",\"nom\":\"Crime et chatiment\",\"dateApparution\":\"2017-11-04T08:54:12Z\"},{\"id\":22,\"bu\":{\"id\":5},\"auteur\":\"Fiodor Dostoievski\",\"isbn\":\"1248\",\"nom\":\"Lidiot\",\"dateApparution\":\"2017-11-04T08:54:12Z\"},{\"id\":23,\"bu\":{\"id\":5},\"auteur\":\"George Eliot\",\"isbn\":\"1249\",\"nom\":\"Middlemarch\",\"dateApparution\":\"2017-11-04T08:54:12Z\"},{\"id\":24,\"bu\":{\"id\":5},\"auteur\":\"Euripide\",\"isbn\":\"1251\",\"nom\":\"Medee\",\"dateApparution\":\"2017-11-04T08:54:12Z\"},{\"id\":25,\"bu\":{\"id\":5},\"auteur\":\"Homere\",\"isbn\":\"1251\",\"nom\":\"Lliade\",\"dateApparution\":\"2017-11-04T08:54:12Z\"},{\"id\":26,\"bu\":{\"id\":1},\"auteur\":\"ckeik\",\"isbn\":\"lola\",\"nom\":\"Romance\",\"dateApparution\":\"2017-10-13T06:22:20Z\"},{\"id\":27,\"bu\":{\"id\":1},\"auteur\":\"Kingston\",\"isbn\":\"mam\",\"nom\":\"Abid\",\"dateApparution\":\"2017-10-13T06:22:20Z\"}]",
+					"language": "json",
+					"previewType": "text",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"code": 200,
+					"responseSize": {
+						"body": 3345,
+						"header": 178,
+						"total": 3523
+					},
+					"mimeType": "text",
+					"fileName": "response.json",
+					"dataURI": "data:application/json;base64, W3siaWQiOjEsImJ1Ijp7ImlkIjoxfSwiYXV0ZXVyIjoiQ2hpbnVhIEFjaGViZSIsImlzYm4iOiIxMjMxIiwibm9tIjoiTGUgbW9uZGUgc2VmZm9uZHJlIiwiZGF0ZUFwcGFydXRpb24iOiIyMDE3LTExLTA0VDA4OjU0OjEyWiJ9LHsiaWQiOjIsImJ1Ijp7ImlkIjoxfSwiYXV0ZXVyIjoiSGFucyBDaHJpc3RpYW4gQW5kZXJzZW4iLCJpc2JuIjoiMTIzMiIsIm5vbSI6IkNvbnRlcyIsImRhdGVBcHBhcnV0aW9uIjoiMjAxNy0xMS0wNFQwODo1NDoxMloifSx7ImlkIjozLCJidSI6eyJpZCI6MX0sImF1dGV1ciI6IkphbmUgQXVzdGVuIiwiaXNibiI6IjEyMzMiLCJub20iOiJPcmd1ZWlsIGV0IHByZWp1Z2VzIiwiZGF0ZUFwcGFydXRpb24iOiIyMDE3LTExLTA0VDA4OjU0OjEyWiJ9LHsiaWQiOjQsImJ1Ijp7ImlkIjoxfSwiYXV0ZXVyIjoiSG9ub3JlIGRlIEJhbHphYyIsImlzYm4iOiIxMjM0Iiwibm9tIjoiTWFtYWRvdSIsImRhdGVBcHBhcnV0aW9uIjoiMjAxMC0wNS0wOVQyMjowMDowMFoifSx7ImlkIjo1LCJidSI6eyJpZCI6MX0sImF1dGV1ciI6InRvdG8iLCJpc2JuIjoiMTI0Iiwibm9tIjoiVHJpbG9naWUiLCJkYXRlQXBwYXJ1dGlvbiI6IjIwMTctMTEtMDRUMDg6NTQ6MTJaIn0seyJpZCI6NiwiYnUiOnsiaWQiOjJ9LCJhdXRldXIiOiJtYW1hZG91IiwiaXNibiI6IjEyNSIsIm5vbSI6ImxlIHNvbGVpbCIsImRhdGVBcHBhcnV0aW9uIjoiMjAxMC0wNS0wOVQyMjowMDowMFoifSx7ImlkIjo3LCJidSI6eyJpZCI6Mn0sImF1dGV1ciI6IkJvY2NhY2UiLCJpc2JuIjoiMTIzNiIsIm5vbSI6IkRlY2FtZXJvbiIsImRhdGVBcHBhcnV0aW9uIjoiMjAxNy0xMS0wNFQwODo1NDoxMloifSx7ImlkIjo4LCJidSI6eyJpZCI6Mn0sImF1dGV1ciI6IkpvcmdlIEx1aXMgQm9yZ2VzIiwiaXNibiI6IjEyMzciLCJub20iOiJGaWN0aW9ucyIsImRhdGVBcHBhcnV0aW9uIjoiMjAxNy0xMS0wNFQwODo1NDoxMloifSx7ImlkIjo5LCJidSI6eyJpZCI6Mn0sImF1dGV1ciI6IkVtaWx5IEJyb250ZSIsImlzYm4iOiIxMjM4Iiwibm9tIjoiTGVzIEhhdXRzIGRlIEh1cmxldmVtZW50IiwiZGF0ZUFwcGFydXRpb24iOiIyMDE3LTExLTA0VDA4OjU0OjEyWiJ9LHsiaWQiOjEwLCJidSI6eyJpZCI6Mn0sImF1dGV1ciI6IkpvaGFuIFdvbGZnYW5nIiwiaXNibiI6IjEyMzgiLCJub20iOiJGYXVzdCIsImRhdGVBcHBhcnV0aW9uIjoiMjAxNy0xMS0wNFQwODo1NDoxMloifSx7ImlkIjoxMSwiYnUiOnsiaWQiOjN9LCJhdXRldXIiOiJMb3VpcyBGZXJkaW5hbmQgQ8OpbGluZSIsImlzYm4iOiIxMjM5Iiwibm9tIjoiVm95YWdlIGF1IGJvdXQgZGUgbGEgbnVpdCIsImRhdGVBcHBhcnV0aW9uIjoiMjAxNy0xMS0wNFQwODo1NDoxMloifSx7ImlkIjoxMiwiYnUiOnsiaWQiOjN9LCJhdXRldXIiOiJNaWd1ZWwgZGUgQ2VydmFudGVzIiwiaXNibiI6IjEyNDEiLCJub20iOiJEb24gUXVpY2hvdHRlIiwiZGF0ZUFwcGFydXRpb24iOiIyMDE3LTExLTA0VDA4OjU0OjEyWiJ9LHsiaWQiOjEzLCJidSI6eyJpZCI6M30sImF1dGV1ciI6Ikdlb2ZmcmV5IENoYXVjZXIiLCJpc2JuIjoiMTI0MiIsIm5vbSI6IkxlcyBDb250ZXMgZGUgQ2FudGVyYnVyeSIsImRhdGVBcHBhcnV0aW9uIjoiMjAxNy0xMS0wNFQwODo1NDoxMloifSx7ImlkIjoxNCwiYnUiOnsiaWQiOjN9LCJhdXRldXIiOiJKb3NlcGggQ29ucmFkIiwiaXNibiI6IjEyNDMiLCJub20iOiJOb3N0cm9tbyIsImRhdGVBcHBhcnV0aW9uIjoiMjAxNy0xMS0wNFQwODo1NDoxMloifSx7ImlkIjoxNSwiYnUiOnsiaWQiOjN9LCJhdXRldXIiOiJHdW50ZXIgR3Jhc3MiLCJpc2JuIjoiMTI0MyIsIm5vbSI6IkxlIFRhbWJvdXIiLCJkYXRlQXBwYXJ1dGlvbiI6IjIwMTctMTEtMDRUMDg6NTQ6MTJaIn0seyJpZCI6MTYsImJ1Ijp7ImlkIjo0fSwiYXV0ZXVyIjoiRGFudGUgQWxpZ2hpZXJpIiwiaXNibiI6IjEyNDMiLCJub20iOiJEaXZpbmUgQ29tZWRpZSIsImRhdGVBcHBhcnV0aW9uIjoiMjAxNy0xMS0wNFQwODo1NDoxMloifSx7ImlkIjoxNywiYnUiOnsiaWQiOjR9LCJhdXRldXIiOiJDaGFybGVzIERpY2tlbnMiLCJpc2JuIjoiMTI0NCIsIm5vbSI6IkxlcyBHcmFuZGVzIEVzcGVyYW5jZXMiLCJkYXRlQXBwYXJ1dGlvbiI6IjIwMTctMTEtMDRUMDg6NTQ6MTJaIn0seyJpZCI6MTgsImJ1Ijp7ImlkIjo0fSwiYXV0ZXVyIjoiRGVuaXMgRGlkZXJvdCIsImlzYm4iOiIxMjQ1Iiwibm9tIjoiSmFjcXVlcyBsZSBmYXRhbGlzdGUiLCJkYXRlQXBwYXJ1dGlvbiI6IjIwMTctMTEtMDRUMDg6NTQ6MTJaIn0seyJpZCI6MTksImJ1Ijp7ImlkIjo0fSwiYXV0ZXVyIjoiQUxmcmVkIERvYmxpbiIsImlzYm4iOiIxMjQ2Iiwibm9tIjoiQmVybGluIEFsZXhhbmRlcnBsYXR6IiwiZGF0ZUFwcGFydXRpb24iOiIyMDE3LTExLTA0VDA4OjU0OjEyWiJ9LHsiaWQiOjIwLCJidSI6eyJpZCI6NH0sImF1dGV1ciI6IktudXQgSGFtc3VuIiwiaXNibiI6IjEyNDYiLCJub20iOiJMYSBGYWltIiwiZGF0ZUFwcGFydXRpb24iOiIyMDE3LTExLTA0VDA4OjU0OjEyWiJ9LHsiaWQiOjIxLCJidSI6eyJpZCI6NX0sImF1dGV1ciI6IkZpb2RvciBEb3N0b2lldnNraSIsImlzYm4iOiIxMjQ3Iiwibm9tIjoiQ3JpbWUgZXQgY2hhdGltZW50IiwiZGF0ZUFwcGFydXRpb24iOiIyMDE3LTExLTA0VDA4OjU0OjEyWiJ9LHsiaWQiOjIyLCJidSI6eyJpZCI6NX0sImF1dGV1ciI6IkZpb2RvciBEb3N0b2lldnNraSIsImlzYm4iOiIxMjQ4Iiwibm9tIjoiTGlkaW90IiwiZGF0ZUFwcGFydXRpb24iOiIyMDE3LTExLTA0VDA4OjU0OjEyWiJ9LHsiaWQiOjIzLCJidSI6eyJpZCI6NX0sImF1dGV1ciI6Ikdlb3JnZSBFbGlvdCIsImlzYm4iOiIxMjQ5Iiwibm9tIjoiTWlkZGxlbWFyY2giLCJkYXRlQXBwYXJ1dGlvbiI6IjIwMTctMTEtMDRUMDg6NTQ6MTJaIn0seyJpZCI6MjQsImJ1Ijp7ImlkIjo1fSwiYXV0ZXVyIjoiRXVyaXBpZGUiLCJpc2JuIjoiMTI1MSIsIm5vbSI6Ik1lZGVlIiwiZGF0ZUFwcGFydXRpb24iOiIyMDE3LTExLTA0VDA4OjU0OjEyWiJ9LHsiaWQiOjI1LCJidSI6eyJpZCI6NX0sImF1dGV1ciI6IkhvbWVyZSIsImlzYm4iOiIxMjUxIiwibm9tIjoiTGxpYWRlIiwiZGF0ZUFwcGFydXRpb24iOiIyMDE3LTExLTA0VDA4OjU0OjEyWiJ9LHsiaWQiOjI2LCJidSI6eyJpZCI6MX0sImF1dGV1ciI6ImNrZWlrIiwiaXNibiI6ImxvbGEiLCJub20iOiJSb21hbmNlIiwiZGF0ZUFwcGFydXRpb24iOiIyMDE3LTEwLTEzVDA2OjIyOjIwWiJ9LHsiaWQiOjI3LCJidSI6eyJpZCI6MX0sImF1dGV1ciI6IktpbmdzdG9uIiwiaXNibiI6Im1hbSIsIm5vbSI6IkFiaWQiLCJkYXRlQXBwYXJ1dGlvbiI6IjIwMTctMTAtMTNUMDY6MjI6MjBaIn1d",
+					"name": "Lecture_All_Livre_JSON",
+					"id": "ec9e5d66-89a3-7e8f-aeb0-86b790809869",
+					"request": {
+						"url": "http://localhost:8080/api/livres",
+						"pathVariables": {},
+						"pathVariableData": [],
+						"queryParams": [],
+						"headerData": [
+							{
+								"key": "Accept",
+								"value": "JSON",
+								"description": "",
+								"enabled": true,
+								"disabled": false
+							},
+							{
+								"key": "MyToken",
+								"value": "eyJhbGciOiJIUzI1NiJ9.eyJwcmluY2lwYWwiOiJINHNJQUFBQUFBQUFBSlZTdjA4VVFSUit1OXdGQ0ltQ0NTWVcySWlkMlV1MHZFcklZVUkyUURpdndVUXpOXC90WUJtWm5scGxadUd2TVZWcFFRRUFTRWxwTFwvaE50XC9BTUlGcmJVdHI1WkR2YTBJVTYxKytiYjc5ZmJpMnVvV3dPdlVzT0V0RkV1aTFTb3lPWkdxTlFpTDR4d1wvYWl3YUJKMEplSk5DZXpRQkc1T0VFSVFReWdTQjRcL2liYmJIR3BLcHRMSGEzVWJ1bWowREw3VkpoNHliaG1XNHI4MU9kTWZOdGNHXC9CQ3JxNEdzSTR4c3d3empYaFhJcldyVjZ1VENZYk1CME5ZczEzXC9HaldVNDNxSnhnMG81Q3gxR3hyc1FraGlsV3VDMU5xZ0t0ZzRjM1pnc25aS09OcmhuRFJNNnNKWGZcL0pHazdiOTNmZTV1S0V1ekNSNmoxOG9BT2RmZmNReVBQRXkxcUtTbTEwTXJPZDFTbUU3RXB2RGp4RCthT2Z4eWVEem9oQUhYeTR2NXZxdm1UQlJoOGVcL1wvN2FWbDB3QjA4SHJGZXdacTluTnpNVk14dkRYcmx5N08xazlQcnorXC9HU05ramx2NVwvSFwvT3ZoODMxRjNXV004T2NIdGtSMGU3WFwvRE9STDl4UGZydUZmdFFXV1M2UlwvaWpsTUxtVHFJZ3BiczFvZWR1M2c4bjExYmoxb2ROdXJmdTNPaE44aTVIb2d6S3pYMVlVYTFyVndhK2o3NGZQcm9oZ0dlcDdUQlpJbFU5WG9KVWk2Nkw1ZEhFNk5cL1hsNTBFWllQZ3poMzhBaEVNbmpSQURBQUE9Iiwic3ViIjoiYWljaGEiLCJyb2xlcyI6WyJST0xFX1VTRVIiXSwiZXhwIjoxNTA5NzkwMzc3LCJpYXQiOjE1MDk3ODY3Nzd9.PET0m6G3MqvMvWE8gecZ14BN207XlI-68VPOYe5fjWc",
+								"description": "",
+								"enabled": true,
+								"disabled": false
+							}
+						],
+						"headers": "Accept: JSON\nMyToken: eyJhbGciOiJIUzI1NiJ9.eyJwcmluY2lwYWwiOiJINHNJQUFBQUFBQUFBSlZTdjA4VVFSUit1OXdGQ0ltQ0NTWVcySWlkMlV1MHZFcklZVUkyUURpdndVUXpOXC90WUJtWm5scGxadUd2TVZWcFFRRUFTRWxwTFwvaE50XC9BTUlGcmJVdHI1WkR2YTBJVTYxKytiYjc5ZmJpMnVvV3dPdlVzT0V0RkV1aTFTb3lPWkdxTlFpTDR4d1wvYWl3YUJKMEplSk5DZXpRQkc1T0VFSVFReWdTQjRcL2liYmJIR3BLcHRMSGEzVWJ1bWowREw3VkpoNHliaG1XNHI4MU9kTWZOdGNHXC9CQ3JxNEdzSTR4c3d3empYaFhJcldyVjZ1VENZYk1CME5ZczEzXC9HaldVNDNxSnhnMG81Q3gxR3hyc1FraGlsV3VDMU5xZ0t0ZzRjM1pnc25aS09OcmhuRFJNNnNKWGZcL0pHazdiOTNmZTV1S0V1ekNSNmoxOG9BT2RmZmNReVBQRXkxcUtTbTEwTXJPZDFTbUU3RXB2RGp4RCthT2Z4eWVEem9oQUhYeTR2NXZxdm1UQlJoOGVcL1wvN2FWbDB3QjA4SHJGZXdacTluTnpNVk14dkRYcmx5N08xazlQcnorXC9HU05ramx2NVwvSFwvT3ZoODMxRjNXV004T2NIdGtSMGU3WFwvRE9STDl4UGZydUZmdFFXV1M2UlwvaWpsTUxtVHFJZ3BiczFvZWR1M2c4bjExYmoxb2ROdXJmdTNPaE44aTVIb2d6S3pYMVlVYTFyVndhK2o3NGZQcm9oZ0dlcDdUQlpJbFU5WG9KVWk2Nkw1ZEhFNk5cL1hsNTBFWllQZ3poMzhBaEVNbmpSQURBQUE9Iiwic3ViIjoiYWljaGEiLCJyb2xlcyI6WyJST0xFX1VTRVIiXSwiZXhwIjoxNTA5NzkwMzc3LCJpYXQiOjE1MDk3ODY3Nzd9.PET0m6G3MqvMvWE8gecZ14BN207XlI-68VPOYe5fjWc\n",
+						"data": null,
+						"method": "GET",
+						"dataMode": "params"
+					}
+				}
+			]
+		},
+		{
+			"id": "7e7e06e7-8098-f1cf-d20f-79d53ababfd0",
+			"headers": "Accept: XML\nMyToken: eyJhbGciOiJIUzI1NiJ9.eyJwcmluY2lwYWwiOiJINHNJQUFBQUFBQUFBSlZTdjA4VVFSUit1OXdGQ0ltQ0NTWVcySWlkMlV1MHZFcklZVUkyUURpdndVUXpOXC90WUJtWm5scGxadUd2TVZWcFFRRUFTRWxwTFwvaE50XC9BTUlGcmJVdHI1WkR2YTBJVTYxKytiYjc5ZmJpMnVvV3dPdlVzT0V0RkV1aTFTb3lPWkdxTlFpTDR4d1wvYWl3YUJKMEplSk5DZXpRQkc1T0VFSVFReWdTQjRcL2liYmJIR3BLcHRMSGEzVWJ1bWowREw3VkpoNHliaG1XNHI4MU9kTWZOdGNHXC9CQ3JxNEdzSTR4c3d3empYaFhJcldyVjZ1VENZYk1CME5ZczEzXC9HaldVNDNxSnhnMG81Q3gxR3hyc1FraGlsV3VDMU5xZ0t0ZzRjM1pnc25aS09OcmhuRFJNNnNKWGZcL0pHazdiOTNmZTV1S0V1ekNSNmoxOG9BT2RmZmNReVBQRXkxcUtTbTEwTXJPZDFTbUU3RXB2RGp4RCthT2Z4eWVEem9oQUhYeTR2NXZxdm1UQlJoOGVcL1wvN2FWbDB3QjA4SHJGZXdacTluTnpNVk14dkRYcmx5N08xazlQcnorXC9HU05ramx2NVwvSFwvT3ZoODMxRjNXV004T2NIdGtSMGU3WFwvRE9STDl4UGZydUZmdFFXV1M2UlwvaWpsTUxtVHFJZ3BiczFvZWR1M2c4bjExYmoxb2ROdXJmdTNPaE44aTVIb2d6S3pYMVlVYTFyVndhK2o3NGZQcm9oZ0dlcDdUQlpJbFU5WG9KVWk2Nkw1ZEhFNk5cL1hsNTBFWllQZ3poMzhBaEVNbmpSQURBQUE9Iiwic3ViIjoiYWljaGEiLCJyb2xlcyI6WyJST0xFX1VTRVIiXSwiZXhwIjoxNTA5NzkwMzc3LCJpYXQiOjE1MDk3ODY3Nzd9.PET0m6G3MqvMvWE8gecZ14BN207XlI-68VPOYe5fjWc\n",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "XML",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "MyToken",
+					"value": "eyJhbGciOiJIUzI1NiJ9.eyJwcmluY2lwYWwiOiJINHNJQUFBQUFBQUFBSlZTdjA4VVFSUit1OXdGQ0ltQ0NTWVcySWlkMlV1MHZFcklZVUkyUURpdndVUXpOXC90WUJtWm5scGxadUd2TVZWcFFRRUFTRWxwTFwvaE50XC9BTUlGcmJVdHI1WkR2YTBJVTYxKytiYjc5ZmJpMnVvV3dPdlVzT0V0RkV1aTFTb3lPWkdxTlFpTDR4d1wvYWl3YUJKMEplSk5DZXpRQkc1T0VFSVFReWdTQjRcL2liYmJIR3BLcHRMSGEzVWJ1bWowREw3VkpoNHliaG1XNHI4MU9kTWZOdGNHXC9CQ3JxNEdzSTR4c3d3empYaFhJcldyVjZ1VENZYk1CME5ZczEzXC9HaldVNDNxSnhnMG81Q3gxR3hyc1FraGlsV3VDMU5xZ0t0ZzRjM1pnc25aS09OcmhuRFJNNnNKWGZcL0pHazdiOTNmZTV1S0V1ekNSNmoxOG9BT2RmZmNReVBQRXkxcUtTbTEwTXJPZDFTbUU3RXB2RGp4RCthT2Z4eWVEem9oQUhYeTR2NXZxdm1UQlJoOGVcL1wvN2FWbDB3QjA4SHJGZXdacTluTnpNVk14dkRYcmx5N08xazlQcnorXC9HU05ramx2NVwvSFwvT3ZoODMxRjNXV004T2NIdGtSMGU3WFwvRE9STDl4UGZydUZmdFFXV1M2UlwvaWpsTUxtVHFJZ3BiczFvZWR1M2c4bjExYmoxb2ROdXJmdTNPaE44aTVIb2d6S3pYMVlVYTFyVndhK2o3NGZQcm9oZ0dlcDdUQlpJbFU5WG9KVWk2Nkw1ZEhFNk5cL1hsNTBFWllQZ3poMzhBaEVNbmpSQURBQUE9Iiwic3ViIjoiYWljaGEiLCJyb2xlcyI6WyJST0xFX1VTRVIiXSwiZXhwIjoxNTA5NzkwMzc3LCJpYXQiOjE1MDk3ODY3Nzd9.PET0m6G3MqvMvWE8gecZ14BN207XlI-68VPOYe5fjWc",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/api/livres",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "2b8f8549-8847-aadd-486c-792ade711cd8",
+			"data": null,
+			"dataMode": "params",
+			"name": "Lecture_All_Livre_XML",
+			"description": "Consultation de tous les livres existants sous le format XML",
+			"descriptionFormat": "html",
+			"time": 1509788044681,
+			"version": 2,
+			"responses": [
+				{
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK",
+						"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+					},
+					"time": 91,
+					"headers": [
+						{
+							"key": "Content-Type",
+							"value": "application/xml;charset=UTF-8",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 04 Nov 2017 09:33:32 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked",
+							"name": "Transfer-Encoding",
+							"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+						},
+						{
+							"key": "X-Application-Context",
+							"value": "application:development",
+							"name": "X-Application-Context",
+							"description": "Custom header"
+						}
+					],
+					"cookies": [
+						{
+							"domain": "localhost",
+							"expirationDate": 2147483647,
+							"httpOnly": true,
+							"name": "JSESSIONID",
+							"path": "/",
+							"secure": false,
+							"url": "http://localhost:8080",
+							"value": "901ECE9F3017AF8646280EF6B554F4E5"
+						}
+					],
+					"mime": "",
+					"text": "<?xml version=\"1.0\" encoding=\"UTF-8\"?><list><livre id=\"1\"><bu id=\"1\" /><auteur>Chinua Achebe</auteur><isbn>1231</isbn><nom>Le monde seffondre</nom><dateApparution>2017-11-04 09:54:12.46 CET</dateApparution></livre><livre id=\"2\"><bu id=\"1\" /><auteur>Hans Christian Andersen</auteur><isbn>1232</isbn><nom>Contes</nom><dateApparution>2017-11-04 09:54:12.93 CET</dateApparution></livre><livre id=\"3\"><bu id=\"1\" /><auteur>Jane Austen</auteur><isbn>1233</isbn><nom>Orgueil et prejuges</nom><dateApparution>2017-11-04 09:54:12.95 CET</dateApparution></livre><livre id=\"4\"><bu id=\"1\" /><auteur>Honore de Balzac</auteur><isbn>1234</isbn><nom>Mamadou</nom><dateApparution>2010-05-10 00:00:00.0 CEST</dateApparution></livre><livre id=\"5\"><bu id=\"1\" /><auteur>toto</auteur><isbn>124</isbn><nom>Trilogie</nom><dateApparution>2017-11-04 09:54:12.97 CET</dateApparution></livre><livre id=\"6\"><bu id=\"2\" /><auteur>mamadou</auteur><isbn>125</isbn><nom>le soleil</nom><dateApparution>2010-05-10 00:00:00.0 CEST</dateApparution></livre><livre id=\"7\"><bu id=\"2\" /><auteur>Boccace</auteur><isbn>1236</isbn><nom>Decameron</nom><dateApparution>2017-11-04 09:54:12.97 CET</dateApparution></livre><livre id=\"8\"><bu id=\"2\" /><auteur>Jorge Luis Borges</auteur><isbn>1237</isbn><nom>Fictions</nom><dateApparution>2017-11-04 09:54:12.97 CET</dateApparution></livre><livre id=\"9\"><bu id=\"2\" /><auteur>Emily Bronte</auteur><isbn>1238</isbn><nom>Les Hauts de Hurlevement</nom><dateApparution>2017-11-04 09:54:12.97 CET</dateApparution></livre><livre id=\"10\"><bu id=\"2\" /><auteur>Johan Wolfgang</auteur><isbn>1238</isbn><nom>Faust</nom><dateApparution>2017-11-04 09:54:12.113 CET</dateApparution></livre><livre id=\"11\"><bu id=\"3\" /><auteur>Louis Ferdinand Céline</auteur><isbn>1239</isbn><nom>Voyage au bout de la nuit</nom><dateApparution>2017-11-04 09:54:12.113 CET</dateApparution></livre><livre id=\"12\"><bu id=\"3\" /><auteur>Miguel de Cervantes</auteur><isbn>1241</isbn><nom>Don Quichotte</nom><dateApparution>2017-11-04 09:54:12.113 CET</dateApparution></livre><livre id=\"13\"><bu id=\"3\" /><auteur>Geoffrey Chaucer</auteur><isbn>1242</isbn><nom>Les Contes de Canterbury</nom><dateApparution>2017-11-04 09:54:12.113 CET</dateApparution></livre><livre id=\"14\"><bu id=\"3\" /><auteur>Joseph Conrad</auteur><isbn>1243</isbn><nom>Nostromo</nom><dateApparution>2017-11-04 09:54:12.113 CET</dateApparution></livre><livre id=\"15\"><bu id=\"3\" /><auteur>Gunter Grass</auteur><isbn>1243</isbn><nom>Le Tambour</nom><dateApparution>2017-11-04 09:54:12.113 CET</dateApparution></livre><livre id=\"16\"><bu id=\"4\" /><auteur>Dante Alighieri</auteur><isbn>1243</isbn><nom>Divine Comedie</nom><dateApparution>2017-11-04 09:54:12.113 CET</dateApparution></livre><livre id=\"17\"><bu id=\"4\" /><auteur>Charles Dickens</auteur><isbn>1244</isbn><nom>Les Grandes Esperances</nom><dateApparution>2017-11-04 09:54:12.128 CET</dateApparution></livre><livre id=\"18\"><bu id=\"4\" /><auteur>Denis Diderot</auteur><isbn>1245</isbn><nom>Jacques le fataliste</nom><dateApparution>2017-11-04 09:54:12.128 CET</dateApparution></livre><livre id=\"19\"><bu id=\"4\" /><auteur>ALfred Doblin</auteur><isbn>1246</isbn><nom>Berlin Alexanderplatz</nom><dateApparution>2017-11-04 09:54:12.128 CET</dateApparution></livre><livre id=\"20\"><bu id=\"4\" /><auteur>Knut Hamsun</auteur><isbn>1246</isbn><nom>La Faim</nom><dateApparution>2017-11-04 09:54:12.128 CET</dateApparution></livre><livre id=\"21\"><bu id=\"5\" /><auteur>Fiodor Dostoievski</auteur><isbn>1247</isbn><nom>Crime et chatiment</nom><dateApparution>2017-11-04 09:54:12.128 CET</dateApparution></livre><livre id=\"22\"><bu id=\"5\" /><auteur>Fiodor Dostoievski</auteur><isbn>1248</isbn><nom>Lidiot</nom><dateApparution>2017-11-04 09:54:12.128 CET</dateApparution></livre><livre id=\"23\"><bu id=\"5\" /><auteur>George Eliot</auteur><isbn>1249</isbn><nom>Middlemarch</nom><dateApparution>2017-11-04 09:54:12.128 CET</dateApparution></livre><livre id=\"24\"><bu id=\"5\" /><auteur>Euripide</auteur><isbn>1251</isbn><nom>Medee</nom><dateApparution>2017-11-04 09:54:12.128 CET</dateApparution></livre><livre id=\"25\"><bu id=\"5\" /><auteur>Homere</auteur><isbn>1251</isbn><nom>Lliade</nom><dateApparution>2017-11-04 09:54:12.144 CET</dateApparution></livre><livre id=\"26\"><bu id=\"1\" /><auteur>ckeik</auteur><isbn>lola</isbn><nom>Romance</nom><dateApparution>2017-10-13 08:22:20.626 CEST</dateApparution></livre><livre id=\"27\"><bu id=\"1\" /><auteur>Kingston</auteur><isbn>mam</isbn><nom>Abid</nom><dateApparution>2017-10-13 08:22:20.626 CEST</dateApparution></livre></list>",
+					"language": "xml",
+					"previewType": "text",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"code": 200,
+					"responseSize": {
+						"body": 4522,
+						"header": 177,
+						"total": 4699
+					},
+					"mimeType": "text",
+					"fileName": "response.xml",
+					"dataURI": "data:application/xml;base64, PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48bGlzdD48bGl2cmUgaWQ9IjEiPjxidSBpZD0iMSIgLz48YXV0ZXVyPkNoaW51YSBBY2hlYmU8L2F1dGV1cj48aXNibj4xMjMxPC9pc2JuPjxub20+TGUgbW9uZGUgc2VmZm9uZHJlPC9ub20+PGRhdGVBcHBhcnV0aW9uPjIwMTctMTEtMDQgMDk6NTQ6MTIuNDYgQ0VUPC9kYXRlQXBwYXJ1dGlvbj48L2xpdnJlPjxsaXZyZSBpZD0iMiI+PGJ1IGlkPSIxIiAvPjxhdXRldXI+SGFucyBDaHJpc3RpYW4gQW5kZXJzZW48L2F1dGV1cj48aXNibj4xMjMyPC9pc2JuPjxub20+Q29udGVzPC9ub20+PGRhdGVBcHBhcnV0aW9uPjIwMTctMTEtMDQgMDk6NTQ6MTIuOTMgQ0VUPC9kYXRlQXBwYXJ1dGlvbj48L2xpdnJlPjxsaXZyZSBpZD0iMyI+PGJ1IGlkPSIxIiAvPjxhdXRldXI+SmFuZSBBdXN0ZW48L2F1dGV1cj48aXNibj4xMjMzPC9pc2JuPjxub20+T3JndWVpbCBldCBwcmVqdWdlczwvbm9tPjxkYXRlQXBwYXJ1dGlvbj4yMDE3LTExLTA0IDA5OjU0OjEyLjk1IENFVDwvZGF0ZUFwcGFydXRpb24+PC9saXZyZT48bGl2cmUgaWQ9IjQiPjxidSBpZD0iMSIgLz48YXV0ZXVyPkhvbm9yZSBkZSBCYWx6YWM8L2F1dGV1cj48aXNibj4xMjM0PC9pc2JuPjxub20+TWFtYWRvdTwvbm9tPjxkYXRlQXBwYXJ1dGlvbj4yMDEwLTA1LTEwIDAwOjAwOjAwLjAgQ0VTVDwvZGF0ZUFwcGFydXRpb24+PC9saXZyZT48bGl2cmUgaWQ9IjUiPjxidSBpZD0iMSIgLz48YXV0ZXVyPnRvdG88L2F1dGV1cj48aXNibj4xMjQ8L2lzYm4+PG5vbT5Ucmlsb2dpZTwvbm9tPjxkYXRlQXBwYXJ1dGlvbj4yMDE3LTExLTA0IDA5OjU0OjEyLjk3IENFVDwvZGF0ZUFwcGFydXRpb24+PC9saXZyZT48bGl2cmUgaWQ9IjYiPjxidSBpZD0iMiIgLz48YXV0ZXVyPm1hbWFkb3U8L2F1dGV1cj48aXNibj4xMjU8L2lzYm4+PG5vbT5sZSBzb2xlaWw8L25vbT48ZGF0ZUFwcGFydXRpb24+MjAxMC0wNS0xMCAwMDowMDowMC4wIENFU1Q8L2RhdGVBcHBhcnV0aW9uPjwvbGl2cmU+PGxpdnJlIGlkPSI3Ij48YnUgaWQ9IjIiIC8+PGF1dGV1cj5Cb2NjYWNlPC9hdXRldXI+PGlzYm4+MTIzNjwvaXNibj48bm9tPkRlY2FtZXJvbjwvbm9tPjxkYXRlQXBwYXJ1dGlvbj4yMDE3LTExLTA0IDA5OjU0OjEyLjk3IENFVDwvZGF0ZUFwcGFydXRpb24+PC9saXZyZT48bGl2cmUgaWQ9IjgiPjxidSBpZD0iMiIgLz48YXV0ZXVyPkpvcmdlIEx1aXMgQm9yZ2VzPC9hdXRldXI+PGlzYm4+MTIzNzwvaXNibj48bm9tPkZpY3Rpb25zPC9ub20+PGRhdGVBcHBhcnV0aW9uPjIwMTctMTEtMDQgMDk6NTQ6MTIuOTcgQ0VUPC9kYXRlQXBwYXJ1dGlvbj48L2xpdnJlPjxsaXZyZSBpZD0iOSI+PGJ1IGlkPSIyIiAvPjxhdXRldXI+RW1pbHkgQnJvbnRlPC9hdXRldXI+PGlzYm4+MTIzODwvaXNibj48bm9tPkxlcyBIYXV0cyBkZSBIdXJsZXZlbWVudDwvbm9tPjxkYXRlQXBwYXJ1dGlvbj4yMDE3LTExLTA0IDA5OjU0OjEyLjk3IENFVDwvZGF0ZUFwcGFydXRpb24+PC9saXZyZT48bGl2cmUgaWQ9IjEwIj48YnUgaWQ9IjIiIC8+PGF1dGV1cj5Kb2hhbiBXb2xmZ2FuZzwvYXV0ZXVyPjxpc2JuPjEyMzg8L2lzYm4+PG5vbT5GYXVzdDwvbm9tPjxkYXRlQXBwYXJ1dGlvbj4yMDE3LTExLTA0IDA5OjU0OjEyLjExMyBDRVQ8L2RhdGVBcHBhcnV0aW9uPjwvbGl2cmU+PGxpdnJlIGlkPSIxMSI+PGJ1IGlkPSIzIiAvPjxhdXRldXI+TG91aXMgRmVyZGluYW5kIEPDqWxpbmU8L2F1dGV1cj48aXNibj4xMjM5PC9pc2JuPjxub20+Vm95YWdlIGF1IGJvdXQgZGUgbGEgbnVpdDwvbm9tPjxkYXRlQXBwYXJ1dGlvbj4yMDE3LTExLTA0IDA5OjU0OjEyLjExMyBDRVQ8L2RhdGVBcHBhcnV0aW9uPjwvbGl2cmU+PGxpdnJlIGlkPSIxMiI+PGJ1IGlkPSIzIiAvPjxhdXRldXI+TWlndWVsIGRlIENlcnZhbnRlczwvYXV0ZXVyPjxpc2JuPjEyNDE8L2lzYm4+PG5vbT5Eb24gUXVpY2hvdHRlPC9ub20+PGRhdGVBcHBhcnV0aW9uPjIwMTctMTEtMDQgMDk6NTQ6MTIuMTEzIENFVDwvZGF0ZUFwcGFydXRpb24+PC9saXZyZT48bGl2cmUgaWQ9IjEzIj48YnUgaWQ9IjMiIC8+PGF1dGV1cj5HZW9mZnJleSBDaGF1Y2VyPC9hdXRldXI+PGlzYm4+MTI0MjwvaXNibj48bm9tPkxlcyBDb250ZXMgZGUgQ2FudGVyYnVyeTwvbm9tPjxkYXRlQXBwYXJ1dGlvbj4yMDE3LTExLTA0IDA5OjU0OjEyLjExMyBDRVQ8L2RhdGVBcHBhcnV0aW9uPjwvbGl2cmU+PGxpdnJlIGlkPSIxNCI+PGJ1IGlkPSIzIiAvPjxhdXRldXI+Sm9zZXBoIENvbnJhZDwvYXV0ZXVyPjxpc2JuPjEyNDM8L2lzYm4+PG5vbT5Ob3N0cm9tbzwvbm9tPjxkYXRlQXBwYXJ1dGlvbj4yMDE3LTExLTA0IDA5OjU0OjEyLjExMyBDRVQ8L2RhdGVBcHBhcnV0aW9uPjwvbGl2cmU+PGxpdnJlIGlkPSIxNSI+PGJ1IGlkPSIzIiAvPjxhdXRldXI+R3VudGVyIEdyYXNzPC9hdXRldXI+PGlzYm4+MTI0MzwvaXNibj48bm9tPkxlIFRhbWJvdXI8L25vbT48ZGF0ZUFwcGFydXRpb24+MjAxNy0xMS0wNCAwOTo1NDoxMi4xMTMgQ0VUPC9kYXRlQXBwYXJ1dGlvbj48L2xpdnJlPjxsaXZyZSBpZD0iMTYiPjxidSBpZD0iNCIgLz48YXV0ZXVyPkRhbnRlIEFsaWdoaWVyaTwvYXV0ZXVyPjxpc2JuPjEyNDM8L2lzYm4+PG5vbT5EaXZpbmUgQ29tZWRpZTwvbm9tPjxkYXRlQXBwYXJ1dGlvbj4yMDE3LTExLTA0IDA5OjU0OjEyLjExMyBDRVQ8L2RhdGVBcHBhcnV0aW9uPjwvbGl2cmU+PGxpdnJlIGlkPSIxNyI+PGJ1IGlkPSI0IiAvPjxhdXRldXI+Q2hhcmxlcyBEaWNrZW5zPC9hdXRldXI+PGlzYm4+MTI0NDwvaXNibj48bm9tPkxlcyBHcmFuZGVzIEVzcGVyYW5jZXM8L25vbT48ZGF0ZUFwcGFydXRpb24+MjAxNy0xMS0wNCAwOTo1NDoxMi4xMjggQ0VUPC9kYXRlQXBwYXJ1dGlvbj48L2xpdnJlPjxsaXZyZSBpZD0iMTgiPjxidSBpZD0iNCIgLz48YXV0ZXVyPkRlbmlzIERpZGVyb3Q8L2F1dGV1cj48aXNibj4xMjQ1PC9pc2JuPjxub20+SmFjcXVlcyBsZSBmYXRhbGlzdGU8L25vbT48ZGF0ZUFwcGFydXRpb24+MjAxNy0xMS0wNCAwOTo1NDoxMi4xMjggQ0VUPC9kYXRlQXBwYXJ1dGlvbj48L2xpdnJlPjxsaXZyZSBpZD0iMTkiPjxidSBpZD0iNCIgLz48YXV0ZXVyPkFMZnJlZCBEb2JsaW48L2F1dGV1cj48aXNibj4xMjQ2PC9pc2JuPjxub20+QmVybGluIEFsZXhhbmRlcnBsYXR6PC9ub20+PGRhdGVBcHBhcnV0aW9uPjIwMTctMTEtMDQgMDk6NTQ6MTIuMTI4IENFVDwvZGF0ZUFwcGFydXRpb24+PC9saXZyZT48bGl2cmUgaWQ9IjIwIj48YnUgaWQ9IjQiIC8+PGF1dGV1cj5LbnV0IEhhbXN1bjwvYXV0ZXVyPjxpc2JuPjEyNDY8L2lzYm4+PG5vbT5MYSBGYWltPC9ub20+PGRhdGVBcHBhcnV0aW9uPjIwMTctMTEtMDQgMDk6NTQ6MTIuMTI4IENFVDwvZGF0ZUFwcGFydXRpb24+PC9saXZyZT48bGl2cmUgaWQ9IjIxIj48YnUgaWQ9IjUiIC8+PGF1dGV1cj5GaW9kb3IgRG9zdG9pZXZza2k8L2F1dGV1cj48aXNibj4xMjQ3PC9pc2JuPjxub20+Q3JpbWUgZXQgY2hhdGltZW50PC9ub20+PGRhdGVBcHBhcnV0aW9uPjIwMTctMTEtMDQgMDk6NTQ6MTIuMTI4IENFVDwvZGF0ZUFwcGFydXRpb24+PC9saXZyZT48bGl2cmUgaWQ9IjIyIj48YnUgaWQ9IjUiIC8+PGF1dGV1cj5GaW9kb3IgRG9zdG9pZXZza2k8L2F1dGV1cj48aXNibj4xMjQ4PC9pc2JuPjxub20+TGlkaW90PC9ub20+PGRhdGVBcHBhcnV0aW9uPjIwMTctMTEtMDQgMDk6NTQ6MTIuMTI4IENFVDwvZGF0ZUFwcGFydXRpb24+PC9saXZyZT48bGl2cmUgaWQ9IjIzIj48YnUgaWQ9IjUiIC8+PGF1dGV1cj5HZW9yZ2UgRWxpb3Q8L2F1dGV1cj48aXNibj4xMjQ5PC9pc2JuPjxub20+TWlkZGxlbWFyY2g8L25vbT48ZGF0ZUFwcGFydXRpb24+MjAxNy0xMS0wNCAwOTo1NDoxMi4xMjggQ0VUPC9kYXRlQXBwYXJ1dGlvbj48L2xpdnJlPjxsaXZyZSBpZD0iMjQiPjxidSBpZD0iNSIgLz48YXV0ZXVyPkV1cmlwaWRlPC9hdXRldXI+PGlzYm4+MTI1MTwvaXNibj48bm9tPk1lZGVlPC9ub20+PGRhdGVBcHBhcnV0aW9uPjIwMTctMTEtMDQgMDk6NTQ6MTIuMTI4IENFVDwvZGF0ZUFwcGFydXRpb24+PC9saXZyZT48bGl2cmUgaWQ9IjI1Ij48YnUgaWQ9IjUiIC8+PGF1dGV1cj5Ib21lcmU8L2F1dGV1cj48aXNibj4xMjUxPC9pc2JuPjxub20+TGxpYWRlPC9ub20+PGRhdGVBcHBhcnV0aW9uPjIwMTctMTEtMDQgMDk6NTQ6MTIuMTQ0IENFVDwvZGF0ZUFwcGFydXRpb24+PC9saXZyZT48bGl2cmUgaWQ9IjI2Ij48YnUgaWQ9IjEiIC8+PGF1dGV1cj5ja2VpazwvYXV0ZXVyPjxpc2JuPmxvbGE8L2lzYm4+PG5vbT5Sb21hbmNlPC9ub20+PGRhdGVBcHBhcnV0aW9uPjIwMTctMTAtMTMgMDg6MjI6MjAuNjI2IENFU1Q8L2RhdGVBcHBhcnV0aW9uPjwvbGl2cmU+PGxpdnJlIGlkPSIyNyI+PGJ1IGlkPSIxIiAvPjxhdXRldXI+S2luZ3N0b248L2F1dGV1cj48aXNibj5tYW08L2lzYm4+PG5vbT5BYmlkPC9ub20+PGRhdGVBcHBhcnV0aW9uPjIwMTctMTAtMTMgMDg6MjI6MjAuNjI2IENFU1Q8L2RhdGVBcHBhcnV0aW9uPjwvbGl2cmU+PC9saXN0Pg==",
+					"name": "Lecture_All_Livre",
+					"id": "d16910f1-b613-a81e-5171-26627988fd56",
+					"request": {
+						"url": "http://localhost:8080/api/livres",
+						"pathVariables": {},
+						"pathVariableData": [],
+						"queryParams": [],
+						"headerData": [
+							{
+								"key": "Accept",
+								"value": "XML",
+								"description": "",
+								"enabled": true,
+								"disabled": false
+							},
+							{
+								"key": "MyToken",
+								"value": "eyJhbGciOiJIUzI1NiJ9.eyJwcmluY2lwYWwiOiJINHNJQUFBQUFBQUFBSlZTdjA4VVFSUit1OXdGQ0ltQ0NTWVcySWlkMlV1MHZFcklZVUkyUURpdndVUXpOXC90WUJtWm5scGxadUd2TVZWcFFRRUFTRWxwTFwvaE50XC9BTUlGcmJVdHI1WkR2YTBJVTYxKytiYjc5ZmJpMnVvV3dPdlVzT0V0RkV1aTFTb3lPWkdxTlFpTDR4d1wvYWl3YUJKMEplSk5DZXpRQkc1T0VFSVFReWdTQjRcL2liYmJIR3BLcHRMSGEzVWJ1bWowREw3VkpoNHliaG1XNHI4MU9kTWZOdGNHXC9CQ3JxNEdzSTR4c3d3empYaFhJcldyVjZ1VENZYk1CME5ZczEzXC9HaldVNDNxSnhnMG81Q3gxR3hyc1FraGlsV3VDMU5xZ0t0ZzRjM1pnc25aS09OcmhuRFJNNnNKWGZcL0pHazdiOTNmZTV1S0V1ekNSNmoxOG9BT2RmZmNReVBQRXkxcUtTbTEwTXJPZDFTbUU3RXB2RGp4RCthT2Z4eWVEem9oQUhYeTR2NXZxdm1UQlJoOGVcL1wvN2FWbDB3QjA4SHJGZXdacTluTnpNVk14dkRYcmx5N08xazlQcnorXC9HU05ramx2NVwvSFwvT3ZoODMxRjNXV004T2NIdGtSMGU3WFwvRE9STDl4UGZydUZmdFFXV1M2UlwvaWpsTUxtVHFJZ3BiczFvZWR1M2c4bjExYmoxb2ROdXJmdTNPaE44aTVIb2d6S3pYMVlVYTFyVndhK2o3NGZQcm9oZ0dlcDdUQlpJbFU5WG9KVWk2Nkw1ZEhFNk5cL1hsNTBFWllQZ3poMzhBaEVNbmpSQURBQUE9Iiwic3ViIjoiYWljaGEiLCJyb2xlcyI6WyJST0xFX1VTRVIiXSwiZXhwIjoxNTA5NzkwMzc3LCJpYXQiOjE1MDk3ODY3Nzd9.PET0m6G3MqvMvWE8gecZ14BN207XlI-68VPOYe5fjWc",
+								"description": "",
+								"enabled": true,
+								"disabled": false
+							}
+						],
+						"headers": "Accept: XML\nMyToken: eyJhbGciOiJIUzI1NiJ9.eyJwcmluY2lwYWwiOiJINHNJQUFBQUFBQUFBSlZTdjA4VVFSUit1OXdGQ0ltQ0NTWVcySWlkMlV1MHZFcklZVUkyUURpdndVUXpOXC90WUJtWm5scGxadUd2TVZWcFFRRUFTRWxwTFwvaE50XC9BTUlGcmJVdHI1WkR2YTBJVTYxKytiYjc5ZmJpMnVvV3dPdlVzT0V0RkV1aTFTb3lPWkdxTlFpTDR4d1wvYWl3YUJKMEplSk5DZXpRQkc1T0VFSVFReWdTQjRcL2liYmJIR3BLcHRMSGEzVWJ1bWowREw3VkpoNHliaG1XNHI4MU9kTWZOdGNHXC9CQ3JxNEdzSTR4c3d3empYaFhJcldyVjZ1VENZYk1CME5ZczEzXC9HaldVNDNxSnhnMG81Q3gxR3hyc1FraGlsV3VDMU5xZ0t0ZzRjM1pnc25aS09OcmhuRFJNNnNKWGZcL0pHazdiOTNmZTV1S0V1ekNSNmoxOG9BT2RmZmNReVBQRXkxcUtTbTEwTXJPZDFTbUU3RXB2RGp4RCthT2Z4eWVEem9oQUhYeTR2NXZxdm1UQlJoOGVcL1wvN2FWbDB3QjA4SHJGZXdacTluTnpNVk14dkRYcmx5N08xazlQcnorXC9HU05ramx2NVwvSFwvT3ZoODMxRjNXV004T2NIdGtSMGU3WFwvRE9STDl4UGZydUZmdFFXV1M2UlwvaWpsTUxtVHFJZ3BiczFvZWR1M2c4bjExYmoxb2ROdXJmdTNPaE44aTVIb2d6S3pYMVlVYTFyVndhK2o3NGZQcm9oZ0dlcDdUQlpJbFU5WG9KVWk2Nkw1ZEhFNk5cL1hsNTBFWllQZ3poMzhBaEVNbmpSQURBQUE9Iiwic3ViIjoiYWljaGEiLCJyb2xlcyI6WyJST0xFX1VTRVIiXSwiZXhwIjoxNTA5NzkwMzc3LCJpYXQiOjE1MDk3ODY3Nzd9.PET0m6G3MqvMvWE8gecZ14BN207XlI-68VPOYe5fjWc\n",
+						"data": null,
+						"method": "GET",
+						"dataMode": "params"
+					}
+				}
+			],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "8188abab-97c2-459b-b3c5-e4356dee7495",
+			"headers": "Accept: JSON\nMyToken: eyJhbGciOiJIUzI1NiJ9.eyJwcmluY2lwYWwiOiJINHNJQUFBQUFBQUFBSlZTdjA4VVFSUit1OXdGQ0ltQ0NTWVcySWlkMlV1MHZFcklZVUkyUURpdndVUXpOXC90WUJtWm5scGxadUd2TVZWcFFRRUFTRWxwTFwvaE50XC9BTUlGcmJVdHI1WkR2YTBJVTYxKytiYjc5ZmJpMnVvV3dPdlVzT0V0RkV1aTFTb3lPWkdxTlFpTDR4d1wvYWl3YUJKMEplSk5DZXpRQkc1T0VFSVFReWdTQjRcL2liYmJIR3BLcHRMSGEzVWJ1bWowREw3VkpoNHliaG1XNHI4MU9kTWZOdGNHXC9CQ3JxNEdzSTR4c3d3empYaFhJcldyVjZ1VENZYk1CME5ZczEzXC9HaldVNDNxSnhnMG81Q3gxR3hyc1FraGlsV3VDMU5xZ0t0ZzRjM1pnc25aS09OcmhuRFJNNnNKWGZcL0pHazdiOTNmZTV1S0V1ekNSNmoxOG9BT2RmZmNReVBQRXkxcUtTbTEwTXJPZDFTbUU3RXB2RGp4RCthT2Z4eWVEem9oQUhYeTR2NXZxdm1UQlJoOGVcL1wvN2FWbDB3QjA4SHJGZXdacTluTnpNVk14dkRYcmx5N08xazlQcnorXC9HU05ramx2NVwvSFwvT3ZoODMxRjNXV004T2NIdGtSMGU3WFwvRE9STDl4UGZydUZmdFFXV1M2UlwvaWpsTUxtVHFJZ3BiczFvZWR1M2c4bjExYmoxb2ROdXJmdTNPaE44aTVIb2d6S3pYMVlVYTFyVndhK2o3NGZQcm9oZ0dlcDdUQlpJbFU5WG9KVWk2Nkw1ZEhFNk5cL1hsNTBFWllQZ3poMzhBaEVNbmpSQURBQUE9Iiwic3ViIjoiYWljaGEiLCJyb2xlcyI6WyJST0xFX1VTRVIiXSwiZXhwIjoxNTA5NzkwMzc3LCJpYXQiOjE1MDk3ODY3Nzd9.PET0m6G3MqvMvWE8gecZ14BN207XlI-68VPOYe5fjWc\n",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "JSON",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "MyToken",
+					"value": "eyJhbGciOiJIUzI1NiJ9.eyJwcmluY2lwYWwiOiJINHNJQUFBQUFBQUFBSlZTdjA4VVFSUit1OXdGQ0ltQ0NTWVcySWlkMlV1MHZFcklZVUkyUURpdndVUXpOXC90WUJtWm5scGxadUd2TVZWcFFRRUFTRWxwTFwvaE50XC9BTUlGcmJVdHI1WkR2YTBJVTYxKytiYjc5ZmJpMnVvV3dPdlVzT0V0RkV1aTFTb3lPWkdxTlFpTDR4d1wvYWl3YUJKMEplSk5DZXpRQkc1T0VFSVFReWdTQjRcL2liYmJIR3BLcHRMSGEzVWJ1bWowREw3VkpoNHliaG1XNHI4MU9kTWZOdGNHXC9CQ3JxNEdzSTR4c3d3empYaFhJcldyVjZ1VENZYk1CME5ZczEzXC9HaldVNDNxSnhnMG81Q3gxR3hyc1FraGlsV3VDMU5xZ0t0ZzRjM1pnc25aS09OcmhuRFJNNnNKWGZcL0pHazdiOTNmZTV1S0V1ekNSNmoxOG9BT2RmZmNReVBQRXkxcUtTbTEwTXJPZDFTbUU3RXB2RGp4RCthT2Z4eWVEem9oQUhYeTR2NXZxdm1UQlJoOGVcL1wvN2FWbDB3QjA4SHJGZXdacTluTnpNVk14dkRYcmx5N08xazlQcnorXC9HU05ramx2NVwvSFwvT3ZoODMxRjNXV004T2NIdGtSMGU3WFwvRE9STDl4UGZydUZmdFFXV1M2UlwvaWpsTUxtVHFJZ3BiczFvZWR1M2c4bjExYmoxb2ROdXJmdTNPaE44aTVIb2d6S3pYMVlVYTFyVndhK2o3NGZQcm9oZ0dlcDdUQlpJbFU5WG9KVWk2Nkw1ZEhFNk5cL1hsNTBFWllQZ3poMzhBaEVNbmpSQURBQUE9Iiwic3ViIjoiYWljaGEiLCJyb2xlcyI6WyJST0xFX1VTRVIiXSwiZXhwIjoxNTA5NzkwMzc3LCJpYXQiOjE1MDk3ODY3Nzd9.PET0m6G3MqvMvWE8gecZ14BN207XlI-68VPOYe5fjWc",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/api/livre/4?bu.id=1&dateApparution=2017-11-04 09:19:57.15",
+			"queryParams": [
+				{
+					"key": "bu.id",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "dateApparution",
+					"value": "2017-11-04 09:19:57.15",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PUT",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1509787155806,
+			"name": "Modification_Date_Livre",
+			"description": "Modification de la date de création d'un  livre et renvoie la reponse sous le format JSON",
+			"collectionId": "2b8f8549-8847-aadd-486c-792ade711cd8",
+			"responses": [
+				{
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK",
+						"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+					},
+					"time": 159,
+					"headers": [
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 04 Nov 2017 09:17:36 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked",
+							"name": "Transfer-Encoding",
+							"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+						},
+						{
+							"key": "X-Application-Context",
+							"value": "application:development",
+							"name": "X-Application-Context",
+							"description": "Custom header"
+						}
+					],
+					"cookies": [
+						{
+							"domain": "localhost",
+							"expirationDate": 2147483647,
+							"httpOnly": true,
+							"name": "JSESSIONID",
+							"path": "/",
+							"secure": false,
+							"url": "http://localhost:8080",
+							"value": "901ECE9F3017AF8646280EF6B554F4E5"
+						}
+					],
+					"mime": "",
+					"text": "{\"id\":4,\"bu\":{\"id\":1},\"auteur\":\"Honore de Balzac\",\"isbn\":\"1234\",\"nom\":\"Mamadou\",\"dateApparution\":\"2010-05-09T22:00:00Z\"}",
+					"language": "json",
+					"previewType": "text",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"code": 200,
+					"responseSize": {
+						"body": 120,
+						"header": 178,
+						"total": 298
+					},
+					"mimeType": "text",
+					"fileName": "response.json",
+					"dataURI": "data:application/json;base64, eyJpZCI6NCwiYnUiOnsiaWQiOjF9LCJhdXRldXIiOiJIb25vcmUgZGUgQmFsemFjIiwiaXNibiI6IjEyMzQiLCJub20iOiJNYW1hZG91IiwiZGF0ZUFwcGFydXRpb24iOiIyMDEwLTA1LTA5VDIyOjAwOjAwWiJ9",
+					"name": "PUT_Livre_reponse_JSON",
+					"id": "d56a8874-6da6-e41d-545c-becbb9a16112",
+					"request": {
+						"url": "http://localhost:8080/api/livre/4?bu.id=1&dateApparution=2017-11-04 09:19:57.15",
+						"pathVariables": {},
+						"pathVariableData": [],
+						"queryParams": [
+							{
+								"key": "bu.id",
+								"value": "1",
+								"equals": true,
+								"description": "",
+								"enabled": true
+							},
+							{
+								"key": "dateApparution",
+								"value": "2017-11-04 09:19:57.15",
+								"equals": true,
+								"description": "",
+								"enabled": true
+							}
+						],
+						"headerData": [
+							{
+								"key": "Accept",
+								"value": "JSON",
+								"description": "",
+								"enabled": true,
+								"disabled": false
+							},
+							{
+								"key": "MyToken",
+								"value": "eyJhbGciOiJIUzI1NiJ9.eyJwcmluY2lwYWwiOiJINHNJQUFBQUFBQUFBSlZTdjA4VVFSUit1OXdGQ0ltQ0NTWVcySWlkMlV1MHZFcklZVUkyUURpdndVUXpOXC90WUJtWm5scGxadUd2TVZWcFFRRUFTRWxwTFwvaE50XC9BTUlGcmJVdHI1WkR2YTBJVTYxKytiYjc5ZmJpMnVvV3dPdlVzT0V0RkV1aTFTb3lPWkdxTlFpTDR4d1wvYWl3YUJKMEplSk5DZXpRQkc1T0VFSVFReWdTQjRcL2liYmJIR3BLcHRMSGEzVWJ1bWowREw3VkpoNHliaG1XNHI4MU9kTWZOdGNHXC9CQ3JxNEdzSTR4c3d3empYaFhJcldyVjZ1VENZYk1CME5ZczEzXC9HaldVNDNxSnhnMG81Q3gxR3hyc1FraGlsV3VDMU5xZ0t0ZzRjM1pnc25aS09OcmhuRFJNNnNKWGZcL0pHazdiOTNmZTV1S0V1ekNSNmoxOG9BT2RmZmNReVBQRXkxcUtTbTEwTXJPZDFTbUU3RXB2RGp4RCthT2Z4eWVEem9oQUhYeTR2NXZxdm1UQlJoOGVcL1wvN2FWbDB3QjA4SHJGZXdacTluTnpNVk14dkRYcmx5N08xazlQcnorXC9HU05ramx2NVwvSFwvT3ZoODMxRjNXV004T2NIdGtSMGU3WFwvRE9STDl4UGZydUZmdFFXV1M2UlwvaWpsTUxtVHFJZ3BiczFvZWR1M2c4bjExYmoxb2ROdXJmdTNPaE44aTVIb2d6S3pYMVlVYTFyVndhK2o3NGZQcm9oZ0dlcDdUQlpJbFU5WG9KVWk2Nkw1ZEhFNk5cL1hsNTBFWllQZ3poMzhBaEVNbmpSQURBQUE9Iiwic3ViIjoiYWljaGEiLCJyb2xlcyI6WyJST0xFX1VTRVIiXSwiZXhwIjoxNTA5NzkwMzc3LCJpYXQiOjE1MDk3ODY3Nzd9.PET0m6G3MqvMvWE8gecZ14BN207XlI-68VPOYe5fjWc",
+								"description": "",
+								"enabled": true,
+								"disabled": false
+							}
+						],
+						"headers": "Accept: JSON\nMyToken: eyJhbGciOiJIUzI1NiJ9.eyJwcmluY2lwYWwiOiJINHNJQUFBQUFBQUFBSlZTdjA4VVFSUit1OXdGQ0ltQ0NTWVcySWlkMlV1MHZFcklZVUkyUURpdndVUXpOXC90WUJtWm5scGxadUd2TVZWcFFRRUFTRWxwTFwvaE50XC9BTUlGcmJVdHI1WkR2YTBJVTYxKytiYjc5ZmJpMnVvV3dPdlVzT0V0RkV1aTFTb3lPWkdxTlFpTDR4d1wvYWl3YUJKMEplSk5DZXpRQkc1T0VFSVFReWdTQjRcL2liYmJIR3BLcHRMSGEzVWJ1bWowREw3VkpoNHliaG1XNHI4MU9kTWZOdGNHXC9CQ3JxNEdzSTR4c3d3empYaFhJcldyVjZ1VENZYk1CME5ZczEzXC9HaldVNDNxSnhnMG81Q3gxR3hyc1FraGlsV3VDMU5xZ0t0ZzRjM1pnc25aS09OcmhuRFJNNnNKWGZcL0pHazdiOTNmZTV1S0V1ekNSNmoxOG9BT2RmZmNReVBQRXkxcUtTbTEwTXJPZDFTbUU3RXB2RGp4RCthT2Z4eWVEem9oQUhYeTR2NXZxdm1UQlJoOGVcL1wvN2FWbDB3QjA4SHJGZXdacTluTnpNVk14dkRYcmx5N08xazlQcnorXC9HU05ramx2NVwvSFwvT3ZoODMxRjNXV004T2NIdGtSMGU3WFwvRE9STDl4UGZydUZmdFFXV1M2UlwvaWpsTUxtVHFJZ3BiczFvZWR1M2c4bjExYmoxb2ROdXJmdTNPaE44aTVIb2d6S3pYMVlVYTFyVndhK2o3NGZQcm9oZ0dlcDdUQlpJbFU5WG9KVWk2Nkw1ZEhFNk5cL1hsNTBFWllQZ3poMzhBaEVNbmpSQURBQUE9Iiwic3ViIjoiYWljaGEiLCJyb2xlcyI6WyJST0xFX1VTRVIiXSwiZXhwIjoxNTA5NzkwMzc3LCJpYXQiOjE1MDk3ODY3Nzd9.PET0m6G3MqvMvWE8gecZ14BN207XlI-68VPOYe5fjWc\n",
+						"data": null,
+						"method": "PUT",
+						"dataMode": "params"
+					}
+				}
+			]
+		},
+		{
+			"id": "b4e5e273-95a3-2978-2ed4-2a3842b66e29",
+			"headers": "Accept: XML\nMyToken: eyJhbGciOiJIUzI1NiJ9.eyJwcmluY2lwYWwiOiJINHNJQUFBQUFBQUFBSlZTdlVcL2JRQlJcL0RxRlFJZkZSQ1NRR1dFcTN5cEhhTVZOQkFRbFpnQWhaUUNxNjJBXC8zNEh6bjNwMGhXVkFtR0JoQWZFaElyQjM1VCtqU1A2QnFCMWJtcnJ3ekFRY1cxSnZzZHpcL1wvdnA2djc2RGZhUGdjYThhRjhWT1J4Vno2SnRWY3hnYkRUSFBiOWpPRE9rS2JJeFp5WUlNbThIQzhFbmdCbEhoazRWMnd6WFpaUlRBWlY1YWIyeGphYWt2REo2WGpMdU9XWmdudUtiM2pQM0dIU3VNemdZTGErMUdDZ1hVWVkyR29NbW1YbEt5MVVxNHhXb2ZSWWhhb2NNZU54a082UVdrNUU2WVhPb0NTTlFWR0FReXh6SDVUcE1yUldCaDVNSnRaTGlwMXROVUFCbE5tRExsN2thUnVuWFYzNzJ4S1N2QWQ5cUhjU2owNjFOMEhCXC9VZGp6K25oS0RVWEVrejA1Q0ppdmdXZCtMRTM1azZcL1hWODFXbVVBS2lUajY5XC9VOHduWjZGejhcL1hmZEY2MEYxcVk2TEZld0txdGxOeU1GY3hyR3AzeTc4dVZzNHU3dzQwK1VuYUkrZlwvZng4eVhiblB0T1pXa1RET3JlblpFdEh0bDkwemtzNitUUDI2aDdkZDVrZ3FrUDBwYWpKNGtDbUtLVzlaS1BQWnQ0ZTNxY2xEYmJOUnJxKzd0amRXTUNFbDFPQVwvdHR1VUhpbloxZEh2eThcL2o5SDJKWWhQNWRKaktremtjTDBGS1dORkVmWEY5TURaM1wvUGNvVGRQXC9tdm50cHZhZDZFUU1BQUE9PSIsInN1YiI6InRyYW9yZSIsInJvbGVzIjpbIlJPTEVfVVNFUiJdLCJleHAiOjE1MDk3ODkwMDgsImlhdCI6MTUwOTc4NTQwOH0.c--0xhY6Jo1bvoziAKLUhJOd8UU2jKL4aSuZ97-0SpA\n",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "XML",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "MyToken",
+					"value": "eyJhbGciOiJIUzI1NiJ9.eyJwcmluY2lwYWwiOiJINHNJQUFBQUFBQUFBSlZTdlVcL2JRQlJcL0RxRlFJZkZSQ1NRR1dFcTN5cEhhTVZOQkFRbFpnQWhaUUNxNjJBXC8zNEh6bjNwMGhXVkFtR0JoQWZFaElyQjM1VCtqU1A2QnFCMWJtcnJ3ekFRY1cxSnZzZHpcL1wvdnA2djc2RGZhUGdjYThhRjhWT1J4Vno2SnRWY3hnYkRUSFBiOWpPRE9rS2JJeFp5WUlNbThIQzhFbmdCbEhoazRWMnd6WFpaUlRBWlY1YWIyeGphYWt2REo2WGpMdU9XWmdudUtiM2pQM0dIU3VNemdZTGErMUdDZ1hVWVkyR29NbW1YbEt5MVVxNHhXb2ZSWWhhb2NNZU54a082UVdrNUU2WVhPb0NTTlFWR0FReXh6SDVUcE1yUldCaDVNSnRaTGlwMXROVUFCbE5tRExsN2thUnVuWFYzNzJ4S1N2QWQ5cUhjU2owNjFOMEhCXC9VZGp6K25oS0RVWEVrejA1Q0ppdmdXZCtMRTM1azZcL1hWODFXbVVBS2lUajY5XC9VOHduWjZGejhcL1hmZEY2MEYxcVk2TEZld0txdGxOeU1GY3hyR3AzeTc4dVZzNHU3dzQwK1VuYUkrZlwvZng4eVhiblB0T1pXa1RET3JlblpFdEh0bDkwemtzNitUUDI2aDdkZDVrZ3FrUDBwYWpKNGtDbUtLVzlaS1BQWnQ0ZTNxY2xEYmJOUnJxKzd0amRXTUNFbDFPQVwvdHR1VUhpbloxZEh2eThcL2o5SDJKWWhQNWRKaktremtjTDBGS1dORkVmWEY5TURaM1wvUGNvVGRQXC9tdm50cHZhZDZFUU1BQUE9PSIsInN1YiI6InRyYW9yZSIsInJvbGVzIjpbIlJPTEVfVVNFUiJdLCJleHAiOjE1MDk3ODkwMDgsImlhdCI6MTUwOTc4NTQwOH0.c--0xhY6Jo1bvoziAKLUhJOd8UU2jKL4aSuZ97-0SpA",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/api/livre/4?bu.id=1&nom=Henri",
+			"queryParams": [
+				{
+					"key": "bu.id",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "nom",
+					"value": "Henri",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PUT",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1509786606303,
+			"name": "Modification_Nom_Livre",
+			"description": "Modification du nom d'un livre et le livre modifié est retourné sous le format xml",
+			"collectionId": "2b8f8549-8847-aadd-486c-792ade711cd8",
+			"responses": [
+				{
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK",
+						"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+					},
+					"time": 264,
+					"headers": [
+						{
+							"key": "Content-Type",
+							"value": "application/xml;charset=UTF-8",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 04 Nov 2017 09:10:01 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked",
+							"name": "Transfer-Encoding",
+							"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+						},
+						{
+							"key": "X-Application-Context",
+							"value": "application:development",
+							"name": "X-Application-Context",
+							"description": "Custom header"
+						}
+					],
+					"cookies": [
+						{
+							"domain": "localhost",
+							"expirationDate": 2147483647,
+							"httpOnly": true,
+							"name": "JSESSIONID",
+							"path": "/",
+							"secure": false,
+							"url": "http://localhost:8080",
+							"value": "901ECE9F3017AF8646280EF6B554F4E5"
+						}
+					],
+					"mime": "",
+					"text": "<?xml version=\"1.0\" encoding=\"UTF-8\"?><livre id=\"4\"><bu id=\"1\" /><auteur>Honore de Balzac</auteur><isbn>1234</isbn><nom>Henri</nom><dateApparution>2017-11-04 09:54:12.97 CET</dateApparution></livre>",
+					"language": "xml",
+					"previewType": "text",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"code": 200,
+					"responseSize": {
+						"body": 198,
+						"header": 177,
+						"total": 375
+					},
+					"mimeType": "text",
+					"fileName": "response.xml",
+					"dataURI": "data:application/xml;base64, PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48bGl2cmUgaWQ9IjQiPjxidSBpZD0iMSIgLz48YXV0ZXVyPkhvbm9yZSBkZSBCYWx6YWM8L2F1dGV1cj48aXNibj4xMjM0PC9pc2JuPjxub20+SGVucmk8L25vbT48ZGF0ZUFwcGFydXRpb24+MjAxNy0xMS0wNCAwOTo1NDoxMi45NyBDRVQ8L2RhdGVBcHBhcnV0aW9uPjwvbGl2cmU+",
+					"name": "PUT_Livre_reponse_XML",
+					"id": "af073909-857c-146e-689c-df727f534673",
+					"request": {
+						"url": "http://localhost:8080/api/livre/4?bu.id=1&nom=Henri",
+						"pathVariables": {},
+						"pathVariableData": [],
+						"queryParams": [
+							{
+								"key": "bu.id",
+								"value": "1",
+								"equals": true,
+								"description": "",
+								"enabled": true
+							},
+							{
+								"key": "nom",
+								"value": "Henri",
+								"equals": true,
+								"description": "",
+								"enabled": true
+							}
+						],
+						"headerData": [
+							{
+								"key": "Accept",
+								"value": "XML",
+								"description": "",
+								"enabled": true,
+								"disabled": false
+							},
+							{
+								"key": "MyToken",
+								"value": "eyJhbGciOiJIUzI1NiJ9.eyJwcmluY2lwYWwiOiJINHNJQUFBQUFBQUFBSlZTdlVcL2JRQlJcL0RxRlFJZkZSQ1NRR1dFcTN5cEhhTVZOQkFRbFpnQWhaUUNxNjJBXC8zNEh6bjNwMGhXVkFtR0JoQWZFaElyQjM1VCtqU1A2QnFCMWJtcnJ3ekFRY1cxSnZzZHpcL1wvdnA2djc2RGZhUGdjYThhRjhWT1J4Vno2SnRWY3hnYkRUSFBiOWpPRE9rS2JJeFp5WUlNbThIQzhFbmdCbEhoazRWMnd6WFpaUlRBWlY1YWIyeGphYWt2REo2WGpMdU9XWmdudUtiM2pQM0dIU3VNemdZTGErMUdDZ1hVWVkyR29NbW1YbEt5MVVxNHhXb2ZSWWhhb2NNZU54a082UVdrNUU2WVhPb0NTTlFWR0FReXh6SDVUcE1yUldCaDVNSnRaTGlwMXROVUFCbE5tRExsN2thUnVuWFYzNzJ4S1N2QWQ5cUhjU2owNjFOMEhCXC9VZGp6K25oS0RVWEVrejA1Q0ppdmdXZCtMRTM1azZcL1hWODFXbVVBS2lUajY5XC9VOHduWjZGejhcL1hmZEY2MEYxcVk2TEZld0txdGxOeU1GY3hyR3AzeTc4dVZzNHU3dzQwK1VuYUkrZlwvZng4eVhiblB0T1pXa1RET3JlblpFdEh0bDkwemtzNitUUDI2aDdkZDVrZ3FrUDBwYWpKNGtDbUtLVzlaS1BQWnQ0ZTNxY2xEYmJOUnJxKzd0amRXTUNFbDFPQVwvdHR1VUhpbloxZEh2eThcL2o5SDJKWWhQNWRKaktremtjTDBGS1dORkVmWEY5TURaM1wvUGNvVGRQXC9tdm50cHZhZDZFUU1BQUE9PSIsInN1YiI6InRyYW9yZSIsInJvbGVzIjpbIlJPTEVfVVNFUiJdLCJleHAiOjE1MDk3ODkwMDgsImlhdCI6MTUwOTc4NTQwOH0.c--0xhY6Jo1bvoziAKLUhJOd8UU2jKL4aSuZ97-0SpA",
+								"description": "",
+								"enabled": true,
+								"disabled": false
+							}
+						],
+						"headers": "Accept: XML\nMyToken: eyJhbGciOiJIUzI1NiJ9.eyJwcmluY2lwYWwiOiJINHNJQUFBQUFBQUFBSlZTdlVcL2JRQlJcL0RxRlFJZkZSQ1NRR1dFcTN5cEhhTVZOQkFRbFpnQWhaUUNxNjJBXC8zNEh6bjNwMGhXVkFtR0JoQWZFaElyQjM1VCtqU1A2QnFCMWJtcnJ3ekFRY1cxSnZzZHpcL1wvdnA2djc2RGZhUGdjYThhRjhWT1J4Vno2SnRWY3hnYkRUSFBiOWpPRE9rS2JJeFp5WUlNbThIQzhFbmdCbEhoazRWMnd6WFpaUlRBWlY1YWIyeGphYWt2REo2WGpMdU9XWmdudUtiM2pQM0dIU3VNemdZTGErMUdDZ1hVWVkyR29NbW1YbEt5MVVxNHhXb2ZSWWhhb2NNZU54a082UVdrNUU2WVhPb0NTTlFWR0FReXh6SDVUcE1yUldCaDVNSnRaTGlwMXROVUFCbE5tRExsN2thUnVuWFYzNzJ4S1N2QWQ5cUhjU2owNjFOMEhCXC9VZGp6K25oS0RVWEVrejA1Q0ppdmdXZCtMRTM1azZcL1hWODFXbVVBS2lUajY5XC9VOHduWjZGejhcL1hmZEY2MEYxcVk2TEZld0txdGxOeU1GY3hyR3AzeTc4dVZzNHU3dzQwK1VuYUkrZlwvZng4eVhiblB0T1pXa1RET3JlblpFdEh0bDkwemtzNitUUDI2aDdkZDVrZ3FrUDBwYWpKNGtDbUtLVzlaS1BQWnQ0ZTNxY2xEYmJOUnJxKzd0amRXTUNFbDFPQVwvdHR1VUhpbloxZEh2eThcL2o5SDJKWWhQNWRKaktremtjTDBGS1dORkVmWEY5TURaM1wvUGNvVGRQXC9tdm50cHZhZDZFUU1BQUE9PSIsInN1YiI6InRyYW9yZSIsInJvbGVzIjpbIlJPTEVfVVNFUiJdLCJleHAiOjE1MDk3ODkwMDgsImlhdCI6MTUwOTc4NTQwOH0.c--0xhY6Jo1bvoziAKLUhJOd8UU2jKL4aSuZ97-0SpA\n",
+						"data": null,
+						"method": "PUT",
+						"dataMode": "params"
+					}
+				}
+			]
+		},
+		{
+			"id": "c08fe6ee-5592-5854-187d-07d57c31fed6",
+			"headers": "Accept: XML\nMyToken: eyJhbGciOiJIUzI1NiJ9.eyJwcmluY2lwYWwiOiJINHNJQUFBQUFBQUFBSlZTTVU4VVFSUitleDRCUXFKZ0lva0ZOR0puOWhJdHJ4SnlrSkFORU01cklOSE03VDdXZ2RtWmRlWXQzRFhrS2lrb01DZ0ppYTBsXC8wUWJmNERCd3BiYTFqY0x4NTQyeEtsbTNuenpmZFwvNzNseGN3Wml6OENLMVFpb1g1cXBJcFE1ZGJxVk9IY2FGbGRRUEM0YzJRU29SS3lXd3d4VzRYa0VOZ2docU1pRjRHTzJLZmRGUVFxZU45ZTR1eHRUc1dYaHViSHJEdUdORmhnZkc3b1czM0xHeCtKZEFSUjE4cWNINEZzeUlPRGFGcGpXalc3MWNXa3kyWUxxcVJTYmU4NlZITWQrZ0ppbVVHNFdPb3haZGhVa0VVNktndDRaVkpUcUNCOWRtQzVLcTBVWnFSakNSQytmWTNUK2R0TWxiOVwvZmVwdVlPM3NFaDFIdDV3SXV6ZStxaG9lY0psNHhTM0xVMDJpMTBkR1lTdVNPOU9QTVA1azZcL24zd2VkR29Bbk1tenU5OVU5Y2VMTVBqNit2ZDhHWFFRRTh5T1dLOWd6VjdPYm1ZcTVsY1d2ZktQODQyUFoxZEgyXC9kWTJTT1dcLzM4ZUN5OXZrdXN2bVN3WFZwQVptUkhUSHRUOW5za1g3eVlmVHFFZnRtV1dLK1FmcFFtVFc0bUttTnV0VzZPR2VSTk1icTVIclRlZGRtdlRuK3BreUxEbVwvYkpsUDZzd01qeXA0MThmdnAwOHVlVDNxekMyTDFTQm5QaDBCVm9yc2k3YTl4ZG5jMU9mZmg2WFwvb2RcLytRXC9MWk5ua0R3TUFBQT09Iiwic3ViIjoidG90byIsInJvbGVzIjpbIlJPTEVfVVNFUiJdLCJleHAiOjE1MDk3OTIxNTAsImlhdCI6MTUwOTc4ODU1MH0.FMsQ8_56w96nNVC4Iwk8Ycn_ACz8tiTCj6mxwyvn0NI\n",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "XML",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "MyToken",
+					"value": "eyJhbGciOiJIUzI1NiJ9.eyJwcmluY2lwYWwiOiJINHNJQUFBQUFBQUFBSlZTTVU4VVFSUitleDRCUXFKZ0lva0ZOR0puOWhJdHJ4SnlrSkFORU01cklOSE03VDdXZ2RtWmRlWXQzRFhrS2lrb01DZ0ppYTBsXC8wUWJmNERCd3BiYTFqY0x4NTQyeEtsbTNuenpmZFwvNzNseGN3Wml6OENLMVFpb1g1cXBJcFE1ZGJxVk9IY2FGbGRRUEM0YzJRU29SS3lXd3d4VzRYa0VOZ2docU1pRjRHTzJLZmRGUVFxZU45ZTR1eHRUc1dYaHViSHJEdUdORmhnZkc3b1czM0xHeCtKZEFSUjE4cWNINEZzeUlPRGFGcGpXalc3MWNXa3kyWUxxcVJTYmU4NlZITWQrZ0ppbVVHNFdPb3haZGhVa0VVNktndDRaVkpUcUNCOWRtQzVLcTBVWnFSakNSQytmWTNUK2R0TWxiOVwvZmVwdVlPM3NFaDFIdDV3SXV6ZStxaG9lY0psNHhTM0xVMDJpMTBkR1lTdVNPOU9QTVA1azZcL24zd2VkR29Bbk1tenU5OVU5Y2VMTVBqNit2ZDhHWFFRRTh5T1dLOWd6VjdPYm1ZcTVsY1d2ZktQODQyUFoxZEgyXC9kWTJTT1dcLzM4ZUN5OXZrdXN2bVN3WFZwQVptUkhUSHRUOW5za1g3eVlmVHFFZnRtV1dLK1FmcFFtVFc0bUttTnV0VzZPR2VSTk1icTVIclRlZGRtdlRuK3BreUxEbVwvYkpsUDZzd01qeXA0MThmdnAwOHVlVDNxekMyTDFTQm5QaDBCVm9yc2k3YTl4ZG5jMU9mZmg2WFwvb2RcLytRXC9MWk5ua0R3TUFBQT09Iiwic3ViIjoidG90byIsInJvbGVzIjpbIlJPTEVfVVNFUiJdLCJleHAiOjE1MDk3OTIxNTAsImlhdCI6MTUwOTc4ODU1MH0.FMsQ8_56w96nNVC4Iwk8Ycn_ACz8tiTCj6mxwyvn0NI",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/api/livre/2",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1509789132831,
+			"name": "lecture_livre_reponse_XML",
+			"description": "lecture d'un livre à partir de son id et retourne le livre en format XML",
+			"collectionId": "2b8f8549-8847-aadd-486c-792ade711cd8",
+			"responses": [
+				{
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK",
+						"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+					},
+					"time": 74,
+					"headers": [
+						{
+							"key": "Content-Type",
+							"value": "application/xml;charset=UTF-8",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 04 Nov 2017 09:52:10 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked",
+							"name": "Transfer-Encoding",
+							"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+						},
+						{
+							"key": "X-Application-Context",
+							"value": "application:development",
+							"name": "X-Application-Context",
+							"description": "Custom header"
+						}
+					],
+					"cookies": [
+						{
+							"domain": "localhost",
+							"expirationDate": 2147483647,
+							"httpOnly": true,
+							"name": "JSESSIONID",
+							"path": "/",
+							"secure": false,
+							"url": "http://localhost:8080",
+							"value": "901ECE9F3017AF8646280EF6B554F4E5"
+						}
+					],
+					"mime": "",
+					"text": "<?xml version=\"1.0\" encoding=\"UTF-8\"?><livre id=\"2\"><bu id=\"1\" /><auteur>Hans Christian Andersen</auteur><isbn>1232</isbn><nom>ami</nom><dateApparution>2017-11-04 09:54:12.93 CET</dateApparution></livre>",
+					"language": "xml",
+					"previewType": "text",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"code": 200,
+					"responseSize": {
+						"body": 203,
+						"header": 177,
+						"total": 380
+					},
+					"mimeType": "text",
+					"fileName": "response.xml",
+					"dataURI": "data:application/xml;base64, PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48bGl2cmUgaWQ9IjIiPjxidSBpZD0iMSIgLz48YXV0ZXVyPkhhbnMgQ2hyaXN0aWFuIEFuZGVyc2VuPC9hdXRldXI+PGlzYm4+MTIzMjwvaXNibj48bm9tPmFtaTwvbm9tPjxkYXRlQXBwYXJ1dGlvbj4yMDE3LTExLTA0IDA5OjU0OjEyLjkzIENFVDwvZGF0ZUFwcGFydXRpb24+PC9saXZyZT4=",
+					"name": "lecture_livre_reponse_XML",
+					"id": "519b988c-486a-c01e-bb46-f65cf1c474f3",
+					"request": {
+						"url": "http://localhost:8080/api/livre/2",
+						"pathVariables": {},
+						"pathVariableData": [],
+						"queryParams": [],
+						"headerData": [
+							{
+								"key": "Accept",
+								"value": "XML",
+								"description": "",
+								"enabled": true,
+								"disabled": false
+							},
+							{
+								"key": "MyToken",
+								"value": "eyJhbGciOiJIUzI1NiJ9.eyJwcmluY2lwYWwiOiJINHNJQUFBQUFBQUFBSlZTTVU4VVFSUitleDRCUXFKZ0lva0ZOR0puOWhJdHJ4SnlrSkFORU01cklOSE03VDdXZ2RtWmRlWXQzRFhrS2lrb01DZ0ppYTBsXC8wUWJmNERCd3BiYTFqY0x4NTQyeEtsbTNuenpmZFwvNzNseGN3Wml6OENLMVFpb1g1cXBJcFE1ZGJxVk9IY2FGbGRRUEM0YzJRU29SS3lXd3d4VzRYa0VOZ2docU1pRjRHTzJLZmRGUVFxZU45ZTR1eHRUc1dYaHViSHJEdUdORmhnZkc3b1czM0xHeCtKZEFSUjE4cWNINEZzeUlPRGFGcGpXalc3MWNXa3kyWUxxcVJTYmU4NlZITWQrZ0ppbVVHNFdPb3haZGhVa0VVNktndDRaVkpUcUNCOWRtQzVLcTBVWnFSakNSQytmWTNUK2R0TWxiOVwvZmVwdVlPM3NFaDFIdDV3SXV6ZStxaG9lY0psNHhTM0xVMDJpMTBkR1lTdVNPOU9QTVA1azZcL24zd2VkR29Bbk1tenU5OVU5Y2VMTVBqNit2ZDhHWFFRRTh5T1dLOWd6VjdPYm1ZcTVsY1d2ZktQODQyUFoxZEgyXC9kWTJTT1dcLzM4ZUN5OXZrdXN2bVN3WFZwQVptUkhUSHRUOW5za1g3eVlmVHFFZnRtV1dLK1FmcFFtVFc0bUttTnV0VzZPR2VSTk1icTVIclRlZGRtdlRuK3BreUxEbVwvYkpsUDZzd01qeXA0MThmdnAwOHVlVDNxekMyTDFTQm5QaDBCVm9yc2k3YTl4ZG5jMU9mZmg2WFwvb2RcLytRXC9MWk5ua0R3TUFBQT09Iiwic3ViIjoidG90byIsInJvbGVzIjpbIlJPTEVfVVNFUiJdLCJleHAiOjE1MDk3OTIxNTAsImlhdCI6MTUwOTc4ODU1MH0.FMsQ8_56w96nNVC4Iwk8Ycn_ACz8tiTCj6mxwyvn0NI",
+								"description": "",
+								"enabled": true,
+								"disabled": false
+							}
+						],
+						"headers": "Accept: XML\nMyToken: eyJhbGciOiJIUzI1NiJ9.eyJwcmluY2lwYWwiOiJINHNJQUFBQUFBQUFBSlZTTVU4VVFSUitleDRCUXFKZ0lva0ZOR0puOWhJdHJ4SnlrSkFORU01cklOSE03VDdXZ2RtWmRlWXQzRFhrS2lrb01DZ0ppYTBsXC8wUWJmNERCd3BiYTFqY0x4NTQyeEtsbTNuenpmZFwvNzNseGN3Wml6OENLMVFpb1g1cXBJcFE1ZGJxVk9IY2FGbGRRUEM0YzJRU29SS3lXd3d4VzRYa0VOZ2docU1pRjRHTzJLZmRGUVFxZU45ZTR1eHRUc1dYaHViSHJEdUdORmhnZkc3b1czM0xHeCtKZEFSUjE4cWNINEZzeUlPRGFGcGpXalc3MWNXa3kyWUxxcVJTYmU4NlZITWQrZ0ppbVVHNFdPb3haZGhVa0VVNktndDRaVkpUcUNCOWRtQzVLcTBVWnFSakNSQytmWTNUK2R0TWxiOVwvZmVwdVlPM3NFaDFIdDV3SXV6ZStxaG9lY0psNHhTM0xVMDJpMTBkR1lTdVNPOU9QTVA1azZcL24zd2VkR29Bbk1tenU5OVU5Y2VMTVBqNit2ZDhHWFFRRTh5T1dLOWd6VjdPYm1ZcTVsY1d2ZktQODQyUFoxZEgyXC9kWTJTT1dcLzM4ZUN5OXZrdXN2bVN3WFZwQVptUkhUSHRUOW5za1g3eVlmVHFFZnRtV1dLK1FmcFFtVFc0bUttTnV0VzZPR2VSTk1icTVIclRlZGRtdlRuK3BreUxEbVwvYkpsUDZzd01qeXA0MThmdnAwOHVlVDNxekMyTDFTQm5QaDBCVm9yc2k3YTl4ZG5jMU9mZmg2WFwvb2RcLytRXC9MWk5ua0R3TUFBQT09Iiwic3ViIjoidG90byIsInJvbGVzIjpbIlJPTEVfVVNFUiJdLCJleHAiOjE1MDk3OTIxNTAsImlhdCI6MTUwOTc4ODU1MH0.FMsQ8_56w96nNVC4Iwk8Ycn_ACz8tiTCj6mxwyvn0NI\n",
+						"data": null,
+						"method": "GET",
+						"dataMode": "params"
+					}
+				}
+			]
+		},
+		{
+			"id": "ce7f5040-78a1-baff-667f-a4ff59a0321e",
+			"headers": "Accept: XML\nMyToken: eyJhbGciOiJIUzI1NiJ9.eyJwcmluY2lwYWwiOiJINHNJQUFBQUFBQUFBSlZTTVU4VVFSUitleDRCUXFKZ0lva0ZOR0puOWhJdHJ4SnlrSkFORU01cklOSE03VDdXZ2RtWmRlWXQzRFhrS2lrb01DZ0ppYTBsXC8wUWJmNERCd3BiYTFqY0x4NTQyeEtsbTNuenpmZFwvNzNseGN3Wml6OENLMVFpb1g1cXBJcFE1ZGJxVk9IY2FGbGRRUEM0YzJRU29SS3lXd3d4VzRYa0VOZ2docU1pRjRHTzJLZmRGUVFxZU45ZTR1eHRUc1dYaHViSHJEdUdORmhnZkc3b1czM0xHeCtKZEFSUjE4cWNINEZzeUlPRGFGcGpXalc3MWNXa3kyWUxxcVJTYmU4NlZITWQrZ0ppbVVHNFdPb3haZGhVa0VVNktndDRaVkpUcUNCOWRtQzVLcTBVWnFSakNSQytmWTNUK2R0TWxiOVwvZmVwdVlPM3NFaDFIdDV3SXV6ZStxaG9lY0psNHhTM0xVMDJpMTBkR1lTdVNPOU9QTVA1azZcL24zd2VkR29Bbk1tenU5OVU5Y2VMTVBqNit2ZDhHWFFRRTh5T1dLOWd6VjdPYm1ZcTVsY1d2ZktQODQyUFoxZEgyXC9kWTJTT1dcLzM4ZUN5OXZrdXN2bVN3WFZwQVptUkhUSHRUOW5za1g3eVlmVHFFZnRtV1dLK1FmcFFtVFc0bUttTnV0VzZPR2VSTk1icTVIclRlZGRtdlRuK3BreUxEbVwvYkpsUDZzd01qeXA0MThmdnAwOHVlVDNxekMyTDFTQm5QaDBCVm9yc2k3YTl4ZG5jMU9mZmg2WFwvb2RcLytRXC9MWk5ua0R3TUFBQT09Iiwic3ViIjoidG90byIsInJvbGVzIjpbIlJPTEVfVVNFUiJdLCJleHAiOjE1MDk3OTIxNTAsImlhdCI6MTUwOTc4ODU1MH0.FMsQ8_56w96nNVC4Iwk8Ycn_ACz8tiTCj6mxwyvn0NI\n",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "XML",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "MyToken",
+					"value": "eyJhbGciOiJIUzI1NiJ9.eyJwcmluY2lwYWwiOiJINHNJQUFBQUFBQUFBSlZTTVU4VVFSUitleDRCUXFKZ0lva0ZOR0puOWhJdHJ4SnlrSkFORU01cklOSE03VDdXZ2RtWmRlWXQzRFhrS2lrb01DZ0ppYTBsXC8wUWJmNERCd3BiYTFqY0x4NTQyeEtsbTNuenpmZFwvNzNseGN3Wml6OENLMVFpb1g1cXBJcFE1ZGJxVk9IY2FGbGRRUEM0YzJRU29SS3lXd3d4VzRYa0VOZ2docU1pRjRHTzJLZmRGUVFxZU45ZTR1eHRUc1dYaHViSHJEdUdORmhnZkc3b1czM0xHeCtKZEFSUjE4cWNINEZzeUlPRGFGcGpXalc3MWNXa3kyWUxxcVJTYmU4NlZITWQrZ0ppbVVHNFdPb3haZGhVa0VVNktndDRaVkpUcUNCOWRtQzVLcTBVWnFSakNSQytmWTNUK2R0TWxiOVwvZmVwdVlPM3NFaDFIdDV3SXV6ZStxaG9lY0psNHhTM0xVMDJpMTBkR1lTdVNPOU9QTVA1azZcL24zd2VkR29Bbk1tenU5OVU5Y2VMTVBqNit2ZDhHWFFRRTh5T1dLOWd6VjdPYm1ZcTVsY1d2ZktQODQyUFoxZEgyXC9kWTJTT1dcLzM4ZUN5OXZrdXN2bVN3WFZwQVptUkhUSHRUOW5za1g3eVlmVHFFZnRtV1dLK1FmcFFtVFc0bUttTnV0VzZPR2VSTk1icTVIclRlZGRtdlRuK3BreUxEbVwvYkpsUDZzd01qeXA0MThmdnAwOHVlVDNxekMyTDFTQm5QaDBCVm9yc2k3YTl4ZG5jMU9mZmg2WFwvb2RcLytRXC9MWk5ua0R3TUFBQT09Iiwic3ViIjoidG90byIsInJvbGVzIjpbIlJPTEVfVVNFUiJdLCJleHAiOjE1MDk3OTIxNTAsImlhdCI6MTUwOTc4ODU1MH0.FMsQ8_56w96nNVC4Iwk8Ycn_ACz8tiTCj6mxwyvn0NI",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/api/livres?bu.id=1&nom=Abid&dateApparution=2017-10-13 08:22:20.626&isbn=mam&auteur=Kingston",
+			"queryParams": [
+				{
+					"key": "bu.id",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "nom",
+					"value": "Abid",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "dateApparution",
+					"value": "2017-10-13 08:22:20.626",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "isbn",
+					"value": "mam",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "auteur",
+					"value": "Kingston",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1509789178064,
+			"name": "Creation_Livre_reponse_xml",
+			"description": "ajout d'un livre dans une bibliothéque ",
+			"collectionId": "2b8f8549-8847-aadd-486c-792ade711cd8",
+			"responses": [
+				{
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK",
+						"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+					},
+					"time": 78,
+					"headers": [
+						{
+							"key": "Content-Type",
+							"value": "application/xml;charset=UTF-8",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 04 Nov 2017 09:52:56 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked",
+							"name": "Transfer-Encoding",
+							"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+						},
+						{
+							"key": "X-Application-Context",
+							"value": "application:development",
+							"name": "X-Application-Context",
+							"description": "Custom header"
+						}
+					],
+					"cookies": [
+						{
+							"domain": "localhost",
+							"expirationDate": 2147483647,
+							"httpOnly": true,
+							"name": "JSESSIONID",
+							"path": "/",
+							"secure": false,
+							"url": "http://localhost:8080",
+							"value": "901ECE9F3017AF8646280EF6B554F4E5"
+						}
+					],
+					"mime": "",
+					"text": "<?xml version=\"1.0\" encoding=\"UTF-8\"?><livre id=\"29\"><bu id=\"1\" /><auteur>Kingston</auteur><isbn>mam</isbn><nom>Abid</nom><dateApparution>2017-10-13 08:22:20.626 CEST</dateApparution></livre>",
+					"language": "xml",
+					"previewType": "text",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"code": 200,
+					"responseSize": {
+						"body": 191,
+						"header": 177,
+						"total": 368
+					},
+					"mimeType": "text",
+					"fileName": "response.xml",
+					"dataURI": "data:application/xml;base64, PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48bGl2cmUgaWQ9IjI5Ij48YnUgaWQ9IjEiIC8+PGF1dGV1cj5LaW5nc3RvbjwvYXV0ZXVyPjxpc2JuPm1hbTwvaXNibj48bm9tPkFiaWQ8L25vbT48ZGF0ZUFwcGFydXRpb24+MjAxNy0xMC0xMyAwODoyMjoyMC42MjYgQ0VTVDwvZGF0ZUFwcGFydXRpb24+PC9saXZyZT4=",
+					"name": "Creation_Livre_reponse_xml",
+					"id": "25538369-4453-c38f-8a71-ce85c87a0867",
+					"request": {
+						"url": "http://localhost:8080/api/livres?bu.id=1&nom=Abid&dateApparution=2017-10-13 08:22:20.626&isbn=mam&auteur=Kingston",
+						"pathVariables": {},
+						"pathVariableData": [],
+						"queryParams": [
+							{
+								"key": "bu.id",
+								"value": "1",
+								"equals": true,
+								"description": "",
+								"enabled": true
+							},
+							{
+								"key": "nom",
+								"value": "Abid",
+								"equals": true,
+								"description": "",
+								"enabled": true
+							},
+							{
+								"key": "dateApparution",
+								"value": "2017-10-13 08:22:20.626",
+								"equals": true,
+								"description": "",
+								"enabled": true
+							},
+							{
+								"key": "isbn",
+								"value": "mam",
+								"equals": true,
+								"description": "",
+								"enabled": true
+							},
+							{
+								"key": "auteur",
+								"value": "Kingston",
+								"equals": true,
+								"description": "",
+								"enabled": true
+							}
+						],
+						"headerData": [
+							{
+								"key": "Accept",
+								"value": "XML",
+								"description": "",
+								"enabled": true,
+								"disabled": false
+							},
+							{
+								"key": "MyToken",
+								"value": "eyJhbGciOiJIUzI1NiJ9.eyJwcmluY2lwYWwiOiJINHNJQUFBQUFBQUFBSlZTTVU4VVFSUitleDRCUXFKZ0lva0ZOR0puOWhJdHJ4SnlrSkFORU01cklOSE03VDdXZ2RtWmRlWXQzRFhrS2lrb01DZ0ppYTBsXC8wUWJmNERCd3BiYTFqY0x4NTQyeEtsbTNuenpmZFwvNzNseGN3Wml6OENLMVFpb1g1cXBJcFE1ZGJxVk9IY2FGbGRRUEM0YzJRU29SS3lXd3d4VzRYa0VOZ2docU1pRjRHTzJLZmRGUVFxZU45ZTR1eHRUc1dYaHViSHJEdUdORmhnZkc3b1czM0xHeCtKZEFSUjE4cWNINEZzeUlPRGFGcGpXalc3MWNXa3kyWUxxcVJTYmU4NlZITWQrZ0ppbVVHNFdPb3haZGhVa0VVNktndDRaVkpUcUNCOWRtQzVLcTBVWnFSakNSQytmWTNUK2R0TWxiOVwvZmVwdVlPM3NFaDFIdDV3SXV6ZStxaG9lY0psNHhTM0xVMDJpMTBkR1lTdVNPOU9QTVA1azZcL24zd2VkR29Bbk1tenU5OVU5Y2VMTVBqNit2ZDhHWFFRRTh5T1dLOWd6VjdPYm1ZcTVsY1d2ZktQODQyUFoxZEgyXC9kWTJTT1dcLzM4ZUN5OXZrdXN2bVN3WFZwQVptUkhUSHRUOW5za1g3eVlmVHFFZnRtV1dLK1FmcFFtVFc0bUttTnV0VzZPR2VSTk1icTVIclRlZGRtdlRuK3BreUxEbVwvYkpsUDZzd01qeXA0MThmdnAwOHVlVDNxekMyTDFTQm5QaDBCVm9yc2k3YTl4ZG5jMU9mZmg2WFwvb2RcLytRXC9MWk5ua0R3TUFBQT09Iiwic3ViIjoidG90byIsInJvbGVzIjpbIlJPTEVfVVNFUiJdLCJleHAiOjE1MDk3OTIxNTAsImlhdCI6MTUwOTc4ODU1MH0.FMsQ8_56w96nNVC4Iwk8Ycn_ACz8tiTCj6mxwyvn0NI",
+								"description": "",
+								"enabled": true,
+								"disabled": false
+							}
+						],
+						"headers": "Accept: XML\nMyToken: eyJhbGciOiJIUzI1NiJ9.eyJwcmluY2lwYWwiOiJINHNJQUFBQUFBQUFBSlZTTVU4VVFSUitleDRCUXFKZ0lva0ZOR0puOWhJdHJ4SnlrSkFORU01cklOSE03VDdXZ2RtWmRlWXQzRFhrS2lrb01DZ0ppYTBsXC8wUWJmNERCd3BiYTFqY0x4NTQyeEtsbTNuenpmZFwvNzNseGN3Wml6OENLMVFpb1g1cXBJcFE1ZGJxVk9IY2FGbGRRUEM0YzJRU29SS3lXd3d4VzRYa0VOZ2docU1pRjRHTzJLZmRGUVFxZU45ZTR1eHRUc1dYaHViSHJEdUdORmhnZkc3b1czM0xHeCtKZEFSUjE4cWNINEZzeUlPRGFGcGpXalc3MWNXa3kyWUxxcVJTYmU4NlZITWQrZ0ppbVVHNFdPb3haZGhVa0VVNktndDRaVkpUcUNCOWRtQzVLcTBVWnFSakNSQytmWTNUK2R0TWxiOVwvZmVwdVlPM3NFaDFIdDV3SXV6ZStxaG9lY0psNHhTM0xVMDJpMTBkR1lTdVNPOU9QTVA1azZcL24zd2VkR29Bbk1tenU5OVU5Y2VMTVBqNit2ZDhHWFFRRTh5T1dLOWd6VjdPYm1ZcTVsY1d2ZktQODQyUFoxZEgyXC9kWTJTT1dcLzM4ZUN5OXZrdXN2bVN3WFZwQVptUkhUSHRUOW5za1g3eVlmVHFFZnRtV1dLK1FmcFFtVFc0bUttTnV0VzZPR2VSTk1icTVIclRlZGRtdlRuK3BreUxEbVwvYkpsUDZzd01qeXA0MThmdnAwOHVlVDNxekMyTDFTQm5QaDBCVm9yc2k3YTl4ZG5jMU9mZmg2WFwvb2RcLytRXC9MWk5ua0R3TUFBQT09Iiwic3ViIjoidG90byIsInJvbGVzIjpbIlJPTEVfVVNFUiJdLCJleHAiOjE1MDk3OTIxNTAsImlhdCI6MTUwOTc4ODU1MH0.FMsQ8_56w96nNVC4Iwk8Ycn_ACz8tiTCj6mxwyvn0NI\n",
+						"data": null,
+						"method": "POST",
+						"dataMode": "params"
+					}
+				}
+			]
+		},
+		{
+			"id": "cfe4358c-2987-b9ce-f470-94bd1d73786b",
+			"headers": "Accept: XML\nMyToken: eyJhbGciOiJIUzI1NiJ9.eyJwcmluY2lwYWwiOiJINHNJQUFBQUFBQUFBSlZTdjA4VVFSUit1OXdGQ0ltQ0NTWVcySWlkMlV1MHZFcklZVUkyUURpdndVUXpOXC90WUJtWm5scGxadUd2TVZWcFFRRUFTRWxwTFwvaE50XC9BTUlGcmJVdHI1WkR2YTBJVTYxKytiYjc5ZmJpMnVvV3dPdlVzT0V0RkV1aTFTb3lPWkdxTlFpTDR4d1wvYWl3YUJKMEplSk5DZXpRQkc1T0VFSVFReWdTQjRcL2liYmJIR3BLcHRMSGEzVWJ1bWowREw3VkpoNHliaG1XNHI4MU9kTWZOdGNHXC9CQ3JxNEdzSTR4c3d3empYaFhJcldyVjZ1VENZYk1CME5ZczEzXC9HaldVNDNxSnhnMG81Q3gxR3hyc1FraGlsV3VDMU5xZ0t0ZzRjM1pnc25aS09OcmhuRFJNNnNKWGZcL0pHazdiOTNmZTV1S0V1ekNSNmoxOG9BT2RmZmNReVBQRXkxcUtTbTEwTXJPZDFTbUU3RXB2RGp4RCthT2Z4eWVEem9oQUhYeTR2NXZxdm1UQlJoOGVcL1wvN2FWbDB3QjA4SHJGZXdacTluTnpNVk14dkRYcmx5N08xazlQcnorXC9HU05ramx2NVwvSFwvT3ZoODMxRjNXV004T2NIdGtSMGU3WFwvRE9STDl4UGZydUZmdFFXV1M2UlwvaWpsTUxtVHFJZ3BiczFvZWR1M2c4bjExYmoxb2ROdXJmdTNPaE44aTVIb2d6S3pYMVlVYTFyVndhK2o3NGZQcm9oZ0dlcDdUQlpJbFU5WG9KVWk2Nkw1ZEhFNk5cL1hsNTBFWllQZ3poMzhBaEVNbmpSQURBQUE9Iiwic3ViIjoiYWljaGEiLCJyb2xlcyI6WyJST0xFX1VTRVIiXSwiZXhwIjoxNTA5NzkwMzc3LCJpYXQiOjE1MDk3ODY3Nzd9.PET0m6G3MqvMvWE8gecZ14BN207XlI-68VPOYe5fjWc\n",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "XML",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "MyToken",
+					"value": "eyJhbGciOiJIUzI1NiJ9.eyJwcmluY2lwYWwiOiJINHNJQUFBQUFBQUFBSlZTdjA4VVFSUit1OXdGQ0ltQ0NTWVcySWlkMlV1MHZFcklZVUkyUURpdndVUXpOXC90WUJtWm5scGxadUd2TVZWcFFRRUFTRWxwTFwvaE50XC9BTUlGcmJVdHI1WkR2YTBJVTYxKytiYjc5ZmJpMnVvV3dPdlVzT0V0RkV1aTFTb3lPWkdxTlFpTDR4d1wvYWl3YUJKMEplSk5DZXpRQkc1T0VFSVFReWdTQjRcL2liYmJIR3BLcHRMSGEzVWJ1bWowREw3VkpoNHliaG1XNHI4MU9kTWZOdGNHXC9CQ3JxNEdzSTR4c3d3empYaFhJcldyVjZ1VENZYk1CME5ZczEzXC9HaldVNDNxSnhnMG81Q3gxR3hyc1FraGlsV3VDMU5xZ0t0ZzRjM1pnc25aS09OcmhuRFJNNnNKWGZcL0pHazdiOTNmZTV1S0V1ekNSNmoxOG9BT2RmZmNReVBQRXkxcUtTbTEwTXJPZDFTbUU3RXB2RGp4RCthT2Z4eWVEem9oQUhYeTR2NXZxdm1UQlJoOGVcL1wvN2FWbDB3QjA4SHJGZXdacTluTnpNVk14dkRYcmx5N08xazlQcnorXC9HU05ramx2NVwvSFwvT3ZoODMxRjNXV004T2NIdGtSMGU3WFwvRE9STDl4UGZydUZmdFFXV1M2UlwvaWpsTUxtVHFJZ3BiczFvZWR1M2c4bjExYmoxb2ROdXJmdTNPaE44aTVIb2d6S3pYMVlVYTFyVndhK2o3NGZQcm9oZ0dlcDdUQlpJbFU5WG9KVWk2Nkw1ZEhFNk5cL1hsNTBFWllQZ3poMzhBaEVNbmpSQURBQUE9Iiwic3ViIjoiYWljaGEiLCJyb2xlcyI6WyJST0xFX1VTRVIiXSwiZXhwIjoxNTA5NzkwMzc3LCJpYXQiOjE1MDk3ODY3Nzd9.PET0m6G3MqvMvWE8gecZ14BN207XlI-68VPOYe5fjWc",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/api/livre/5?auteur=toto&isbn=124",
+			"queryParams": [
+				{
+					"key": "auteur",
+					"value": "toto",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "isbn",
+					"value": "124",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "PUT",
+			"collectionId": "2b8f8549-8847-aadd-486c-792ade711cd8",
+			"data": null,
+			"dataMode": "params",
+			"name": "Modification_auteur_ISBN_Livre",
+			"description": "Modification de l'auteur et l'ISBN d'un livre et le livre modifié est renvoyé sous le format xml",
+			"descriptionFormat": "html",
+			"time": 1509787519614,
+			"version": 2,
+			"responses": [
+				{
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK",
+						"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+					},
+					"time": 61,
+					"headers": [
+						{
+							"key": "Content-Type",
+							"value": "application/xml;charset=UTF-8",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 04 Nov 2017 09:24:45 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked",
+							"name": "Transfer-Encoding",
+							"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+						},
+						{
+							"key": "X-Application-Context",
+							"value": "application:development",
+							"name": "X-Application-Context",
+							"description": "Custom header"
+						}
+					],
+					"cookies": [
+						{
+							"domain": "localhost",
+							"expirationDate": 2147483647,
+							"httpOnly": true,
+							"name": "JSESSIONID",
+							"path": "/",
+							"secure": false,
+							"url": "http://localhost:8080",
+							"value": "901ECE9F3017AF8646280EF6B554F4E5"
+						}
+					],
+					"mime": "",
+					"text": "<?xml version=\"1.0\" encoding=\"UTF-8\"?><livre id=\"5\"><bu id=\"1\" /><auteur>toto</auteur><isbn>124</isbn><nom>Trilogie</nom><dateApparution>2017-11-04 09:54:12.97 CET</dateApparution></livre>",
+					"language": "xml",
+					"previewType": "text",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"code": 200,
+					"responseSize": {
+						"body": 188,
+						"header": 177,
+						"total": 365
+					},
+					"mimeType": "text",
+					"fileName": "response.xml",
+					"dataURI": "data:application/xml;base64, PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48bGl2cmUgaWQ9IjUiPjxidSBpZD0iMSIgLz48YXV0ZXVyPnRvdG88L2F1dGV1cj48aXNibj4xMjQ8L2lzYm4+PG5vbT5Ucmlsb2dpZTwvbm9tPjxkYXRlQXBwYXJ1dGlvbj4yMDE3LTExLTA0IDA5OjU0OjEyLjk3IENFVDwvZGF0ZUFwcGFydXRpb24+PC9saXZyZT4=",
+					"name": "Modification_auteur_ISBN_Livre",
+					"id": "ec22c531-1c28-389f-c618-2b608f004a66",
+					"request": {
+						"url": "http://localhost:8080/api/livre/5?auteur=toto&isbn=124",
+						"pathVariables": {},
+						"pathVariableData": [],
+						"queryParams": [
+							{
+								"key": "auteur",
+								"value": "toto",
+								"equals": true,
+								"description": "",
+								"enabled": true
+							},
+							{
+								"key": "isbn",
+								"value": "124",
+								"equals": true,
+								"description": "",
+								"enabled": true
+							}
+						],
+						"headerData": [
+							{
+								"key": "Accept",
+								"value": "XML",
+								"description": "",
+								"enabled": true,
+								"disabled": false
+							},
+							{
+								"key": "MyToken",
+								"value": "eyJhbGciOiJIUzI1NiJ9.eyJwcmluY2lwYWwiOiJINHNJQUFBQUFBQUFBSlZTdjA4VVFSUit1OXdGQ0ltQ0NTWVcySWlkMlV1MHZFcklZVUkyUURpdndVUXpOXC90WUJtWm5scGxadUd2TVZWcFFRRUFTRWxwTFwvaE50XC9BTUlGcmJVdHI1WkR2YTBJVTYxKytiYjc5ZmJpMnVvV3dPdlVzT0V0RkV1aTFTb3lPWkdxTlFpTDR4d1wvYWl3YUJKMEplSk5DZXpRQkc1T0VFSVFReWdTQjRcL2liYmJIR3BLcHRMSGEzVWJ1bWowREw3VkpoNHliaG1XNHI4MU9kTWZOdGNHXC9CQ3JxNEdzSTR4c3d3empYaFhJcldyVjZ1VENZYk1CME5ZczEzXC9HaldVNDNxSnhnMG81Q3gxR3hyc1FraGlsV3VDMU5xZ0t0ZzRjM1pnc25aS09OcmhuRFJNNnNKWGZcL0pHazdiOTNmZTV1S0V1ekNSNmoxOG9BT2RmZmNReVBQRXkxcUtTbTEwTXJPZDFTbUU3RXB2RGp4RCthT2Z4eWVEem9oQUhYeTR2NXZxdm1UQlJoOGVcL1wvN2FWbDB3QjA4SHJGZXdacTluTnpNVk14dkRYcmx5N08xazlQcnorXC9HU05ramx2NVwvSFwvT3ZoODMxRjNXV004T2NIdGtSMGU3WFwvRE9STDl4UGZydUZmdFFXV1M2UlwvaWpsTUxtVHFJZ3BiczFvZWR1M2c4bjExYmoxb2ROdXJmdTNPaE44aTVIb2d6S3pYMVlVYTFyVndhK2o3NGZQcm9oZ0dlcDdUQlpJbFU5WG9KVWk2Nkw1ZEhFNk5cL1hsNTBFWllQZ3poMzhBaEVNbmpSQURBQUE9Iiwic3ViIjoiYWljaGEiLCJyb2xlcyI6WyJST0xFX1VTRVIiXSwiZXhwIjoxNTA5NzkwMzc3LCJpYXQiOjE1MDk3ODY3Nzd9.PET0m6G3MqvMvWE8gecZ14BN207XlI-68VPOYe5fjWc",
+								"description": "",
+								"enabled": true,
+								"disabled": false
+							}
+						],
+						"headers": "Accept: XML\nMyToken: eyJhbGciOiJIUzI1NiJ9.eyJwcmluY2lwYWwiOiJINHNJQUFBQUFBQUFBSlZTdjA4VVFSUit1OXdGQ0ltQ0NTWVcySWlkMlV1MHZFcklZVUkyUURpdndVUXpOXC90WUJtWm5scGxadUd2TVZWcFFRRUFTRWxwTFwvaE50XC9BTUlGcmJVdHI1WkR2YTBJVTYxKytiYjc5ZmJpMnVvV3dPdlVzT0V0RkV1aTFTb3lPWkdxTlFpTDR4d1wvYWl3YUJKMEplSk5DZXpRQkc1T0VFSVFReWdTQjRcL2liYmJIR3BLcHRMSGEzVWJ1bWowREw3VkpoNHliaG1XNHI4MU9kTWZOdGNHXC9CQ3JxNEdzSTR4c3d3empYaFhJcldyVjZ1VENZYk1CME5ZczEzXC9HaldVNDNxSnhnMG81Q3gxR3hyc1FraGlsV3VDMU5xZ0t0ZzRjM1pnc25aS09OcmhuRFJNNnNKWGZcL0pHazdiOTNmZTV1S0V1ekNSNmoxOG9BT2RmZmNReVBQRXkxcUtTbTEwTXJPZDFTbUU3RXB2RGp4RCthT2Z4eWVEem9oQUhYeTR2NXZxdm1UQlJoOGVcL1wvN2FWbDB3QjA4SHJGZXdacTluTnpNVk14dkRYcmx5N08xazlQcnorXC9HU05ramx2NVwvSFwvT3ZoODMxRjNXV004T2NIdGtSMGU3WFwvRE9STDl4UGZydUZmdFFXV1M2UlwvaWpsTUxtVHFJZ3BiczFvZWR1M2c4bjExYmoxb2ROdXJmdTNPaE44aTVIb2d6S3pYMVlVYTFyVndhK2o3NGZQcm9oZ0dlcDdUQlpJbFU5WG9KVWk2Nkw1ZEhFNk5cL1hsNTBFWllQZ3poMzhBaEVNbmpSQURBQUE9Iiwic3ViIjoiYWljaGEiLCJyb2xlcyI6WyJST0xFX1VTRVIiXSwiZXhwIjoxNTA5NzkwMzc3LCJpYXQiOjE1MDk3ODY3Nzd9.PET0m6G3MqvMvWE8gecZ14BN207XlI-68VPOYe5fjWc\n",
+						"data": null,
+						"method": "PUT",
+						"dataMode": "params"
+					}
+				}
+			],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		}
+	]
+}
