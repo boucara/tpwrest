@@ -8,11 +8,18 @@ class UrlMappings {
                 // apply constraints here
             }
         }
-        "/biblio/${id}/livres" (controller:"api",action:"ressourcesLies")
-        "/biblio/${id}/livre/" (controller:"api",action:"ressourcesLies")
-        "/biblio/${id}/livres/livre/" (controller:"api",action:"lectureLivreBu")
-        "/livre"(controller:"api",action:"livre")
-        "/bibliotheque"(controller:"api",action:"bibliotheque")
+        /*acces aux livres*/
+        "/api/livre/${livreid}/"(controller:"api",action:"livre")
+        "/api/livres"(controller:"api",action:"livres")
+
+        /*acces à un ou plusieurs livre dune BU*/
+
+        "/api/bibliotheque/${buid}/livres/"(controller:"api",action:"livreBu")
+        "/api/bibliotheque/${buid}/livre/${livreid}/"(controller:"api",action:"ressourcesLies")
+
+        /*acces aux BU*/
+        "/api/bibliotheque/${buid}/"(controller:"api",action:"bibliotheque")
+        "/api/bibliotheques"(controller:"api",action:"bibliotheques")
 
         "/"(view:"/index")
         "500"(view:'/error')
