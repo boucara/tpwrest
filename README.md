@@ -19,7 +19,8 @@ Il va de soi que si le livre avec l’id 1 ne se trouve pas dans la bibliothèqu
 * Modification du fichier build.gradle : ajout dans la section de dependance les  plugins: 
     *  **org.grails.plugins:springsecurity-core:3.2.0.M1**
     *  **org.grails.plugins:springsecurity-rest:2.0.0.M2**
-* Création des entités User , authority et leur relation UserAuthority à l'aide de la commande suivante :grails s2-quickstart api_rest User Authority
+* Création des entités User , authority et leur relation UserAuthority à l'aide de la commande suivante :
+    *  **grails s2-quickstart api_rest User Authority**
 Leur contenu a été automatiquement généré par spring security core précedemment ajouté dans le fichier build.gradle
 * Modification  du fichier "**grails-app/conf/application.groovy**" : ajout des éléments suivants pour configurer le plugin Grails Spring Security Rest
     * grails.plugin.springsecurity.rest.logout.endpointUrl = '/api/logout'
