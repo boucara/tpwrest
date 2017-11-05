@@ -16,11 +16,12 @@ PUT /biblio/2/book/1 pour modifier le livre ayant l’id 1 référencé dans la 
 Il va de soi que si le livre avec l’id 1 ne se trouve pas dans la bibliothèque ayant l’id 2, il faudra retourner un code d’état approprié.
 
 # Les étapes d'implementation de la sécurité REST
-* Modification du fichier build.gradle : ajout dans la section de dependance les  plugins: org.grails.plugins:springsecurity-core:3.2.0.M1
-et org.grails.plugins:springsecurity-rest:2.0.0.M2
+* Modification du fichier build.gradle : ajout dans la section de dependance les  plugins: 
+    *  **org.grails.plugins:springsecurity-core:3.2.0.M1**
+    *  **org.grails.plugins:springsecurity-rest:2.0.0.M2**
 * Création des entités User , authority et leur relation UserAuthority à l'aide de la commande suivante :grails s2-quickstart api_rest User Authority
 Leur contenu a été automatiquement généré par spring security core précedemment ajouté dans le fichier build.gradle
-* Modification  du fichier "grails-app / conf / application.groovy" : ajout des éléments suivants pour configurer le plugin Grails Spring Security Rest
+* Modification  du fichier "**grails-app/conf/application.groovy**" : ajout des éléments suivants pour configurer le plugin Grails Spring Security Rest
     * grails.plugin.springsecurity.rest.logout.endpointUrl = '/api/logout'
       grails.plugin.springsecurity.rest.token.validation.useBearerToken = false
       grails.plugin.springsecurity.rest.token.validation.headerName = 'MyToken'
@@ -31,10 +32,10 @@ Leur contenu a été automatiquement généré par spring security core précede
     
     * Interdiction d'accés aux services de l'APi sans authentification
      grails.plugin.springsecurity.interceptUrlMap = [
-    [pattern: '/api/bibliotheque',    access: ['isFullyAuthenticated()']],
-    [pattern: '/api/bibliotheques',    access: ['isFullyAuthenticated()']],
-    [pattern: '/api/livre',    access: ['isFullyAuthenticated()']],
-    [pattern: '/api/livres',    access: ['isFullyAuthenticated()']],
+    [pattern: '/api/bibliotheque',    access: [**'isFullyAuthenticated()**']],
+    [pattern: '/api/bibliotheques',    access: [**'isFullyAuthenticated()**']],
+    [pattern: '/api/livre',    access: ['**isFullyAuthenticated()**']],
+    [pattern: '/api/livres',    access: ['**isFullyAuthenticated()**']],
     ]
     
-* Modification du fichier  "grails-app/init/Boostrap : ajout de trois utilisateurs pour le test de la sécurité 
+* Modification du fichier  "**grails-app/init/Boostrap**" : ajout de trois utilisateurs pour le test de la sécurité 
