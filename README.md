@@ -31,11 +31,11 @@ Leur contenu a été automatiquement généré par spring security core précede
       grails.plugin.springsecurity.rest.token.storage.memcached.expiration = 86400
     
     * Interdiction d'accés aux services de l'APi sans authentification
-     grails.plugin.springsecurity.interceptUrlMap = [
-    [pattern: '/api/bibliotheque',    access: [**'isFullyAuthenticated()**']],
-    [pattern: '/api/bibliotheques',    access: [**'isFullyAuthenticated()**']],
-    [pattern: '/api/livre',    access: ['**isFullyAuthenticated()**']],
-    [pattern: '/api/livres',    access: ['**isFullyAuthenticated()**']],
-    ]
+       * grails.plugin.springsecurity.**interceptUrlMap** = [
+        [pattern: '/api/bibliotheque',    access: [**'isFullyAuthenticated()**']],
+        [pattern: '/api/bibliotheques',    access: [**'isFullyAuthenticated()**']],
+        [pattern: '/api/livre',    access: ['**isFullyAuthenticated()**']],
+        [pattern: '/api/livres',    access: ['**isFullyAuthenticated()**']],
+        ]
     
 * Modification du fichier  "**grails-app/init/Boostrap**" : ajout de trois utilisateurs pour le test de la sécurité 
