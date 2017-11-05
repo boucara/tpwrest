@@ -206,7 +206,7 @@ class ApiController {
                             break;
 
 
-                            response.status = 200
+                            response.status = 201
                     }
                 } else
                     response.status = 400
@@ -354,7 +354,7 @@ class ApiController {
                 if(bibliothequeInstance.addToLivres(livreInstance)){
                     if(bibliothequeInstance.save(flush:true)){
 
-                        response.status=200
+                        response.status=201
                         switch (request.getHeader('Accept')) {
                             case 'JSON':
                                 render livreInstance as JSON

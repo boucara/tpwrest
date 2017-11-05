@@ -40,3 +40,13 @@ Leur contenu a été automatiquement généré par spring security core précede
         ]
     
 * Modification du fichier  "**grails-app/init/Boostrap**" : ajout de trois utilisateurs pour le test de la sécurité 
+    * Utilisateur d’identifiants :
+       * **username toto , password pwd1**
+      * **username aicha, password 0000**
+      * **username traore, password 0001**
+ * **Remarques**
+    * Si un token est expiré une erreur **401**(non autorisé est généré)  méme si le token a été specifié dans le header de la requéte 
+     il faudrait donc régénéré un nouveau  pour que la requéte fonctionne 
+     * Toujours précisé dans le header de la requéte : sur postman key  **MyToken** et value **le token du client** sans cette précision aucun service ne sera accessible
+     donc aucune requéte ne fonctionnera , l'erreur **406** sera générer 
+      
